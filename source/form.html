@@ -31,6 +31,172 @@
       <h1 class="page-title">
         Направления
       </h1>
+      <section class="my-info">
+        <div class="my-info__wrap-level-avatar">
+          <span class="my-info__level"></span>
+          <img class="my-info__avatar" src="#" alt="Автатар">
+        </div>
+        <button class="button my-info__button">Сменить фото</button>
+        <fieldset class="my-info__hachtags">
+          <legend class="my-info__title">ТЭГИ</legend>
+          <span>#бургер #бар #футбол #концерт #крафт</span>
+        </fieldset>
+        <fieldset class="my-info__transport">
+          <legend class="my-info__title"></legend>
+          <ul class="my-info__transport-list">
+            <li class="my-info__transport-item my-info__transport-item--active" aria-label="Самолет"></li>
+            <li class="my-info__transport-item my-info__transport-item--active" aria-label="Автобус"></li>
+            <li class="my-info__transport-item" aria-label="Велосипед"></li>
+            <li class="my-info__transport-item my-info__transport-item--active" aria-label="Пешком"></li>
+          </ul>
+        </fieldset>
+      </section>
+      <section class="my-plans">
+        <h2 class="my-plans__title">Мои планы</h2>
+        <ul class="my-plans__list">
+          <li class="my-plans__item">
+            <h3 class="my-plans__item-title">Франция, Италия</h3>
+            <span class="my-palns__text">3 попутчика</span>
+            <span class="my-palns__text">26 мар — 29 мар</span>
+            <a class="my-plans__change-button" href="#">Изменить</a>
+          </li>
+          <li class="my-plans__item">
+            <h3 class="my-plans__item-title">Тайланд, Индонезия</h3>
+            <span class="my-palns__text">1 попутчик</span>
+            <span class="my-palns__text">1 июл — 15 июл</span>
+            <a class="my-plans__change-button" href="#">Изменить</a>
+          </li>
+        </ul>
+      </section>
+      <section class="add-plan">
+        <h2 class="add-plan__title">Добавить план:</h2>
+        <form action="" method="post">
+          <div class="add-plan__step1">
+            <h3 class="add-plan__step-title">Шаг 1. Даты пребывания</h3>
+            <p class="add-plan__step-text">Укажите предпочтительное количество попутчиков, которых
+              вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+            <span class="add-plan__looking-travelers">
+              <label class="add-plan__looking-travelers-title" for="looking-travelers">ищу попутчиков:</label>
+              <p class="add-plan__looking-travelers-number">Чел.</p>
+            </span>
+            <input class="add-plan__looking-travelers-input" type="number" id="looking-travelers" placeholder="2">
+            <span class="add-plan__duration">
+              <label class="add-plan__duration-title" for="duration">длительность:</label>
+              <p class="add-plan__duration-number">Дн.</p>
+            </span>
+            <input class="add-plan__duration-input" type="number" id="duration" placeholder="2">
+            <input class="add-plan__with-child-input" type="checkbox" id="with-child">
+            <label class="add-plan__with-child-label" for="with-child">Можно с детьми</label>
+
+            <div class="add-plan__calendar">
+              <span class="add-plan__mounth">Март 2019</span>
+              <table class="add-plan__table">
+                <thead class="add-plan__thead">
+                  <td class="add-plan__thead-data">П</td>
+                  <td class="add-plan__thead-data">В</td>
+                  <td class="add-plan__thead-data">С</td>
+                  <td class="add-plan__thead-data">Ч</td>
+                  <td class="add-plan__thead-data">П</td>
+                  <td class="add-plan__thead-data add-plan__thead-data--weekend">С</td>
+                  <td class="add-plan__thead-data add-plan__thead-data--weekend">В</td>
+                </thead>
+                <tr class="add-plan__table-row">
+                  <td class="add-plan__table-data">24</td>
+                  <td class="add-plan__table-data">25</td>
+                  <td class="add-plan__table-data">26</td>
+                  <td class="add-plan__table-data">27</td>
+                  <td class="add-plan__table-data">28</td>
+                  <td class="add-plan__table-data">1</td>
+                  <td class="add-plan__table-data">2</td>
+                </tr>
+                <tr class="add-plan__table-row">
+                  <td class="add-plan__table-data">3</td>
+                  <td class="add-plan__table-data">4</td>
+                  <td class="add-plan__table-data">5</td>
+                  <td class="add-plan__table-data">6</td>
+                  <td class="add-plan__table-data">7</td>
+                  <td class="add-plan__table-data">8</td>
+                  <td class="add-plan__table-data">9</td>
+                </tr>
+                <tr class="add-plan__table-row">
+                  <td class="add-plan__table-data">10</td>
+                  <td class="add-plan__table-data">11</td>
+                  <td class="add-plan__table-data">12</td>
+                  <td class="add-plan__table-data">13</td>
+                  <td class="add-plan__table-data">14</td>
+                  <td class="add-plan__table-data">15</td>
+                  <td class="add-plan__table-data">16</td>
+                </tr>
+                <tr class="add-plan__table-row">
+                  <td class="add-plan__table-data">17</td>
+                  <td class="add-plan__table-data">18</td>
+                  <td class="add-plan__table-data">19</td>
+                  <td class="add-plan__table-data">20</td>
+                  <td class="add-plan__table-data">21</td>
+                  <td class="add-plan__table-data">22</td>
+                  <td class="add-plan__table-data">23</td>
+                </tr>
+                <tr class="add-plan__table-row">
+                  <td class="add-plan__table-data">24</td>
+                  <td class="add-plan__table-data">25</td>
+                  <td class="add-plan__table-data">26</td>
+                  <td class="add-plan__table-data add-plan__table-data--chosen">27</td>
+                  <td class="add-plan__table-data add-plan__table-data--chosen">28</td>
+                  <td class="add-plan__table-data add-plan__table-data--chosen">29</td>
+                  <td class="add-plan__table-data add-plan__table-data--available">30</td>
+                </tr>
+                <tr class="add-plan__table-row">
+                  <td class="add-plan__table-data add-plan__table-data--available">31</td>
+                  <td class="add-plan__table-data add-plan__table-data--available">1</td>
+                  <td class="add-plan__table-data add-plan__table-data--available">2</td>
+                  <td class="add-plan__table-data add-plan__table-data--available">3</td>
+                  <td class="add-plan__table-data add-plan__table-data--available">4</td>
+                  <td class="add-plan__table-data add-plan__table-data--available">5</td>
+                  <td class="add-plan__table-data add-plan__table-data--available">6</td>
+                </tr>
+              </table>
+              <a class="button add-plan__button-next" href="#">Следующий шаг</a>
+            </div>
+          </div>
+          <div class="add-plan__step2">
+            <h3 class="add-plan__step-title">Шаг 2. Маршрут</h3>
+            <p class="add-plan__step-text">Укажите страны, которые вы хотели по посетить.
+              Это может быть одна или сразу несколько.</p>
+            <span class="add-plan__country add-plan__country--step2">
+              <span class="add-plan__country-name">босния и герцеговина</span>
+              <span class="add-plan__country-flag add-plan__country-flag--bosnia"></span>
+            </span>
+            <span class="add-plan__country add-plan__country--step2">
+              <span class="add-plan__country-name">Чехословакия</span>
+              <span class="add-plan__country-flag add-plan__country-flag--chehoslovakia"></span>
+            </span>
+            <span class="add-plan__country-choose">
+              Добавить страну
+            </span>
+            <a class="button add-plan__button-next" href="#">Следующий шаг</a>
+            <a class="button add-plan__button-back" href="#">На шаг назад</a>
+          </div>
+          <div class="add-plan__step3">
+            <h3 class="add-plan__step-title">Шаг 3. Развлечения</h3>
+            <p class="add-plan__step-text">Наконец, расскажите о своих планах времяпровождения.
+              Можно писать в свободной форме и ставить тэги.</p>
+            <label class="add-plan__country add-plan__country--step3" for="action-plan--bosnia">
+              <span class="add-plan__country-name">босния и герцеговина</span>
+              <span class="add-plan__country-flag add-plan__country-flag--bosnia"></span>
+            </label>
+            <textarea name="action-plan" id="action-plan--bosnia" cols="30" rows="10"></textarea>
+            <label class="add-plan__country add-plan__country--step3" for="action-plan-chehia">
+              <span class="add-plan__country-name">Чехословакия</span>
+              <span class="add-plan__country-flag add-plan__country-flag--chehoslovakia"></span>
+            </label>
+            <textarea name="action-plan" id="action-plan-chehia" cols="30" rows="10"
+              placeholder="Пить пиво и лазить по старым замкам, наслаждаться аритектурой
+               и вот это все."></textarea>
+            <button class="button add-plan__button-next" type="submit">Следующий шаг</button>
+            <a class="button add-plan__button-back" href="#">На шаг назад</a>
+          </div>
+        </form>
+      </section>
     </main>
     <footer class="footer">
       <img src="#" alt="Логотип сервиса, Погнали?">
