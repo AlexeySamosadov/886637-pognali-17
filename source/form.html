@@ -71,7 +71,7 @@
       <section class="add-plan">
         <h2 class="add-plan__title">Добавить план:</h2>
         <form action="" method="post">
-          <div class="add-plan__step1">
+          <section class="add-plan__step">
             <h3 class="add-plan__step-title">Шаг 1. Даты пребывания</h3>
             <p class="add-plan__step-text">Укажите предпочтительное количество попутчиков, которых
               вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
@@ -157,44 +157,44 @@
               </table>
               <a class="button add-plan__button-next" href="#">Следующий шаг</a>
             </div>
-          </div>
-          <div class="add-plan__step2">
+          </section>
+          <section class="add-plan__step">
             <h3 class="add-plan__step-title">Шаг 2. Маршрут</h3>
             <p class="add-plan__step-text">Укажите страны, которые вы хотели по посетить.
               Это может быть одна или сразу несколько.</p>
             <span class="add-plan__country add-plan__country--step2">
               <span class="add-plan__country-name">босния и герцеговина</span>
-              <span class="add-plan__country-flag add-plan__country-flag--bosnia"></span>
+              <svg class="add-plan__country-flag"></svg>
             </span>
             <span class="add-plan__country add-plan__country--step2">
               <span class="add-plan__country-name">Чехословакия</span>
-              <span class="add-plan__country-flag add-plan__country-flag--chehoslovakia"></span>
+              <svg class="add-plan__country-flag"></svg>
             </span>
-            <span class="add-plan__country-choose">
+            <button class="add-plan__country-choose">
               Добавить страну
-            </span>
+            </button>
             <a class="button add-plan__button-next" href="#">Следующий шаг</a>
             <a class="button add-plan__button-back" href="#">На шаг назад</a>
-          </div>
-          <div class="add-plan__step3">
+          </section>
+          <section class="add-plan__step">
             <h3 class="add-plan__step-title">Шаг 3. Развлечения</h3>
             <p class="add-plan__step-text">Наконец, расскажите о своих планах времяпровождения.
               Можно писать в свободной форме и ставить тэги.</p>
             <label class="add-plan__country add-plan__country--step3" for="action-plan--bosnia">
               <span class="add-plan__country-name">босния и герцеговина</span>
-              <span class="add-plan__country-flag add-plan__country-flag--bosnia"></span>
+              <svg class="add-plan__country-flag"></svg>
             </label>
             <textarea name="action-plan" id="action-plan--bosnia" cols="30" rows="10"></textarea>
             <label class="add-plan__country add-plan__country--step3" for="action-plan-chehia">
               <span class="add-plan__country-name">Чехословакия</span>
-              <span class="add-plan__country-flag add-plan__country-flag--chehoslovakia"></span>
+              <svg class="add-plan__country-flag"></svg>
             </label>
             <textarea name="action-plan" id="action-plan-chehia" cols="30" rows="10"
               placeholder="Пить пиво и лазить по старым замкам, наслаждаться аритектурой
                и вот это все."></textarea>
             <button class="button add-plan__button-next" type="submit">Следующий шаг</button>
             <a class="button add-plan__button-back" href="#">На шаг назад</a>
-          </div>
+          </section>
         </form>
       </section>
     </main>

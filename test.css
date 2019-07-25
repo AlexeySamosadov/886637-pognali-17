@@ -1,0 +1,68 @@
+/* Используемые цвета:
+
+#777777
+#ffffff
+#fffebc
+#b2fdd0
+#ffbaba
+
+*/
+
+.formula {
+  margin: 10px;
+  width: 500px;
+  border-collapse: collapse;
+  display: table;
+  border-collapse: collapse;
+
+}
+
+.formula p {
+  margin: 0;
+  padding: 10px;
+  font-size: 20px;
+  display: table-caption;
+  caption-side: bottom;
+  text-align: center;
+}
+.formula .column-group {
+  display: table-column-group;
+}
+.formula .column {
+  display: table-column;
+}
+
+.formula header {
+  display: table-header-group;
+}
+.formula header ul {
+  display: table-row;
+}
+.formula header li {
+  display: table-cell;
+  border: 1px solid #777777;
+  text-align: center;
+  background-color: #ffffff;
+
+}
+.formula .content {
+  display: table-row-group;
+}
+.formula .content ul {
+  display: table-row;
+
+}
+.content li {
+  display: table-cell;
+  border: 1px solid #777777;
+  text-align: center;
+}
+.formula .column {
+  background-color: #b2fdd0;
+}
+.formula .column-last  {
+  background-color: #ffbaba;
+}
+.formula .content-important li {
+  background-color: #fffebc;
+}
