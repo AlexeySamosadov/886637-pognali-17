@@ -1,0 +1,312 @@
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог выбора попутчиков сервиса Погнали?</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="" alt="Сервис поиска попутчиков - Погнали?" width="100" height="19">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle">
+          Открыть меню
+        </button>
+        <div class="main-nam__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="#">О сервисе</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Направления</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Попутчики</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="page-title">
+        Попутчики
+      </h1>
+      <section class="filter-by-country">
+        <div class="filter-by-country__filter">
+          <span class="filter-by-country__filter-icon1"></span>
+           Фильтрация по странам
+          <span class="filter-by-country__filter-icon2"></span>
+        </div>
+        <div class="filter-by-country__block">
+          <ul class="filter-by-country__region-list">
+            <li class="filter-by-country__region-item">Европа</li>
+            <li class="filter-by-country__region-item">Азия</li>
+            <li class="filter-by-country__region-item">Америка</li>
+            <li class="filter-by-country__region-item">Острова</li>
+          </ul>
+          <table class="filter-by-country__region-table">
+            <tr class="filter-by-country__table-row">
+              <td class="filter-by-country__table-data">A</td>
+              <td class="filter-by-country__table-data">Б</td>
+              <td class="filter-by-country__table-data">В</td>
+              <td class="filter-by-country__table-data">Г</td>
+              <td class="filter-by-country__table-data">Д</td>
+            </tr>
+            <tr class="filter-by-country__table-row">
+              <td class="filter-by-country__table-data">Е</td>
+              <td class="filter-by-country__table-data">Ё</td>
+              <td class="filter-by-country__table-data">Ж</td>
+              <td class="filter-by-country__table-data">З</td>
+              <td class="filter-by-country__table-data">И</td>
+            </tr>
+            <tr>
+              <td class="filter-by-country__table-data">Й</td>
+              <td class="filter-by-country__table-data">К</td>
+              <td class="filter-by-country__table-data">Л</td>
+              <td class="filter-by-country__table-data">М</td>
+              <td class="filter-by-country__table-data">Н</td>
+            </tr>
+            <tr class="filter-by-country__table-row">
+              <td class="filter-by-country__table-data">О</td>
+              <td class="filter-by-country__table-data">П</td>
+              <td class="filter-by-country__table-data">Р</td>
+              <td class="filter-by-country__table-data">С</td>
+              <td class="filter-by-country__table-data">Т</td>
+            </tr>
+            <tr class="filter-by-country__table-row">
+              <td class="filter-by-country__table-data">У</td>
+              <td class="filter-by-country__table-data">Ф</td>
+              <td class="filter-by-country__table-data">Х</td>
+              <td class="filter-by-country__table-data">Ц</td>
+              <td class="filter-by-country__table-data">Ч</td>
+            </tr>
+            <tr class="filter-by-country__table-row">
+              <td class="filter-by-country__table-data">Ш</td>
+              <td class="filter-by-country__table-data">Щ</td>
+              <td class="filter-by-country__table-data">Э</td>
+              <td class="filter-by-country__table-data">Ю</td>
+              <td class="filter-by-country__table-data">Я</td>
+            </tr>
+          </table>
+          <ul class="filter-by-country__countries-list">
+            <li class="filter-by-country__countries-item">Афганистан</li>
+            <li class="filter-by-country__countries-item">Албания</li>
+            <li class="filter-by-country__countries-item">Алгерия</li>
+            <li class="filter-by-country__countries-item">Андорра</li>
+            <li class="filter-by-country__countries-item">Аргентина</li>
+            <li class="filter-by-country__countries-item">Армения</li>
+            <li class="filter-by-country__countries-item">Австралия</li>
+            <li class="filter-by-country__countries-item">Австрия</li>
+            <li class="filter-by-country__countries-item">Азербайджан</li>
+          </ul>
+          <button class="button filter-by-country__button-close">Свернуть</button>
+        </div>
+      </section>
+      <section class="catalog">
+        <form method="post" class="catalog__filter">
+          <h2 class="catalog__filter-title">Подберите идеального попутчика</h2>
+          <ul class="catalog__filter-list">
+            <li class="catalog__filter-option">
+              <input type="checkbox" id="filter-hobby">
+              <label  for="filter-hobby">Хобби</label>
+              <ul class="catalog__filter-hobby-list"></ul>
+            </li>
+            <li class="catalog__filter-option">
+              <input type="checkbox" id="filter-music">
+              <label class="catalog__filter-option-button" for="filter-music">Музыка</label>
+              <ul class="catalog__filter-music-list">
+                <li><input type="checkbox" id="hard-rock"><label for="hard-rock">Тяжелый рок</label></li>
+                <li><input type="checkbox" id="russian-rap"><label for="russian-rap">Русский рэп</label></li>
+                <li><input type="checkbox" id="eurodans"><label for="eurodans">Евроденс</label></li>
+              </ul>
+            </li>
+            <li class="catalog__filter-option">
+              <input type="checkbox" id="filter-food">
+              <label class="catalog__filter-option-label" for="filter-food">Еда</label>
+              <ul class="catalog__filter-food-list"></ul>
+            </li>
+            <li class="catalog__filter-option">
+              <input type="checkbox" id="filter-transport">
+              <label class="catalog__filter-option-label" for="filter-transport">Транспорт</label>
+              <ul class="catalog__filter-transport-list">
+                <li aria-label="Самолет"></li>
+                <li aria-label="Автобус"></li>
+                <li aria-label="Велосипед"></li>
+                <li aria-label="Пешком"></li>
+              </ul>
+            </li>
+            <li class="catalog__filter-option">
+              <input type="checkbox" id="filter-level">
+              <label class="catalog__filter-option-label" for="filter-level">Левел</label>
+              <div class="catalog__filter-level">
+                <input class="catalog__filter-level-nimber" type="number" placeholder="30">
+                <input class="catalog__filter-level-nimber" type="number" placeholder="100">
+              </div>
+              <input  class="catalog__filter-level-radio" type="range">
+            </li>
+          </ul>
+          <button class="button catalog__filter-button">Показать</button>
+        </form>
+        <ul class="catalog__list">
+          <li class="catalog__list-item">
+            <div class="catalog__wrap-person">
+              <img class="catalog__avatar" src="#" alt="Аватар">
+              <h3 class="catalog__name">Таня Фирсова</h3>
+              <span class="catalog__likes">1,5 m</span>
+            </div>
+            <span class="catalog__hashtags">
+              #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
+            </span>
+            <h4 class="catalog__visit-wishes-title">Хочет посетить</h4>
+            <ul class="catalog__visit-wishes-list">
+              <li class="catalog__wishes-list-item">Шри ланка</li>
+              <li class="catalog__wishes-list-item">Тайланд</li>
+              <li class="catalog__wishes-list-item">Сейшелы</li>
+            </ul>
+            <div class="catalog__wrap-transport-level">
+              <div class="catalog__transport">
+                <h4 class="catalog__transport-title">транспорт:</h4>
+                <ul class="catalog__transport-list">
+                  <li class="catalog__transport-item catalog__transport-item--active" aria-label="Самолет"></li>
+                  <li class="catalog__transport-item" aria-label="Автобус"></li>
+                  <li class="catalog__transport-item" aria-label="Велосипед"></li>
+                  <li class="catalog__transport-item" aria-label="Пешком"></li>
+                </ul>
+              </div>
+              <div class="catalog__level">
+                <h4 class="catalog__level-title">левел</h4>
+                <span class="catalog__level-item">
+                99
+                </span>
+              </div>
+            </div>
+            <a class="catalog__button" href="#">Позвать</a>
+          </li>
+          <li class="catalog__list-item">
+            <div class="catalog__wrap-person">
+              <img class="catalog__avatar" src="#" alt="Аватар">
+              <h3 class="catalog__name">Петя Демин</h3>
+              <span class="catalog__likes">150</span>
+            </div>
+            <span class="catalog__hashtags">
+              #бургер #бар #футбол #концерт #крафт
+            </span>
+            <h4 class="catalog__visit-wishes-title">Хочет посетить</h4>
+            <ul class="catalog__visit-wishes-list">
+              <li class="catalog__wishes-list-item">Бельгия</li>
+              <li class="catalog__wishes-list-item">Чехия</li>
+            </ul>
+            <div class="catalog__wrap-transport-level">
+              <div class="catalog__transport">
+                <h4 class="catalog__transport-title">транспорт:</h4>
+                <ul class="catalog__transport-list">
+                  <li class="catalog__transport-item catalog__transport-item--active" aria-label="Самолет"></li>
+                  <li class="catalog__transport-item catalog__transport-item--active" aria-label="Автобус"></li>
+                  <li class="catalog__transport-item" aria-label="Велосипед"></li>
+                  <li class="catalog__transport-item catalog__transport-item--active" aria-label="Пешком"></li>
+                </ul>
+              </div>
+              <div class="catalog__level">
+                <h4 class="catalog__level-title">левел</h4>
+                <span class="catalog__level-item">
+                80
+                </span>
+              </div>
+            </div>
+            <a class="catalog__button" href="#">Позвать</a>
+          </li>
+          <li class="catalog__list-item">
+            <div class="catalog__wrap-person">
+              <img class="catalog__avatar" src="#" alt="Аватар">
+              <h3 class="catalog__name">Марк Смолов</h3>
+              <span class="catalog__likes">1700</span>
+            </div>
+            <span class="catalog__hashtags">
+              #рэп #тату #хайпбист #кроссовки #суприм
+            </span>
+            <h4 class="catalog__visit-wishes-title">Хочет посетить</h4>
+            <ul class="catalog__visit-wishes-list">
+              <li class="catalog__wishes-list-item">США</li>
+              <li class="catalog__wishes-list-item">Австралия</li>
+              <li class="catalog__wishes-list-item">Доминикана</li>
+            </ul>
+            <div class="catalog__wrap-transport-level">
+              <div class="catalog__transport">
+                <h4 class="catalog__transport-title">транспорт:</h4>
+                <ul class="catalog__transport-list">
+                  <li class="catalog__transport-item catalog__transport-item--active" aria-label="Самолет"></li>
+                  <li class="catalog__transport-item" aria-label="Автобус"></li>
+                  <li class="catalog__transport-item catalog__transport-item--active" aria-label="Велосипед"></li>
+                  <li class="catalog__transport-item" aria-label="Пешком"></li>
+                </ul>
+              </div>
+              <div class="catalog__level">
+                <h4 class="catalog__level-title">левел</h4>
+                <span class="catalog__level-item">
+                25
+                </span>
+              </div>
+            </div>
+            <a class="catalog__button" href="#">Позвать</a>
+          </li>
+          <li class="catalog__list-item">
+            <div class="catalog__wrap-person">
+              <img class="catalog__avatar" src="#" alt="Аватар">
+              <h3 class="catalog__name">Лариса Роговая</h3>
+              <span class="catalog__likes">23</span>
+            </div>
+            <span class="catalog__hashtags">
+              #образование #карьера #учеба #линкедин
+            </span>
+            <h4 class="catalog__visit-wishes-title">Хочет посетить</h4>
+            <ul class="catalog__visit-wishes-list">
+              <li class="catalog__wishes-list-item">Великобритания</li>
+              <li class="catalog__wishes-list-item">Германия</li>
+            </ul>
+            <div class="catalog__wrap-transport-level">
+              <div class="catalog__transport">
+                <h4 class="catalog__transport-title">транспорт:</h4>
+                <ul class="catalog__transport-list">
+                  <li class="catalog__transport-item catalog__transport-item--active" aria-label="Самолет"></li>
+                  <li class="catalog__transport-item catalog__transport-item--active" aria-label="Автобус"></li>
+                  <li class="catalog__transport-item" aria-label="Велосипед"></li>
+                  <li class="catalog__transport-item" aria-label="Пешком"></li>
+                </ul>
+              </div>
+              <div class="catalog__level">
+                <h4 class="catalog__level-title">левел</h4>
+                <span class="catalog__-level-item">
+                50
+                </span>
+              </div>
+            </div>
+            <a class="catalog__button" href="#">Позвать</a>
+          </li>
+        </ul>
+        <div class="catalog__show-more">
+          <span class="catalog__show-more-title">Показать еще</span>
+          <div class="catalog__show-more-buttons">
+            <a class="catalog__show-more-buttoncatalog__show-more-button--back " href="#">Назад</a>
+            <a class="catalog__show-more-button catalog__show-more-button--forward" href="#">Вперед</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <img src="#" alt="Логотип сервиса, Погнали?">
+      <ul class="footer__social-list">
+        <li class="footer__social-ikon footer__social-ikon--facebook"></li>
+        <li class="footer__social-ikon footer__social-ikon--vk"></li>
+        <li class="footer__social-ikon footer__social-ikon--instagram"></li>
+      </ul>
+      <div class="footer__maid-by">
+        <span class="footer__maid-by-span">Разработано</span>
+        <span class="footer__htmlacademy-logo"></span>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
+
+
