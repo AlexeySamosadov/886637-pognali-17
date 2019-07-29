@@ -1,21 +1,20 @@
 @import "blocks/page-header.less";
 @import "blocks/fonts.less";
-@import "blocks/about";
-@import "blocks/add-profile";
-@import "blocks/button";
-@import "blocks/catalog";
-@import "blocks/companions";
-@import "blocks/contacts";
-@import "blocks/directions";
-@import "blocks/feedback";
-@import "blocks/filter-by-country";
-@import "blocks/footer";
-@import "blocks/main-nav";
-@import "blocks/main-page";
-@import "blocks/page-header";
-@import "blocks/service";
-@import "blocks/site-list";
-@import "blocks/travel-algoritm";
+@import "blocks/about.less";
+@import "blocks/add-profile.less";
+@import "blocks/button.less";
+@import "blocks/catalog.less";
+@import "blocks/companions.less";
+@import "blocks/contacts.less";
+@import "blocks/directions.less";
+@import "blocks/feedback.less";
+@import "blocks/filter-by-country.less";
+@import "blocks/footer.less";
+@import "blocks/main-nav.less";
+@import "blocks/main-page.less";
+@import "blocks/service.less";
+@import "blocks/site-list.less";
+@import "blocks/travel-algoritm.less";
 
 html {
   box-sizing: border-box;
@@ -31,7 +30,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "BloggerSans", "Arial", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
@@ -48,3 +47,30 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+}
+
+// Переменные для цветов
+@dark-blue: #161c36;
+@white: #ffffff;
+@orange: #ff8d30;
+@light-orange: #ffa530;
+@dark-lemon: #ffbd30;
+@lemon: #ffd74b;
+@light-gray: #edeff6;
+@dark-gray: #444444;
+@blue: #1d2e5b;
+
+// Переменный для размеров
+@mobile-width: 320px;
+@mobile-section-width: 270px;
