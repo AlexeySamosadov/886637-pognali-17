@@ -88,10 +88,13 @@
       <section class="companions">
         <h2 class="companions__title">Попутчики</h2>
         <p class="companions__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-        <p class="companions__text">Теперь можно легко найти единомышленников!</p>
+        <p class="companions__text companions__text--important">Теперь можно легко найти единомышленников!</p>
         <div class="companions__persons">
           <div class="companions__person companions-person">
-            <span class="companions-person__level">99 level</span>
+            <span class="companions-person__level">
+              99
+              <span class="companions-person__level-name">level</span>
+            </span>
             <img class="companions-person__image" src="#" alt="Фото Таня Фирсова">
             <div class="companions-person__flags">
               <span class="companions-person__flag companions-person__flag--sri-lanka" aria-label="Шри-ланка"></span>
@@ -108,7 +111,10 @@
             </div>
           </div>
           <div class="companions__person companions-person">
-            <span class="companions-person__level"> 80 level</span>
+            <span class="companions-person__level">
+              80
+              <span class="companions-person__level-name">level</span>
+            </span>
             <img class="companions-person__image" src="#" alt="Фото Петя Демин">
             <div class="companions-person__flags">
               <span class="companions-person__flag companions-person__flag--belgium" aria-label="Бельгия"></span>
@@ -139,9 +145,9 @@
         <div class="contacts__wrap">
           <h2 class="contacts__title">Заинтересовались?</h2>
           <p class="contacts__text">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее
-            <a href="#">авторизуйтесь</a>.</p>
+            <a class="contacts__text-link" href="#">авторизуйтесь</a>.</p>
           <form class="contacts__email-form" action="">
-            <input class="contacts__email-input" type="email">
+            <input class="contacts__email-input" type="email" placeholder="E-mail">
             <button class="contacts__email-button" type="submit"></button>
           </form>
           <p class="contacts__text">Остались вопросы? Мы с радостью на них ответим!</p>
