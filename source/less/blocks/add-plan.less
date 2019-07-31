@@ -15,6 +15,7 @@
 }
 
 .add-plan__step {
+  padding: 0 25px;
   background-color: @white;
 }
 
@@ -42,13 +43,14 @@
 }
 
 .add-plan__looking-travelers-input,
-.add-plan__duration-title {
+.add-plan__duration-input {
   color: @blue;
   font-size: 15px;
   font-weight: 500;
   line-height: 13.37px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .add-plan__with-child-label {
@@ -56,6 +58,7 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 15px;
+  text-align: center;
 }
 
 .add-plan__mounth {
@@ -65,7 +68,16 @@
   line-height: 20px;
 }
 
+.add-plan__table {
+  border-collapse: collapse;
+}
+
 .add-plan__thead-data {
+  width: 30px;
+  height: 30px;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  text-align: center;
+  vertical-align: middle;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -81,10 +93,16 @@
 }
 
 .add-plan__table-data {
+  width: 30px;
+  height: 30px;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  text-align: center;
+  vertical-align: middle;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   color: @dark-gray;
+  border: 1px solid @black-03;
 
   &--past {
     color: @dark-gray-03;
@@ -119,6 +137,8 @@
 }
 
 .action-plan__textarea {
+  width: 220px;
+  height: 220px;
   color: @dark-gray-03;
   font-size: 16px;
   font-weight: 400;
