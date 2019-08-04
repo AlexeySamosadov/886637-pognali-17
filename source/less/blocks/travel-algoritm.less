@@ -1,5 +1,5 @@
 .travel-algoritm {
-  padding: 0 25px;
+  padding: 30px 25px;
   background-color: @dark-blue;
 }
 
@@ -10,30 +10,59 @@
 }
 
 .travel-algoritm__step {
-  border-radius: 10px 10px 0 0;
+  position: relative;
   height: 90px;
+  padding: 23px 25px;
+  padding-right: 75px;
+  margin-top: -10px;
+  border-radius: 10px 10px 0 0;
   color: @dark-blue;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
-  margin-top: -10px;
+
+  &::before {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    color: @white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+  }
 
   &--1 {
     margin-top: 0;
     background-color: @orange;
+
+    &::before {
+      content: "1";
+    }
   }
 
   &--2 {
     background-color: @light-orange;
+
+    &::before {
+      content: "2";
+    }
   }
 
   &--3 {
     background-color: @dark-lemon;
+
+    &::before {
+      content: "3";
+    }
   }
 
   &--4 {
     height: 80px;
     border-radius: 10px 10px 10px 10px;
     background-color: @lemon;
+
+    &::before {
+      content: "4";
+    }
   }
 }
