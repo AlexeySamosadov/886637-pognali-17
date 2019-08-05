@@ -10,14 +10,25 @@
   position: relative;
 }
 
-.main-nav_toggle {
+.main-nav__toggle {
   margin-left: auto;
   background-color: @dark-blue;
   border: none;
+
+  &--close {
+    position: absolute;
+    top: 32px;
+    right: 30px;
+    background-color: @white;
+  }
 }
 
-.main-nav_toggle-svg {
+.main-nav__toggle-svg {
   fill: @white;
+
+  &--close {
+    fill: #cccccc;;
+  }
 }
 
 .main-nav__wrapper {
