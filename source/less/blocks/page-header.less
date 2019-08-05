@@ -7,6 +7,7 @@
 
 .main-nav {
   margin-left: auto;
+  position: relative;
 }
 
 .main-nav_toggle {
@@ -19,23 +20,56 @@
   fill: @white;
 }
 
-
 .main-nav__wrapper {
-  display: none;
-  padding: 0 25px;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
   background-color: @white;
+  z-index: 1;
+}
+
+.main-nav__wrapper-logo {
+  width: 100%;
+  padding-top: 30px;
+  margin-bottom: 40px;
 }
 
 .main-nav__slogan {
   color: @dark-night-blue;
+  text-align: center;
   font-size: 30px;
   font-weight: 500;
   line-height: 36px;
   text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.main-nav__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: @saphire-blue;
+}
+
+.main-nav__icon-svg {
+  fill: @lemon;
 }
 
 .main-nav__tel-number,
 .main-nav__mail {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   color: @dark-night-blue;
   font-size: 16px;
   font-weight: 700;
@@ -47,7 +81,24 @@
 }
 
 .main-nav__social-list {
+  display: flex;
+  width: 150px;
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 10px;
+  padding-top: 30px;
+  margin: 10px;
+}
+
+.main-nav__social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: @white;
+  border-radius: 50%;
+
+  svg {
+    fill: #cccccc;
+  }
 }
