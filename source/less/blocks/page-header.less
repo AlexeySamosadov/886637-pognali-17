@@ -5,6 +5,11 @@
   background-color: @dark-blue;
 }
 
+.page-header__logo {
+  display: flex;
+  align-items: center;
+}
+
 .main-nav {
   margin-left: auto;
   position: relative;
@@ -127,5 +132,28 @@
 
   svg {
     fill: #cccccc;
+  }
+}
+
+.button--main-nav-tablet {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    justify-content: space-between;
+    padding: 5px 40px;
+  }
+
+  .button--main-nav-tablet {
+    display: block;
+    width: 188px;
+    margin: 0;
+  }
+
+  .main-nav {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
   }
 }
