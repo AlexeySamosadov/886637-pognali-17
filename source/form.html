@@ -2,6 +2,8 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог выбора попутчиков сервиса Погнали?</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -27,22 +29,25 @@
         </div>
       </nav>
     </header>
-    <main>
-      <h1 class="page-title">
+    <main class="main-page">
+      <h1 class="main-page__page-title">
         Направления
       </h1>
       <section class="my-info">
         <div class="my-info__wrap-level-avatar">
-          <span class="my-info__level"></span>
+          <span class="my-info__level">
+            80
+            <span class="my-info__level-level">level</span>
+          </span>
           <img class="my-info__avatar" src="#" alt="Автатар">
         </div>
-        <button class="button my-info__button">Сменить фото</button>
-        <fieldset class="my-info__hachtags">
+        <button class="button button--my-info">Сменить фото</button>
+        <fieldset class="my-info__tags">
           <legend class="my-info__title">ТЭГИ</legend>
-          <span>#бургер #бар #футбол #концерт #крафт</span>
+          <span class="my-info__hachtags">#бургер #бар #футбол #концерт #крафт</span>
         </fieldset>
         <fieldset class="my-info__transport">
-          <legend class="my-info__title"></legend>
+          <legend class="my-info__title">Транспорт</legend>
           <ul class="my-info__transport-list">
             <li class="my-info__transport-item my-info__transport-item--active" aria-label="Самолет"></li>
             <li class="my-info__transport-item my-info__transport-item--active" aria-label="Автобус"></li>
@@ -90,54 +95,54 @@
               <span class="add-plan__mounth">Март 2019</span>
               <table class="add-plan__table">
                 <thead class="add-plan__thead">
-                  <td class="add-plan__thead-data">П</td>
-                  <td class="add-plan__thead-data">В</td>
-                  <td class="add-plan__thead-data">С</td>
-                  <td class="add-plan__thead-data">Ч</td>
-                  <td class="add-plan__thead-data">П</td>
+                  <td class="add-plan__thead-data add-plan__thead-data--weekday">П</td>
+                  <td class="add-plan__thead-data add-plan__thead-data--weekday">В</td>
+                  <td class="add-plan__thead-data add-plan__thead-data--weekday">С</td>
+                  <td class="add-plan__thead-data add-plan__thead-data--weekday">Ч</td>
+                  <td class="add-plan__thead-data add-plan__thead-data--weekday">П</td>
                   <td class="add-plan__thead-data add-plan__thead-data--weekend">С</td>
                   <td class="add-plan__thead-data add-plan__thead-data--weekend">В</td>
                 </thead>
                 <tr class="add-plan__table-row">
-                  <td class="add-plan__table-data">24</td>
-                  <td class="add-plan__table-data">25</td>
-                  <td class="add-plan__table-data">26</td>
-                  <td class="add-plan__table-data">27</td>
-                  <td class="add-plan__table-data">28</td>
-                  <td class="add-plan__table-data">1</td>
-                  <td class="add-plan__table-data">2</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">24</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">25</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">26</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">27</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">28</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">1</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">2</td>
                 </tr>
                 <tr class="add-plan__table-row">
-                  <td class="add-plan__table-data">3</td>
-                  <td class="add-plan__table-data">4</td>
-                  <td class="add-plan__table-data">5</td>
-                  <td class="add-plan__table-data">6</td>
-                  <td class="add-plan__table-data">7</td>
-                  <td class="add-plan__table-data">8</td>
-                  <td class="add-plan__table-data">9</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">3</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">4</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">5</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">6</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">7</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">8</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">9</td>
                 </tr>
                 <tr class="add-plan__table-row">
-                  <td class="add-plan__table-data">10</td>
-                  <td class="add-plan__table-data">11</td>
-                  <td class="add-plan__table-data">12</td>
-                  <td class="add-plan__table-data">13</td>
-                  <td class="add-plan__table-data">14</td>
-                  <td class="add-plan__table-data">15</td>
-                  <td class="add-plan__table-data">16</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">10</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">11</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">12</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">13</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">14</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">15</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">16</td>
                 </tr>
                 <tr class="add-plan__table-row">
-                  <td class="add-plan__table-data">17</td>
-                  <td class="add-plan__table-data">18</td>
-                  <td class="add-plan__table-data">19</td>
-                  <td class="add-plan__table-data">20</td>
-                  <td class="add-plan__table-data">21</td>
-                  <td class="add-plan__table-data">22</td>
-                  <td class="add-plan__table-data">23</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">17</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">18</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">19</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">20</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">21</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">22</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">23</td>
                 </tr>
                 <tr class="add-plan__table-row">
-                  <td class="add-plan__table-data">24</td>
-                  <td class="add-plan__table-data">25</td>
-                  <td class="add-plan__table-data">26</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">24</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">25</td>
+                  <td class="add-plan__table-data add-plan__table-data--past">26</td>
                   <td class="add-plan__table-data add-plan__table-data--chosen">27</td>
                   <td class="add-plan__table-data add-plan__table-data--chosen">28</td>
                   <td class="add-plan__table-data add-plan__table-data--chosen">29</td>
@@ -153,7 +158,7 @@
                   <td class="add-plan__table-data add-plan__table-data--available">6</td>
                 </tr>
               </table>
-              <a class="button add-plan__button-next" href="#">Следующий шаг</a>
+              <a class="button button--add-plan-next" href="#">Следующий шаг</a>
             </div>
           </section>
           <section class="add-plan__step">
@@ -168,11 +173,15 @@
               <span class="add-plan__country-name">Чехословакия</span>
               <svg class="add-plan__country-flag"></svg>
             </span>
+            <span class="add-plan__country add-plan__country--step2">
+              <span class="add-plan__country-name">Выберите страну</span>
+              <svg class="add-plan__country-flag"></svg>
+            </span>
             <button class="add-plan__country-choose">
               Добавить страну
             </button>
-            <a class="button add-plan__button-next" href="#">Следующий шаг</a>
-            <a class="button add-plan__button-back" href="#">На шаг назад</a>
+            <a class="button button--add-plan-next" href="#">Следующий шаг</a>
+            <a class="button button--add-plan-back" href="#">На шаг назад</a>
           </section>
           <section class="add-plan__step">
             <h3 class="add-plan__step-title">Шаг 3. Развлечения</h3>
@@ -182,16 +191,16 @@
               <span class="add-plan__country-name">босния и герцеговина</span>
               <svg class="add-plan__country-flag"></svg>
             </label>
-            <textarea name="action-plan" id="action-plan--bosnia" cols="30" rows="10"></textarea>
+            <textarea class="action-plan__textarea" name="action-plan" id="action-plan--bosnia" cols="30" rows="10" placeholder="План действий"></textarea>
             <label class="add-plan__country add-plan__country--step3" for="action-plan-chehia">
               <span class="add-plan__country-name">Чехословакия</span>
               <svg class="add-plan__country-flag"></svg>
             </label>
-            <textarea name="action-plan" id="action-plan-chehia" cols="30" rows="10"
+            <textarea class="action-plan__textarea" name="action-plan" id="action-plan-chehia" cols="30" rows="10"
               placeholder="Пить пиво и лазить по старым замкам, наслаждаться аритектурой
-               и вот это все."></textarea>
-            <button class="button add-plan__button-next" type="submit">Следующий шаг</button>
-            <a class="button add-plan__button-back" href="#">На шаг назад</a>
+              и вот это все."></textarea>
+            <button class="button button--add-plan-next" type="submit">Следующий шаг</button>
+            <a class="button button--add-plan-back" href="#">На шаг назад</a>
           </section>
         </form>
       </section>
@@ -204,7 +213,7 @@
         <li class="footer__social-ikon footer__social-ikon--instagram"></li>
       </ul>
       <div class="footer__maid-by">
-        <span class="footer__maid-by-span">Разработано</span>
+        <span class="footer__maid-by-span">Разра ботано</span>
         <span class="footer__htmlacademy-logo"></span>
       </div>
     </footer>

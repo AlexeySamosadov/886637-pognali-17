@@ -2,6 +2,8 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог выбора попутчиков сервиса Погнали?</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -27,14 +29,14 @@
         </div>
       </nav>
     </header>
-    <main>
-      <h1 class="page-title">
+    <main class="main-page">
+      <h1 class="main-page__page-title">
         Попутчики
       </h1>
       <section class="filter-by-country">
         <div class="filter-by-country__filter">
           <span class="filter-by-country__filter-icon1"></span>
-           Фильтрация по странам
+          Фильтрация по странам
           <span class="filter-by-country__filter-icon2"></span>
         </div>
         <div class="filter-by-country__block">
@@ -108,12 +110,12 @@
           <ul class="catalog__filter-list">
             <li class="catalog__filter-option">
               <input type="checkbox" id="filter-hobby">
-              <label  for="filter-hobby">Хобби</label>
+              <label class="catalog__filter-option-label" for="filter-hobby">Хобби</label>
               <ul class="catalog__filter-hobby-list"></ul>
             </li>
             <li class="catalog__filter-option">
               <input type="checkbox" id="filter-music">
-              <label class="catalog__filter-option-button" for="filter-music">Музыка</label>
+              <label class="catalog__filter-option-label" for="filter-music">Музыка</label>
               <ul class="catalog__filter-music-list">
                 <li><input type="checkbox" id="hard-rock"><label for="hard-rock">Тяжелый рок</label></li>
                 <li><input type="checkbox" id="russian-rap"><label for="russian-rap">Русский рэп</label></li>
@@ -139,13 +141,13 @@
               <input type="checkbox" id="filter-level">
               <label class="catalog__filter-option-label" for="filter-level">Левел</label>
               <div class="catalog__filter-level">
-                <input class="catalog__filter-level-nimber" type="number" placeholder="30">
-                <input class="catalog__filter-level-nimber" type="number" placeholder="100">
+                <input class="catalog__filter-level-number" type="number" placeholder="30">
+                <input class="catalog__filter-level-number" type="number" placeholder="100">
               </div>
               <input  class="catalog__filter-level-radio" type="range">
             </li>
           </ul>
-          <button class="button catalog__filter-button">Показать</button>
+          <button class="button button--catalog-filter">Показать</button>
         </form>
         <ul class="catalog__list">
           <li class="catalog__list-item">
@@ -180,7 +182,7 @@
                 </span>
               </div>
             </div>
-            <a class="catalog__button" href="#">Позвать</a>
+            <a class="button button--catalog" href="#">Позвать</a>
           </li>
           <li class="catalog__list-item">
             <div class="catalog__wrap-person">
@@ -213,7 +215,7 @@
                 </span>
               </div>
             </div>
-            <a class="catalog__button" href="#">Позвать</a>
+            <a class="button button--catalog" href="#">Позвать</a>
           </li>
           <li class="catalog__list-item">
             <div class="catalog__wrap-person">
@@ -247,7 +249,7 @@
                 </span>
               </div>
             </div>
-            <a class="catalog__button" href="#">Позвать</a>
+            <a class="button button--catalog" href="#">Позвать</a>
           </li>
           <li class="catalog__list-item">
             <div class="catalog__wrap-person">
@@ -280,7 +282,7 @@
                 </span>
               </div>
             </div>
-            <a class="catalog__button" href="#">Позвать</a>
+            <a class="button button--catalog" href="#">Позвать</a>
           </li>
         </ul>
         <div class="catalog__show-more">
@@ -306,7 +308,3 @@
     </footer>
   </body>
 </html>
-
-
-
-

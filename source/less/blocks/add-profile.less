@@ -1,0 +1,90 @@
+.add-profile {
+  position: relative;
+  padding: 30px 25px;
+  margin-top: -10px;
+  background-color: @light-gray;
+  border: 1px solid @light-gray;
+  border-radius: 0 0 30px 30px;
+
+  &::before {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 26px;
+    content: "";
+    width: 99px;
+    height: 99px;
+    background-image: url("../../img/rates@1x.png");
+    background-size: 99px 99px;
+  }
+}
+
+
+.add-profile__title {
+  width: 115px;
+  padding: 0 25px;
+  color: @orange;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.add-profile__services-list {
+  width: 180px;
+  list-style: none;
+  padding: 0;
+  margin: 40px 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-profile__item {
+  position: relative;
+  padding-bottom: 30px;
+  color: @dark-gray;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+
+  &::before {
+    display: flex;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 10px;
+    right: -70px;
+    border-radius: 50%;
+    content: "1";
+    color: @white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 14px;
+    background-color: @light-orange;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.add-profile__item--2 {
+  &::before {
+    content: "2";
+    background-color: @dark-lemon;
+  }
+}
+
+.add-profile__item--3 {
+  &::before {
+    content: "3";
+    background-color: @lemon;
+  }
+}
+
+.add-profile__show-all-tariff {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: @dark-night-blue;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+}

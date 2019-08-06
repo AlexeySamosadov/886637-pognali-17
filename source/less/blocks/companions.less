@@ -1,0 +1,151 @@
+.companions {
+  position: relative;
+  padding: 25px 25px;
+  margin-top: -10px;
+  border: 1px solid @dark-blue;
+  border-radius: 0 0 30px 30px;
+  background-color: @dark-blue;
+  background-image:
+    url("../../img/smolov-back-desktop@1x.png"),
+    url("../../img/rogovaya-back-mobile@1x.png");
+  background-size: 143px 143px, 71px 71px;
+  background-repeat: no-repeat;
+  background-position: 170px 30px, 0 170px;
+  z-index: 8;
+}
+
+.companions__title {
+  padding-left: 25px;
+  color: @orange;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.companions__text {
+  padding-left: 25px;
+  padding-right: 25px;
+  color: @white;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+
+  &--important {
+    font-weight: 700;
+  }
+}
+
+.companions-person__level {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border-radius: 50%;
+  color: @white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.companions-person__level-svg {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  fill: transparent;
+  stroke-dasharray: 75 5;
+  stroke: @orange;
+  border-radius: 50%;
+  stroke-width: 3px;
+  transform: rotate(-15deg);
+
+  &--level-80 {
+    stroke-dasharray: 75 17;
+    transform: rotate(-60deg);
+  }
+}
+
+.companions-person__level-name {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+
+  &::before {
+    content: "";
+    width: 31px;
+    height: 1px;
+    opacity: 0.3;
+    background-color: @white;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+  }
+}
+
+.companions-person__name {
+  color: @blue;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+}
+
+.companions-person__hashtags {
+  display: flex;
+  width: 180px;
+  margin: 0 auto;
+  color: @dark-gray;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}
+
+.companions__person {
+  position: relative;
+  background-color: @white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.companions-person__image {
+  border-radius: 10px 10px 0 0;
+}
+
+.companions-person__flags {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: -30px;
+}
+
+.companions-person__flag {
+  width: 35px;
+  height: 24px;
+  margin: 9px;
+}
+
+.companions-person__transport {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.companions-person__transport-link {
+  padding: 10px;
+}
+
+.companions-person__transport-icon {
+  fill: gray;
+  opacity: 0.3;
+
+  &--plane {
+    fill: @blue;
+    opacity: 1;
+  }
+}
