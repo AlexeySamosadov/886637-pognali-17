@@ -7,9 +7,11 @@
 }
 
 .contacts__wrap {
+  position: relative;
   padding: 45px 25px;
   border-radius: 0 0 30px 30px;
   background-color: @dark-night-blue;
+  z-index: 7;
 }
 
 .contacts__title {
@@ -137,15 +139,18 @@
 }
 
 .contacts__wrap-adress {
+  position: relative;
   padding: 30px 25px;
   padding-top: 35px;
   margin-top: -10px;
   border-radius: 0 0 30px 30px;
   background-color: @lemon;
+  z-index: 6;
 
   @media (min-width: @tablet-width) {
     border-radius: 0 0 60px 60px;
     padding: 60px 45px;
+    margin-top: -60px;
   }
 }
 
@@ -190,15 +195,19 @@
 }
 
 .contacts__map {
+  position: relative;
   height: 550px;
+  margin-top: -15px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url("../../img/map.png");
   background-repeat: no-repeat;
+  z-index: 5;
 
   @media (min-width: @tablet-width) {
     height: 700px;
+    margin-top: -30px;
     background-image: url("../../img/map-tab.png");
   }
 }
