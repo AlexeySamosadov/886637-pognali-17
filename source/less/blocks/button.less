@@ -1,7 +1,6 @@
 .button {
   display: block;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding-left: 5%;
   width: 270px;
   height: 62px;
   border-radius: 10px;
@@ -9,16 +8,31 @@
   color: @blue;
   font-size: 18px;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 62px;
   background-color: #ffd74b;
+
+  @media (min-width: @tablet-width) {
+    height: 81px;
+    font-size: 24px;
+    line-height: 81px;
+    border-radius: 20px;
+  }
 
   &--directions {
     width: 100%;
   }
+
+  &--companions {
+    width: 100%;
+  }
+
   &--route {
-    height: 62px;
-    border-radius: 10px;
+    width: 100%;
     border: 3px solid #192144;
+
+    @media (min-width: @tablet-width) {
+      border: 3px solid @dark-night-blue;
+    }
   }
 
   &--catalog-filter {
@@ -69,7 +83,6 @@
 
   &--main-nav {
     height: 50px;
-    padding-top: 10px;
     padding-left: 0;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -77,7 +90,7 @@
     color: @dark-blue;
     font-size: 17px;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 50px;
     text-transform: uppercase;
     text-align: center;
   }
@@ -89,8 +102,9 @@
     width: 0;
     height: 0;
     position: absolute;
-    top: 24px;
-    right: 23px;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
     border: 10px solid #1d2e5b;
     border-top-width: 7px;
     border-bottom-width: 7px;

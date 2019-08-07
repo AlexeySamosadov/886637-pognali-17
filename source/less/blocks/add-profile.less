@@ -16,6 +16,11 @@
     height: 99px;
     background-image: url("../../img/rates@1x.png");
     background-size: 99px 99px;
+
+    @media (min-width: @tablet-width) {
+      top: 300px;
+      right: 45px;
+    }
   }
 }
 
@@ -62,6 +67,13 @@
     background-color: @light-orange;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: @tablet-width) {
+      top: 0;
+      left: -90px;
+      width: 67px;
+      height: 67px;
+    }
   }
 }
 
@@ -80,11 +92,59 @@
 }
 
 .add-profile__show-all-tariff {
-  display: block;
+  display: flex;
+  align-items: center;
   margin: 0 auto;
   text-align: center;
   color: @dark-night-blue;
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.add-profile__show-icon {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 67px;
+    height: 67px;
+    background-color: @gray;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .add-profile {
+    padding: 60px 40px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .add-profile__title {
+    width: 100%;
+    font-size: 45px;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  .add-profile__services-list {
+    width: 100%;
+    padding-left: 100px;
+  }
+
+  .add-profile__item {
+    display: flex;
+    font-size: 28px;
+    line-height: 33px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
 }

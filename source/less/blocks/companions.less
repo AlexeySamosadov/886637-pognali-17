@@ -35,6 +35,15 @@
   }
 }
 
+.companions__person {
+  width: 270px;
+  height: 427px;
+  position: relative;
+  background-color: @white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
 .companions-person__level {
   display: flex;
   flex-direction: column;
@@ -106,13 +115,6 @@
   text-align: center;
 }
 
-.companions__person {
-  position: relative;
-  background-color: @white;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
 .companions-person__image {
   border-radius: 10px 10px 0 0;
 }
@@ -147,5 +149,39 @@
   &--plane {
     fill: @blue;
     opacity: 1;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .companions {
+    padding: 40px 40px;
+  }
+
+  .companions__title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .companions__text {
+    width: 480px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .companions__text--important {
+    width: 350px;
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .companions__persons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .companions__person {
+    width: 285px;
+    height: 483px;
   }
 }
