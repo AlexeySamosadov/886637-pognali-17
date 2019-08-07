@@ -5,13 +5,16 @@
   width: 270px;
   height: 62px;
   border-radius: 10px;
-
+  position: relative;
   color: @blue;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
   background-color: #ffd74b;
 
+  &--directions {
+    width: 100%;
+  }
   &--route {
     height: 62px;
     border-radius: 10px;
@@ -77,5 +80,22 @@
     line-height: 30px;
     text-transform: uppercase;
     text-align: center;
+  }
+}
+
+.button__arrow {
+  &::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 24px;
+    right: 23px;
+    border: 10px solid #1d2e5b;
+    border-top-width: 7px;
+    border-bottom-width: 7px;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right: none;
   }
 }

@@ -23,6 +23,7 @@
 }
 
 .directions__countries-picture {
+  position: relative;
   width: 270px;
   height: 110px;
   border-radius: 10px 10px 0 0;
@@ -38,6 +39,14 @@
   &--chehia {
     background-image: url("../../img/czech-mobile@1x.jpg");
   }
+}
+
+.directions__countries-flag {
+  position: absolute;
+  top: 97px;
+  left: 25px;
+  width: 35px;
+  height: 24px;
 }
 
 .directions__countries-wrap {
@@ -65,9 +74,24 @@
 }
 
 .directions__quantity-messages {
+  position: relative;
   margin-left: auto;
   line-height: 30px;
   text-transform: uppercase;
+  opacity: 0.3;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: -17px;
+    width: 11px;
+    height: 11px;
+    background-image: url("../../img/business.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.1;
+  }
 }
 
 .directions__slogan {
@@ -91,4 +115,78 @@
   font-weight: 700;
   line-height: 21px;
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .directions {
+    padding: 60px 75px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .directions__title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .directions__text {
+    width: 350px;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 33px;
+  }
+
+  .directions__countries {
+    display: flex;
+  }
+
+  .directions__countries-wrap {
+    flex-direction: column;
+    align-content: flex-start;
+    width: 618px;
+    height: 140px;
+    margin: 0;
+    order: 1;
+  }
+
+  .directions__countries-title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .directions__slogan {
+    font-size: 20px;
+    line-height: 17.68px;
+  }
+
+  .directions__quantity-messages {
+    margin: 0;
+    order: 3;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+
+    &::before {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+
+  .directions__countries-picture {
+    order: 2;
+    width: 186px;
+    height: 140px;
+  }
+
+  .directions__countries-flag {
+    top: 20px;
+    left: -35px;
+    width: 70px;
+    height: 47px;
+  }
+
+  .directions__countries-flag svg {
+    width: 70px;
+    height: 47px;
+  }
 }
