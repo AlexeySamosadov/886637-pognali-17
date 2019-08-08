@@ -48,3 +48,15 @@ a {
   clip: rect(0, 0, 0, 0);
   clip-path: inset(100%);
 }
+
+.title {
+  color: @orange;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}

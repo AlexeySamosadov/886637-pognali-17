@@ -93,8 +93,14 @@
     line-height: 50px;
     text-transform: uppercase;
     text-align: center;
+
+    @media (min-width: @tablet-width) {
+      width: 188px;
+      margin: 0;
+    }
   }
 }
+
 
 .button__arrow {
   &::before {
