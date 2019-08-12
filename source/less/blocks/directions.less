@@ -178,3 +178,28 @@
     height: 47px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .directions {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px 90px;
+  }
+
+  .directions__cards-wrap {
+    order: -1;
+  }
+
+  .directions__content-wrap {
+    margin-right: 150px;
+  }
+
+  .directions__title {
+    padding-bottom: 0;
+  }
+
+  .directions__countries-wrap {
+    width: 370px;
+  }
+}

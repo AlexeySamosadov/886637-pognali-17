@@ -1,6 +1,6 @@
 .button {
   display: block;
-  padding-left: 5%;
+  padding-left: 15px;
   width: 270px;
   height: 62px;
   border-radius: 10px;
@@ -18,8 +18,26 @@
     border-radius: 20px;
   }
 
+  &--service {
+    @media (min-width: @tablet-width) {
+      width: 200%;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 274px;
+      height: 81px;
+    }
+  }
+
   &--directions {
     width: 100%;
+
+    @media (min-width: @desktop-width) {
+      width: 274px;
+      position: absolute;
+      bottom: 100px;
+      right: 350px;
+    }
   }
 
   &--companions {
