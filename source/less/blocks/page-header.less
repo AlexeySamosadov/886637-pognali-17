@@ -22,6 +22,7 @@
 }
 
 .main-nav__toggle {
+  position: relative;
   margin-left: auto;
   background-color: @dark-blue;
   border: none;
@@ -48,17 +49,12 @@
   }
 
   &--open-modal {
-    display: block;
-    fill: #161c35;
-
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
+    display: none;
   }
 
   &--close-modal {
     display: block;
-    fill: #cccccc;
+    fill: @gray-light;
   }
 }
 
@@ -232,12 +228,13 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav__toggle-svg {
+  .main-nav__toggle {
     display: none;
   }
 
   .page-header {
     justify-content: flex-start;
+    padding: 55px 60px;
   }
 
   .main-nav {

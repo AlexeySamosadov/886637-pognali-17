@@ -83,12 +83,13 @@
     width: 350px;
     height: 140px;
     margin-top: 0;
+    font-size: 24px;
+    line-height: 24px;
 
     &::before {
-      top: 35px;
+      top: 100px;
       left: 35px;
       font-size: 30px;
-      line-height: 120px;
     }
 
     &--1 {
@@ -109,6 +110,53 @@
     &--4 {
       border-radius: 0 0 20px 20px;
       margin-left: -20px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .travel-algoritm {
+    padding: 0 60px;
+    margin-top: -500px;
+  }
+
+  .travel-algoritm__step {
+    width: 315px;
+    height: 107px;
+    font-size: 24px;
+
+    &::before {
+      position: absolute;
+      left: 280px;                 /* right: 33px;   right тоже перестал работать */
+      top: 25px;
+      color: @white;
+      font-size: 24px;
+    }
+
+    &--1 {
+      border-radius: 20px 0 0 20px;
+      width: 345px;
+    }
+
+    &--2 {
+      width: 345px;
+      border-radius: 20px 0 0 20px;
+      margin-left: -20px;
+    }
+
+    &--3 {
+      border-radius: 20px 0 0 20px;
+      width: 345px;
+      margin-left: -20px;
+    }
+
+    &--4 {
+      border-radius: 20px;
+      margin-left: -20px;
+
+      &::before {
+        left: 265px;
+      }
     }
   }
 }

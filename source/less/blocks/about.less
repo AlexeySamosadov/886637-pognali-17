@@ -27,10 +27,10 @@
 }
 
 .about__list {
+  display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
 }
 
 .about__item {
@@ -47,30 +47,20 @@
 
   &--button {
     width: 189px;
+    height: 40px;
     border-radius: 20px;
     background-color: #ffd74b;
     text-align: center;
-    vertical-align: middle;
-    padding-top: 7px;
+    line-height: 40px;
   }
 }
 
 .about__item-link {
-  display: block;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 40px;
   width: 40px;
-}
-
-.about__link-svg {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-
-  &--message-us {
-    top: 12px;
-    left: 11px;
-  }
 }
 
 .about__authorization {
@@ -105,7 +95,57 @@
   }
 
   .about__list {
+    position: absolute;
+    top: -30px;
+    right: 30px;
+  }
+
+  .about__item--call-us {
     display: none;
-    align-items: center;
+  }
+
+  .about__item--message-us {
+    display: none;
+  }
+
+  .about__item--button {
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about__item--call-us {
+    display: flex;
+  }
+
+  .about__item--message-us {
+    display: flex;
+  }
+
+  .about__item-link {
+    height: 50px;
+    width: 50px;
+  }
+
+  .about__list {
+    top: -90px;
+    right: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about {
+    justify-content: flex-start;
+    background-image:
+      url("../../img/traveller-illustration-tablet@1x.png"),
+      url("../../img/globe-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position:
+      450px 0,
+      0 0;
+    background-size:
+      372px 451px,
+      1479px 612px;
   }
 }
