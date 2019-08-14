@@ -6,7 +6,7 @@
   border: 1px solid @light-gray;
   border-radius: 0 0 30px 30px;
 
-  &::before {
+  &::after {
     display: block;
     position: absolute;
     top: 50px;
@@ -139,5 +139,32 @@
     line-height: 33px;
     padding-top: 19px;
     padding-bottom: 19px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .add-profile::after {
+    top: 200px;
+    width: 198px;
+    height: 198px;
+    background-size: 198px 198px;
+  }
+
+  .add-profile::before {
+    content: "";
+    position: absolute;
+    top: 150px;
+    right: 300px;
+    width: 444px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: @gray;
+  }
+
+  .add-profile__item {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
   }
 }

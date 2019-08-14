@@ -42,6 +42,13 @@
 
   &--companions {
     width: 100%;
+
+    @media (min-width: @desktop-width) {
+      width: 280px;
+      position: absolute;
+      bottom: 50px;
+      left: 120px;
+    }
   }
 
   &--route {
@@ -51,6 +58,9 @@
     @media (min-width: @tablet-width) {
       border: 3px solid @dark-night-blue;
     }
+
+    @media (min-width: @desktop-width) {}
+    width: 324px;
   }
 
   &--catalog-filter {
