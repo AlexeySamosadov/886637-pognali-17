@@ -59,8 +59,9 @@
       border: 3px solid @dark-night-blue;
     }
 
-    @media (min-width: @desktop-width) {}
-    width: 324px;
+    @media (min-width: @desktop-width) {
+      width: 324px;
+    }
   }
 
   &--catalog-filter {
@@ -79,13 +80,14 @@
   &--catalog {
     width: 230px;
     height: 40px;
-    padding-top: 10px;
+    padding-left: 0;
     border-radius: 20px;
+    text-align: center;
     color: @dark-blue;
     background-color: @lemon;
     font-size: 17px;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 40px;
     text-transform: uppercase;
   }
 
