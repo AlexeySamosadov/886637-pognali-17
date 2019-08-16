@@ -59,6 +59,7 @@
   position: relative;
   width: 270px;
   padding: 25px 25px;
+  margin-bottom: 10px;
   border-radius: 20px;
   background-color: @white;
 }
@@ -202,19 +203,120 @@
   transform: rotate(-15deg);
 
   &--level-80 {
-    stroke-dasharray: 75 17;
+    stroke-dasharray: 75px, 17px;
+    transform: rotate(-60deg);
+  }
+
+  &--level-50 {
+    stroke-dasharray: 30 10;
+    transform: rotate(-60deg);
+  }
+
+  &--level-25 {
+    stroke-dasharray: 35 15;
     transform: rotate(-60deg);
   }
 }
 
 .catalog__show-more {
   text-align: center;
+  padding-bottom: 50px;
 }
 
 .catalog__show-more-title {
+  position: relative;
+  min-height: 40px;
   color: @blue;
   font-size: 17px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 50px;
   text-transform: uppercase;
+}
+
+.catalog__show-more-title-svg {
+  position: absolute;
+  top: -3px;
+  left: -33px;
+  fill: @blue;
+}
+
+.catalog__show-more-pages {
+  display: flex;
+  align-items: center;
+  padding: 0 28px;
+}
+
+.catalog__show-more-button {
+  width: 135px;
+  height: 50px;
+  position: relative;
+  background-color: @white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 10px solid @blue;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+  }
+}
+
+.catalog__show-more-button--back {
+  border-radius: 20px 0 0 20px;
+
+  &::before {
+    border-left: none;
+  }
+}
+
+.catalog__show-more-page {
+  display: none;
+}
+
+.catalog__show-more-button--forward {
+  border-radius: 0 20px 20px 0;
+  margin-left: 1px;
+
+  &::before {
+    border-right: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__show-more-pages {
+    width: 100%;
+    max-width: 950px;
+    background-color: @white;
+    border-radius: 20px;
+  }
+
+  .catalog__show-more-button {
+    width: 43px;
+    height: 100px;
+
+    &--back {
+      margin-left: auto;
+    }
+  }
+
+  .catalog__show-more-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: @dark-blue;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+
+    &--active {
+      background-color: @lemon;
+    }
+  }
 }
