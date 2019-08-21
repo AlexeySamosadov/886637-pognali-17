@@ -1,10 +1,15 @@
 .catalog {
-  padding: 0 25px;
+  padding: 25px 25px;
+  margin-top: -10px;
   background-color: @light-gray;
+  position: relative;
+  z-index: 8;
 }
 
 .catalog__filter {
-  padding: 0 25px;
+  padding: 20px 25px;
+  margin-top: 10px;
+  margin-bottom: 25px;
   border-radius: 20px;
   color: @blue;
   background-color: #ffd74b;
@@ -23,6 +28,25 @@
   margin: 0;
 }
 
+.catalog__filter-option {
+  min-height: 40px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    width: 220px;
+    height: 1px;
+    background-color: #f3c72b;
+  }
+}
+
+.catalog__filter-input {
+  display: none;
+}
+
 .catalog__filter-option-label {
   font-size: 16px;
   font-weight: 700;
@@ -31,22 +55,39 @@
 }
 
 .catalog__filter-music-list {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 10px;
+  list-style: none;
   color: @dark-gray;
   font-size: 15px;
   font-weight: 400;
   line-height: 15px;
 }
 
+.catalog__filter-level {
+  display: flex;
+}
+
 .catalog__filter-level-number {
+  width: 50%;
+  height: 35px;
   color: @blue;
+  border: 1px solid #cbced9;
   font-size: 15px;
   font-weight: 500;
   line-height: 13.49px;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 2px;
+
+  &--start {
+    border-radius: 4px 0 0 4px;
+  }
+
+  &--end {
+    margin-left: -1px;
+    border-radius: 0 4px 4px 0;
+  }
 }
 
 .catalog__list {
