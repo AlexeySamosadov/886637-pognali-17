@@ -65,7 +65,24 @@
 }
 
 .catalog__filter-level {
+  position: relative;
   display: flex;
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 1px;
+    border-color: @white;
+    border-top: 5px;
+    border-bottom: 5px;
+    background-color: #cbced9;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 11;
+  }
 }
 
 .catalog__filter-level-number {
