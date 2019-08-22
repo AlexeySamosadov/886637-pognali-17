@@ -173,14 +173,14 @@
   flex-shrink: 0;
   background-color: @saphire-blue;
   border-radius: 50%;
+}
 
-  svg {
-    fill: @lemon;
+.contacts__adress-icon-svg {
+  fill: @lemon; // currentColor не работает
 
-    @media (min-width: @tablet-width) {
-      width: 21px;
-      height: 32px;
-    }
+  @media (min-width: @tablet-width) {
+    width: 21px;
+    height: 32px;
   }
 }
 
