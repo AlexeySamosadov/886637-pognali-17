@@ -1,6 +1,6 @@
 .button {
   display: block;
-  padding-left: 15px;
+  padding-left: 25px;
   width: 270px;
   height: 62px;
   border-radius: 10px;
@@ -8,7 +8,7 @@
   color: @blue;
   font-size: 18px;
   font-weight: 700;
-  line-height: 62px;
+  line-height: 65px;
   background-color: #ffd74b;
 
   @media (min-width: @tablet-width) {
@@ -19,6 +19,8 @@
   }
 
   &--service {
+    display: none;
+
     @media (min-width: @tablet-width) {
       width: 200%;
     }
@@ -31,6 +33,7 @@
 
   &--directions {
     width: 100%;
+    padding-left: 23px;
 
     @media (min-width: @desktop-width) {
       width: 274px;
@@ -42,6 +45,8 @@
 
   &--companions {
     width: 100%;
+    padding-left: 24px;
+    margin-top: 19px;
 
     @media (min-width: @desktop-width) {
       width: 280px;
@@ -54,6 +59,8 @@
   &--route {
     width: 100%;
     border: 3px solid #192144;
+    line-height: 59px;
+    padding-left: 21px;
 
     @media (min-width: @tablet-width) {
       border: 3px solid @dark-night-blue;
@@ -139,7 +146,7 @@
     height: 0;
     position: absolute;
     top: 50%;
-    right: 25px;
+    right: 23px;
     transform: translateY(-50%);
     border: 10px solid #1d2e5b;
     border-top-width: 7px;
@@ -148,4 +155,8 @@
     border-bottom-color: transparent;
     border-right: none;
   }
+}
+
+.button__arrow--route::before {
+  right: 20px;
 }

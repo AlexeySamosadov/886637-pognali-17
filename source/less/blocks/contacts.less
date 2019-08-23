@@ -8,10 +8,12 @@
 
 .contacts__wrap {
   position: relative;
-  padding: 45px 25px;
+  padding: 28px 0;
+  padding-top: 81px;
+  margin-top: -30px;
   border-radius: 0 0 30px 30px;
   background-color: @dark-night-blue;
-  z-index: 7;
+  z-index: 6;
 }
 
 .contacts__title {
@@ -19,13 +21,20 @@
 }
 
 .contacts__text {
-  margin: 30px auto;
+  margin: 20px auto;
+  margin-bottom: 29px;
   width: 200px;
   text-align: center;
   color: @white;
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
+
+  &--questions {
+    width: 235px;
+    margin-left: 50px;
+    margin-bottom: 18px;
+  }
 
   @media (min-width: @tablet-width) {
     width: 606px;
@@ -42,13 +51,15 @@
 
 .contacts__email-form {
   position: relative;
-  margin: 0 40px;
+  margin: 29px 25px;
 }
 
 .contacts__email-input {
   width: 100%;
   height: 62px;
+  padding-left: 24px;
   border-radius: 10px;
+  border: none;
   position: relative;
   color: @dark-gray-03;
   font-family: @main-font;
@@ -94,6 +105,10 @@
   }
 }
 
+.contacts__tel-mail-wrap {
+  margin-left: 26px;
+}
+
 .contacts__tel,
 .contacts__mail {
   display: flex;
@@ -113,7 +128,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 15px;
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -130,12 +145,12 @@
 
 .contacts__wrap-adress {
   position: relative;
-  padding: 30px 25px;
+  padding: 35px 25px;
   padding-top: 35px;
-  margin-top: -10px;
+  margin-top: -30px;
   border-radius: 0 0 30px 30px;
   background-color: @lemon;
-  z-index: 6;
+  z-index: 5;
 
   @media (min-width: @tablet-width) {
     border-radius: 0 0 60px 60px;
@@ -147,9 +162,9 @@
 .contacts__adress {
   display: flex;
   align-items: center;
-  width: 150px;
-  margin: 24px auto;
-  justify-content: center;
+  margin: 27px auto;
+  margin-bottom: 32px;
+  justify-content: flex-start;
   color: @dark-night-blue;
   font-size: 16px;
   font-weight: 700;
@@ -167,9 +182,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 68px;
-  height: 68px;
-  margin-right: 30px;
+  width: 45px;
+  height: 45px;
+  margin-right: 17px;
   flex-shrink: 0;
   background-color: @saphire-blue;
   border-radius: 50%;
@@ -186,14 +201,14 @@
 
 .contacts__map {
   position: relative;
-  height: 550px;
-  margin-top: -15px;
+  height: 322px;
+  margin-top: -35px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url("../../img/map.png");
   background-repeat: no-repeat;
-  z-index: 5;
+  z-index: 4;
 
   @media (min-width: @tablet-width) {
     height: 700px;
@@ -213,8 +228,8 @@
 
   &::before {
     content: "";
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     background-color: #182044;
   }
