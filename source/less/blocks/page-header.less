@@ -1,40 +1,69 @@
 .page-header {
-  padding: 25px 25px;
+  padding: 25px 20px;
   display: flex;
   justify-content: flex-start;
   background-color: @dark-blue;
 }
 
+.page-header__logo {
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+}
+
 .main-nav {
   margin-left: auto;
-  position: relative;
+}
+
+.main-nav__list {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .main-nav__toggle {
+  position: relative;
   margin-left: auto;
   background-color: @dark-blue;
   border: none;
+  z-index: 15;
 
-  &--close {
+  @media (min-width: @tablet-width) {
     position: absolute;
-    top: 32px;
-    right: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &--open {
     background-color: @white;
   }
 }
 
 .main-nav__toggle-svg {
-  fill: @white;
+  &--open {
+    fill: @white;
+  }
 
   &--close {
-    fill: #cccccc;
+    display: none;
+  }
+
+  &--open-modal {
+    display: none;
+  }
+
+  &--close-modal {
+    display: block;
+    fill: @gray-light;
   }
 }
 
 .main-nav__wrapper {
   position: absolute;
-  top: -30px;
-  right: -30px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -42,12 +71,21 @@
   padding: 0 30px;
   background-color: @white;
   z-index: 1;
+
+  &--opened {
+    display: flex;
+  }
 }
 
 .main-nav__wrapper-logo {
   width: 100%;
   padding-top: 30px;
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    width: 517px;
+    height: 42px;
+  }
 }
 
 .main-nav__slogan {
@@ -69,6 +107,11 @@
   height: 45px;
   border-radius: 50%;
   background-color: @saphire-blue;
+
+  @media (min-width: @tablet-width) {
+    width: 68px;
+    height: 68px;
+  }
 }
 
 .main-nav__icon-svg {
@@ -89,6 +132,13 @@
   font-weight: 500;
   line-height: 36px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 368px;
+    height: 186px;
+    font-size: 60px;
+    line-height: 71.01px;
+  }
 }
 
 .main-nav__tel-number,
@@ -101,6 +151,11 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .main-nav__mail {
@@ -127,5 +182,76 @@
 
   svg {
     fill: #cccccc;
+  }
+}
+
+.button--main-nav-tablet {
+  display: none;
+}
+
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    justify-content: space-between;
+    padding: 5px 40px;
+  }
+
+  .button--main-nav-tablet {
+    display: block;
+  }
+
+  .main-nav {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .main-nav__wrapper {
+    width: @tablet-width;
+    height: 910px;
+    top: -10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .main-nav__wrapper-logo {
+    order: -3;
+  }
+
+  .main-nav__wrapper-button {
+    order: -2;
+  }
+
+  .main-nav__wrap-list {
+    order: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .page-header {
+    justify-content: flex-start;
+    padding: 55px 60px;
+  }
+
+  .main-nav {
+    margin-left: 100px;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__list-item {
+    padding: 10px 25px;
+    color: @white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
   }
 }

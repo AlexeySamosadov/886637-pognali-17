@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -6,29 +7,74 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="" alt="Сервис поиска попутчиков - Погнали?" width="100" height="19">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle">
-          Открыть меню
-        </button>
-        <div class="main-nam__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="#">О сервисе</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Направления</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Попутчики</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="img/logo-mobile-white@1x.png" alt="Сервис поиска попутчиков - Погнали?" width="100" height="19">
+    </a>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li>
+          <a class="main-nav__list-item" href="#">О сервисе</a>
+        </li>
+        <li>
+          <a class="main-nav__list-item" href="form.html">Направления</a>
+        </li>
+        <li>
+          <a class="main-nav__list-item" href="catalog.html">Попутчики</a>
+        </li>
+      </ul>
+      <button class="main-nav__toggle" aria-label="Открыть меню">
+        <svg class="main-nav__toggle-svg--open" width="25" height="11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 11"  xml:space="preserve"><path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z"/><path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z"/></svg>
+        <svg class="main-nav__toggle-svg--close" version="1.1" width="18" height="18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18.6 18.6" xml:space="preserve"><path d="M11.4,9.3l6.7-6.7c0.6-0.6,0.6-1.5,0-2.1s-1.5-0.6-2.1,0L9.3,7.2L2.6,0.4C2-0.1,1-0.1,0.4,0.4C-0.1,1-0.1,2,0.4,2.6l6.7,6.7 L0.4,16c-0.6,0.6-0.6,1.5,0,2.1s1.5,0.6,2.1,0l6.7-6.7l6.7,6.7c0.6,0.6,1.5,0.6,2.1,0s0.6-1.5,0-2.1L11.4,9.3z"/></svg>
+      </button>
+      <div class="main-nav__wrapper">
+        <a class="main-nav__wrapper-logo" href="#">
+          <img class="main-nav__wrapper-image" src="img/logo-mobile-blue@1x.png" alt="Логотип сервиса, Погнали?">
+        </a>
+        <ul class="main-nav__wrap-list">
+          <li>
+            <a class="main-nav__wrap-list-item" href="#">О сервисе</a>
+          </li>
+          <li>
+            <a class="main-nav__wrap-list-item" href="form.html">Направления</a>
+          </li>
+          <li>
+            <a class="main-nav__wrap-list-item" href="catalog.html">Попутчики</a>
+          </li>
+        </ul>
+        <a class="button button--main-nav main-nav__wrapper-button" href="#">Авторизация</a>
+        <a class="main-nav__tel-number" href="tel:+78005558628" aria-label="Позвоните нам по номеру 8 800 555-86-28">
+          <span class="main-nav__icon" >
+              <svg class="main-nav__icon-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36" xml:space="preserve"><path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5 c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3 c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3 c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9 c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3 c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6 c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/></svg>
+          </span>
+          8 800 555-86-28
+        </a>
+        <a class="main-nav__mail" href="mailto:mail@htmlacademy.ru" aria-label="Напишиту нам на почту mail@htmlacademy.ru">
+          <span class="main-nav__icon">
+              <svg class="main-nav__icon-svg" version="1.1" height="18" width="18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 26" xml:space="preserve"><path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2 c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2 L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1 c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/></svg>
+          </span>
+          mail@htmlacademy.ru
+        </a>
+        <ul class="main-nav__social-list">
+          <li>
+            <a class="main-nav__social-item main-nav__social-item--facebook" href="#" aria-label="facebook">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="21" width="11" x="0px" y="0px" viewBox="0 0 11 21" xml:space="preserve"><g><path d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8 V21z M3.4,19.9h3.1v-9.8h3.2V7.5H6.5l0-0.6c0-1.5,0-2.9,0.8-3.4l0.2-0.1h2.3V1.1H7.1C5.9,1.2,4.9,1.6,4.3,2.3 C3.5,3.2,3.2,4.8,3.4,6.9l0.1,0.6H1.2v2.6h2.2V19.9z"/></g></svg>
+            </a>
+          </li>
+          <li>
+            <a class="main-nav__social-item main-nav__social-item--vk" href="#" aria-label="vkontakte">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="12" width="23" xmlns:xlink="http://www.w3.org/1999/xlink"   viewBox="0 0 30 15.8" xml:space="preserve"><g><path d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6 c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1 c0.4-0.4,1.1-0.5,1.4-0.5l4.1,0l0.1,0c0.1,0,0.6,0.1,1,0.3c0.4,0.2,0.6,0.7,0.6,0.7c0,0,0.6,1.4,1.5,2.7c1.3,2,1.9,2.5,2.1,2.6 c0.2-0.4,0.3-1.7,0.2-2.9c0-0.5-0.1-1.1-0.3-1.3c-0.1-0.1-0.4-0.3-0.8-0.3L9.5,1.8c-0.1-0.7,0.6-1.2,1.1-1.4 C11.3,0.1,12.4,0,13.7,0l0.7,0c1.2,0,1.6,0.1,2.1,0.2c1.7,0.4,1.6,1.7,1.6,3.3c0,0.5,0,1,0,1.6c0,0.2,0,0.3,0,0.5 c0,0.4,0,1,0.1,1.3c0.2-0.1,0.9-0.7,2.1-2.5c0.8-1.2,1.4-2.5,1.5-2.8l0,0c0.2-0.4,0.6-0.9,1.6-0.9l4.3,0c0,0,0.2,0,0.4,0 c1,0,1.6,0.3,1.8,0.9c0.3,0.6,0.2,1.7-2.4,4.6c-0.4,0.4-0.7,0.8-1,1.1c-0.6,0.7-1.2,1.4-1.2,1.6C25.4,9,26,9.5,26.6,10 c1.5,1.2,2.5,2.3,3,3.1c0.5,0.8,0.4,1.3,0.3,1.7c-0.4,0.9-1.6,1-1.9,1l-3.8,0C24.1,15.8,24.1,15.8,23.9,15.8z M18.6,10.9 c0.9,0,1.7,0.8,2.5,1.6c0.5,0.5,1,1,1.5,1.3c0.7,0.4,1.3,0.4,1.4,0.4l0.1,0l3.8,0c0.2,0,0.4-0.1,0.5-0.1c0,0,0-0.1-0.1-0.2 c-0.4-0.7-1.4-1.7-2.7-2.7c-1.2-1-1.8-1.5-1.9-2.2c-0.1-0.8,0.5-1.4,1.6-2.7c0.3-0.3,0.6-0.7,1-1.1c1.6-1.8,2-2.6,2.1-3 c-0.2,0-0.6,0-0.7,0l-4.4,0c-0.2,0-0.2,0-0.2,0c-0.2,0.4-0.8,1.8-1.6,3c-1.9,2.8-2.8,3.2-3.4,3.2c-0.2,0-0.4,0-0.6-0.1 c-1-0.6-1-1.8-0.9-2.8c0-0.1,0-0.3,0-0.4c0-0.6,0-1.2,0-1.7c0.1-1.7,0-1.7-0.4-1.8c-0.4-0.1-0.7-0.1-1.9-0.2l-0.7,0 c-0.6,0-1.3,0-1.9,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0.6,0.7,0.6,2,0.6,2.2c0.1,1.6,0.1,3.8-1,4.3c-0.2,0.1-0.4,0.1-0.6,0.1 c-0.9,0-1.9-0.9-3.4-3.3C6.8,3.9,6.1,2.4,6.1,2.3c0,0-0.1-0.1-0.1-0.1C5.9,2.2,5.8,2.1,5.7,2.1l-4,0c0,0,0,0-0.1,0 C2.2,3.3,5,8.7,8.1,11.6c2.7,2.5,5.8,2.6,6.4,2.6l1.9,0c0,0,0.2-0.1,0.3-0.1c0,0,0-0.1,0-0.1c0-0.3,0-2.6,1.6-3 C18.4,10.9,18.5,10.9,18.6,10.9z"/></g></svg>
+            </a>
+          </li>
+          <li>
+            <a class="main-nav__social-item main-nav__social-item--instagram" href="" aria-label="instagram">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="18" width="18" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 23" xml:space="preserve"><path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5 M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"/><path class="st0" d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6 c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S14.8,5.6,11.5,5.6L11.5,5.6z"/><circle class="st0" cx="17.6" cy="5.4" r="1.3"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
     <main class="main-page">
       <h1 class="main-page__page-title">
         Попутчики
@@ -36,7 +82,7 @@
       <section class="filter-by-country">
         <div class="filter-by-country__filter">
           <span class="filter-by-country__filter-icon1"></span>
-          Фильтрация по странам
+          <h2 class="filter-by-country__filter-title" >Фильтрация по странам</h2>
           <span class="filter-by-country__filter-icon2"></span>
         </div>
         <div class="filter-by-country__block">
@@ -109,12 +155,12 @@
           <h2 class="catalog__filter-title">Подберите идеального попутчика</h2>
           <ul class="catalog__filter-list">
             <li class="catalog__filter-option">
-              <input type="checkbox" id="filter-hobby">
+              <input class="catalog__filter-input" type="checkbox" id="filter-hobby">
               <label class="catalog__filter-option-label" for="filter-hobby">Хобби</label>
               <ul class="catalog__filter-hobby-list"></ul>
             </li>
             <li class="catalog__filter-option">
-              <input type="checkbox" id="filter-music">
+              <input class="catalog__filter-input" type="checkbox" id="filter-music">
               <label class="catalog__filter-option-label" for="filter-music">Музыка</label>
               <ul class="catalog__filter-music-list">
                 <li><input type="checkbox" id="hard-rock"><label for="hard-rock">Тяжелый рок</label></li>
@@ -123,26 +169,34 @@
               </ul>
             </li>
             <li class="catalog__filter-option">
-              <input type="checkbox" id="filter-food">
+              <input class="catalog__filter-input" type="checkbox" id="filter-food">
               <label class="catalog__filter-option-label" for="filter-food">Еда</label>
               <ul class="catalog__filter-food-list"></ul>
             </li>
             <li class="catalog__filter-option">
-              <input type="checkbox" id="filter-transport">
+              <input class="catalog__filter-input" type="checkbox" id="filter-transport">
               <label class="catalog__filter-option-label" for="filter-transport">Транспорт</label>
-              <ul class="catalog__filter-transport-list">
-                <li aria-label="Самолет"></li>
-                <li aria-label="Автобус"></li>
-                <li aria-label="Велосипед"></li>
-                <li aria-label="Пешком"></li>
+              <ul class="catalog__transport-list">
+                <li class="catalog__transport-item">
+                  <svg class="catalog__transport-icon catalog__transport-icon--active" width="14" height="16" aria-label="Самолет" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21" xml:space="preserve"><path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8 c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6 C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1 c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1 c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9 c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5 c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/></svg>
+                </li>
+                <li class="catalog__transport-item">
+                  <svg class="catalog__transport-icon catalog__transport-icon--active" width="13" height="16"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21" xml:space="preserve"><path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4 c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5 C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9 H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/></svg>
+                </li>
+                <li class="catalog__transport-item">
+                  <svg class="catalog__transport-icon" width="19" height="17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21" xml:space="preserve"><path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5 S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2 l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5 l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5 s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/></svg>
+                </li>
+                <li class="catalog__transport-item">
+                  <svg class="catalog__transport-icon catalog__transport-icon--active" width="15" height="17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21" xml:space="preserve"><g><ellipse cx="14.3" cy="2" rx="2.1" ry="2"/><path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6 C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5 c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4 c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6 z"/></g></svg>
+                </li>
               </ul>
             </li>
             <li class="catalog__filter-option">
-              <input type="checkbox" id="filter-level">
+              <input class="catalog__filter-input" type="checkbox" id="filter-level">
               <label class="catalog__filter-option-label" for="filter-level">Левел</label>
               <div class="catalog__filter-level">
-                <input class="catalog__filter-level-number" type="number" placeholder="30">
-                <input class="catalog__filter-level-number" type="number" placeholder="100">
+                <input class="catalog__filter-level-number catalog__filter-level-number--start" type="number" placeholder="30">
+                <input class="catalog__filter-level-number catalog__filter-level-number--end" type="number" placeholder="100">
               </div>
               <input  class="catalog__filter-level-radio" type="range">
             </li>
@@ -152,31 +206,51 @@
         <ul class="catalog__list">
           <li class="catalog__list-item">
             <div class="catalog__wrap-person">
-              <img class="catalog__avatar" src="#" alt="Аватар">
-              <h3 class="catalog__name">Таня Фирсова</h3>
-              <span class="catalog__likes">1,5 m</span>
+              <img class="catalog__avatar" src="img/firsova-mobile@1x.jpg" alt="Аватар">
+              <div>
+                <h3 class="catalog__name">Таня Фирсова</h3>
+                <span class="catalog__likes">1,5 m</span>
+              </div>
             </div>
             <span class="catalog__hashtags">
               #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
             </span>
             <h4 class="catalog__visit-wishes-title">Хочет посетить</h4>
             <ul class="catalog__visit-wishes-list">
-              <li class="catalog__wishes-list-item">Шри ланка</li>
-              <li class="catalog__wishes-list-item">Тайланд</li>
-              <li class="catalog__wishes-list-item">Сейшелы</li>
+              <li class="catalog__wishes-list-item">
+                <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="18" viewBox="0 0 35 24" aria-label="Шри-ланка"><image width="35" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAYCAYAAABwZEQ3AAACSUlEQVRIS+2XzWsTQRjGf7O72XxtohhtERFFbIVCRS148eRJEHtQUyheFG/2YgW9iEfxIILFgwUPIh5EJHjRP0FQwRi9eFAQqjFNUgOa7CYm2d2RzSRgBQ+N4AfswBx2eXneZ5+d2f2NAJCF7Hkkc0g2Btd/dAg+I7gp9uauCVmYOYvPAoYPER/8vhXpgxFXU3rqpq5Bqw12B9ZLSEtwf8O6AdQF1HWIMC/ky2wFXY68tSPkHYOULnvqDc1kqllh3CmDZqqOnS6MZmD7Btw30HkXQYur+mGG3xKYY12MsS40RSUw0ybmmrc/pLi0ZLEjrlJ4H13H5eITThefQtRSvb7YcGAPHJ/EuaFRv2NhbO6nNoQbd1knfcomefIrLBvtwEyDqGflSkmulxJsjSrxj2aKc+U82fILMFOqVcOBfRNwaBetuwL7YRJ90/BmvBUd65hD/KgNK7otZD5bJ+al/rqZqt4IzQyW16rXFCbzw64Lk/nVJyhMJkxmrb+ncM38p2vmn0KIHlx55r2ixZVigm19nlmKprlYes6J0jMw0yrpugP7J2F6guYtQeO+hTE6PHe6FYPUrE1itgEVvaOw0/RGHpUTLFYSbDEVLH2KWJypvma6+grMPunZTdg9Dgd38u2BwHmcQMsMoHmtewn8mkbySJPYYQdqelUBuZQLgaQnQfQ1JQIdH03+xLhCgCZ64B4w+6B+7VYgUBYaEEzEfE9LFmYugD+HILNKNKgUAcIPnl4D3wM3OEkAhlSKw46gu0sNVyyKqdzV7zzaWsVJw3M+AAAAAElFTkSuQmCC"/></svg>
+                Шри ланка
+              </li>
+              <li class="catalog__wishes-list-item">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="18" viewBox="0 0 35 24"><g><g><image width="35" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAYCAYAAABwZEQ3AAAA6ElEQVRIS+2XLU/DUBSGn9egNsPIfgVyCoWrIUGQLpkjgRoMJGx/YplAbQkfycwEBI/A8E+mu7QVbRGdOaS+IMsRve6q++TNPec8RwDpOJpi3ABH9b3lkyCWg7enhdIwugUeWgZoeu6uhomBoQOYWMn5ZQUcOICplF5cFUDPAUwpy7Ic6DuAKWRmfmCi+w8/MKNg7QcmmLzmmIM/Iwp1ME2l2yXzW0PrkvkrmePTFz995vNrm5uD2SRwNpu+nzeFOVAIQan45KySA7ky2HvSzp0vIa/LPguvZ4bqVWXwD8aXyrQ6fH+c/wDUAmg7hrrt+AAAAABJRU5ErkJggg=="/></g></g></svg>
+                Тайланд
+              </li>
+              <li class="catalog__wishes-list-item">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="18" viewBox="0 0 35 24"><g><g><image width="35" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAYCAYAAABwZEQ3AAAF2ElEQVRIS7WWXWwc1RmGnzOzszPenbETm5C2aQOEBgOh0IQoIU3jkJjEMWokUi4SbvgpaQrmAlTRi/aiF0XiokUqEhIpIrRUKS2xUpBI0qQpQlRViwSiEoKExD9xHOysN/F6f2a93tmdmVOdsR1ie+3YanvuZvbMeZ/znu97zwqA7XsOPSugA8F16nn6CEJBKmvzwu6/s2PrJ5CzIawxUQIJCXWS0YMOYx9YaMkQRK1Vr7wbRvByU+erL4i23Z1PI+SLs00XAoZySdbcmOZAxxGEWrmqz5yuQOokJEJG/+BQei+B3hhcC+TqdZ4RbXsOpYHrZ4MJQ8HFnM3+R95l06bP4HIDCKV81VCPlgQ7pPRHh9ETEyAGMG3qHB6lFYwHxGtNEkKSytmsvznFK08dgUCDSmx2kE6b0aNJtMYQYciFgChmT8G4gF27VjTS+QSvPnaS9Rs+h+FprqhdmxLqQ8YO2xTfSaItChHxhYFMaBdF20OHCkic6TDKlYtZh5bmL3ip4yhUjKm1okCUaENI+e0k7ts2WkOIUHDzP5qrZd1ZYfxQMOwmee0HJ7h7XRcM139ZK0pMHcOikPKRJO5hG63+vwJBjpVrwyhXBkccWlf18+sn/gJlA/yJDpoEWRxSPpbA7XTQ7BChCnihjgiBLLjI0TH0Fctrw/iBRnbU4rd7T3DXmh7ITLiixGISGkO8vyYo/MmJcmRBICpzJIS5AtLziN3wDawdWzDbt8yEmXSl7c4+frXvOJTiEOjju54EeTdB4Q0brU4iVLbMxxEVWGFImM2DHxC7ZQXm9s1YbVsQTlLVzkyYaqBTKMV5fd9xVt15DkYmaludUlOA934d7kEn6hih0vZaIAoiCAhHciAExqpmTOVE6yaEOSVRpsKo7wZGHHau7uH5vSdg1AJfgwmQyj8sCr+vjzLkmiCagEp1HMIwMNZ8C6t9K+bmDRFUjTEVpuLrFL04B/cdo/mO/nFXNAnXBVQ+sCj8zkFoIJJzOKJpyLJHOJJFS9QRv+duzPtbia9bPecFNeWYFOwXGYdda7t47vGT4FogtQik+pFJ/kB9tKFZQTSBLJUJc3k0xyHesh5r5zaM25uvBTH5+5fOeL7OWMXgjSeOcnPzAOSTsCSg+rFJ4UA9MgTNruGIas/iKGHBRWtqxLx3A9b3thH75k3zhZgKI5BO/3A9e+45w88f/Ru4ddAk8T8xyb9Sj/RFFGpX/jYoi6REukVCt4j+ta9gbt2I1X4f+g3LFgSRctP0Zfs5fensuDPliu5U/Bhvdhxh+cqLELPwT8fJ729AeiKK+Qhksj3zLrJUInbTcsz7WqKc0JYumReEEu/JnOPzy10RRF/2ArlynkpQdcWOh94snB9ucB7+zml+qlyJW/inzHGQkoguPuREe2bzSK9C7PaVmNvvxdq2Ga1hxrV2BUpKSaqY5szlbrozvfRkztOfu0DBc/F8D0M3sOM2hhZDCOGKlu//uRCEmnPoqXdYtm6Q4KPF5F9uICwKtEYJFZ8wk4UgxFi9CrO9FXPrd6dnRATghwFDxbSynN5MH90jfVzIDeB6LmXfw4qZ2PEkuhZDm9nerri19bj7+OZP7Wd/fJLw48XkXlpM6OpoiTGCTA6hacTXfpvkA+3oG9dOOYpKUGXITXPq0hl6R87TPdzLQOEibqUYiSeMBEmjDl3T0VQmzD2KomXXW97hX7wVXxJkyT7/dapDFYTMYCSSOBs3oO/aCXfcGC3jIRnMXuBU+gx92fOcHe4lVRiKxD2/gm0mqYtZ8xWfjlYRv3n9ufSP1v3z+tLPlhL0ejjNTdDSAm0b8W5ZxgB5Puv5kHPpHs5mehhyL0W2V0MfJ25H1s9z53P6IoW8JLo6f/j0yuOlF4PBr5K/fwVDm26ja6lGb3GQs93/Jp1LkfcKqGJ0TBtTj/9PxGuQPRNdEv/a++RPjj24tOPyolhTOp8imxpE+EEkHtcNYiKGUHfN/2dkpGB/5+7Xfvkf1bm10+jCJqkAAAAASUVORK5CYII="/></g></g></svg>
+                Сейшелы
+              </li>
             </ul>
             <div class="catalog__wrap-transport-level">
               <div class="catalog__transport">
                 <h4 class="catalog__transport-title">транспорт:</h4>
                 <ul class="catalog__transport-list">
-                  <li class="catalog__transport-item catalog__transport-item--active" aria-label="Самолет"></li>
-                  <li class="catalog__transport-item" aria-label="Автобус"></li>
-                  <li class="catalog__transport-item" aria-label="Велосипед"></li>
-                  <li class="catalog__transport-item" aria-label="Пешком"></li>
+                  <li class="catalog__transport-item">
+                    <svg class="catalog__transport-icon catalog__transport-icon--active" width="14" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21" xml:space="preserve"><path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8 c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6 C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1 c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1 c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9 c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5 c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/></svg>
+                  </li>
+                  <li class="catalog__transport-item">
+                    <svg class="catalog__transport-icon" width="13" height="16"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21" xml:space="preserve"><path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4 c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5 C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9 H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/></svg>
+                  </li>
+                  <li class="catalog__transport-item">
+                    <svg class="catalog__transport-icon" width="19" height="17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21" xml:space="preserve"><path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5 S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2 l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5 l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5 s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/></svg>
+                  </li>
+                  <li class="catalog__transport-item">
+                    <svg class="catalog__transport-icon" width="15" height="17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21" xml:space="preserve"><g><ellipse cx="14.3" cy="2" rx="2.1" ry="2"/><path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6 C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5 c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4 c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6 z"/></g></svg>
+                  </li>
                 </ul>
               </div>
               <div class="catalog__level">
                 <h4 class="catalog__level-title">левел</h4>
+                <svg class="catalog__level-svg catalog__level-svg--99" width="60" height="60"  viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true"><circle r="15.915" cx="15.915" cy="15.915"></circle></svg>
                 <span class="catalog__level-item">
                 99
                 </span>
@@ -186,30 +260,49 @@
           </li>
           <li class="catalog__list-item">
             <div class="catalog__wrap-person">
-              <img class="catalog__avatar" src="#" alt="Аватар">
-              <h3 class="catalog__name">Петя Демин</h3>
-              <span class="catalog__likes">150</span>
+              <div class="catalog__wrap-person">
+                <img class="catalog__avatar" src="img/demin-mobile@1x.jpg" alt="Аватар">
+                <div>
+                  <h3 class="catalog__name">Петя Демин</h3>
+                  <span class="catalog__likes">150</span>
+                </div>
+              </div>
             </div>
             <span class="catalog__hashtags">
               #бургер #бар #футбол #концерт #крафт
             </span>
             <h4 class="catalog__visit-wishes-title">Хочет посетить</h4>
             <ul class="catalog__visit-wishes-list">
-              <li class="catalog__wishes-list-item">Бельгия</li>
-              <li class="catalog__wishes-list-item">Чехия</li>
+              <li class="catalog__wishes-list-item">
+                <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="17" viewBox="0 0 35 24"><g><g><image width="35" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAYCAYAAABwZEQ3AAAA10lEQVRIS+2XsQrCMBRFzxuUDrqo+EHWqa7t2sHRRQcd/AV1cFLQPxB/yq0VXaxQ6tBICm5WXKQR8paQ8CCHmxtyIwC9gT8VxQjo6Pm7OkU589BhGDqkUV7WVqyLA+oG6bJWjHr+oS4Im/ZhvxLXC8ag1h/bgR/CvLaeiOv5MdA1ACbWMBlQrxpGQSbuwE9QNKqGAe5amRvQNAAmsTAlp2CVKbOnVcYq8+1D+VLKesZ65t89Y1iEMCJcAQ+TYufZrECuL33fC2aKfATSruCrchUl29Zxt3gCJ5uDQ3k+tOEAAAAASUVORK5CYII="/></g></g></svg>
+                Бельгия
+              </li>
+              <li class="catalog__wishes-list-item">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="17" viewBox="0 0 35 24"><g><g><image width="35" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAYCAYAAABwZEQ3AAACfUlEQVRIS8XWzUtUURjH8e+5ojYvIVi5q12CWSqGFDbYJjIhFELzBQxRSBoqLRSFoIKihRW6Kgha1SLDP6PEaNE/UFA0zos6Ts69MjP3zj0n7qgxmS+bmdtZ3sU5n/M7z3nOFQBKqTEguJ4yD2tCOJ9cGwpWlBIv/N7SZ6Kl/c1IX+fJmeH+BqRSpNIWwmWQs3MhGBWBjrex+Gqq6uZgI8GBRhSK9ZSF2wkBMdHW+z6TSmfLossGNwYauT102jm4HMjlhDKitWdW14TwpzNZwjGD4WsN3LnelKuZ9ZTpJsgQrb2zSRQHnRQypk04qjPUV8d48IyrIAH6H8xGEQlMK8tixGCg+xSTt866BvoHswWyLJtQRKe/q5Z7I82ugHbE5IMWIzq9V05w/+65ooN2xWyBsllJKJKku6OGh2OBooL2xGw2IrK2IhTW6bxczaOJlg1QERrjvph8UDSS5GJbDZMTASo1MAv/YPx9m3abv0QoYnY5ck3ndW2M+kpI2iWF5uyP0VAs4aFCWDyRCzQlvvLLFKjCv197YxxIVHg5otI8lR+pU8sk8CGdnlToXLY3vfz5NSCMl6MYPJfzVMs4q8KHKg7EWXrnZJxdL+LjuFpjWn7gGElW8eUe0CKObc/B5nIhfNSrONNynioM4vgQxYX8nYyThlMLP/HTrGK5o6kgzQpenNpxYei5XwgBfhuRg1xQIabkAh4sVvC4BXH2aohLPe8yFlpZCD8d6juP5SdKkW5DHIwpzvfMxZbwVF1V33ggPyPRSFDuZiJbFbAkAt1zI+3qx8y4+oJFCWv/B+KARnO9y+gaHD+AHUxQfsilYs2/D3GhxMvKuVdTvwGawz5A3CnkOAAAAABJRU5ErkJggg=="/></g></g></svg>
+                Чехия
+              </li>
             </ul>
             <div class="catalog__wrap-transport-level">
               <div class="catalog__transport">
                 <h4 class="catalog__transport-title">транспорт:</h4>
                 <ul class="catalog__transport-list">
-                  <li class="catalog__transport-item catalog__transport-item--active" aria-label="Самолет"></li>
-                  <li class="catalog__transport-item catalog__transport-item--active" aria-label="Автобус"></li>
-                  <li class="catalog__transport-item" aria-label="Велосипед"></li>
-                  <li class="catalog__transport-item catalog__transport-item--active" aria-label="Пешком"></li>
+                  <li class="catalog__transport-item">
+                    <svg class="catalog__transport-icon catalog__transport-icon--active" width="14" height="16" aria-label="Самолет" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21" xml:space="preserve"><path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8 c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6 C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1 c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1 c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9 c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5 c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/></svg>
+                  </li>
+                  <li class="catalog__transport-item">
+                    <svg class="catalog__transport-icon catalog__transport-icon--active" width="13" height="16"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21" xml:space="preserve"><path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4 c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5 C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9 H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/></svg>
+                  </li>
+                  <li class="catalog__transport-item">
+                    <svg class="catalog__transport-icon" width="19" height="17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21" xml:space="preserve"><path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5 S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2 l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5 l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5 s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/></svg>
+                  </li>
+                  <li class="catalog__transport-item">
+                    <svg class="catalog__transport-icon catalog__transport-icon--active" width="15" height="17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21" xml:space="preserve"><g><ellipse cx="14.3" cy="2" rx="2.1" ry="2"/><path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6 C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5 c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4 c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6 z"/></g></svg>
+                  </li>
                 </ul>
               </div>
               <div class="catalog__level">
                 <h4 class="catalog__level-title">левел</h4>
+                <svg class="catalog__level-svg catalog__level-svg--level-80" width="60" height="60"  viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true"><circle r="15.915" cx="15.915" cy="15.915"></circle></svg>
                 <span class="catalog__level-item">
                 80
                 </span>
@@ -219,9 +312,13 @@
           </li>
           <li class="catalog__list-item">
             <div class="catalog__wrap-person">
-              <img class="catalog__avatar" src="#" alt="Аватар">
-              <h3 class="catalog__name">Марк Смолов</h3>
-              <span class="catalog__likes">1700</span>
+              <div class="catalog__wrap-person">
+                <img class="catalog__avatar" src="#" alt="Аватар">
+                <div>
+                  <h3 class="catalog__name">Марк Смолов</h3>
+                  <span class="catalog__likes">1700</span>
+                </div>
+              </div>
             </div>
             <span class="catalog__hashtags">
               #рэп #тату #хайпбист #кроссовки #суприм
@@ -236,14 +333,23 @@
               <div class="catalog__transport">
                 <h4 class="catalog__transport-title">транспорт:</h4>
                 <ul class="catalog__transport-list">
-                  <li class="catalog__transport-item catalog__transport-item--active" aria-label="Самолет"></li>
-                  <li class="catalog__transport-item" aria-label="Автобус"></li>
-                  <li class="catalog__transport-item catalog__transport-item--active" aria-label="Велосипед"></li>
-                  <li class="catalog__transport-item" aria-label="Пешком"></li>
+                  <li class="catalog__transport-item">
+                    <svg class="catalog__transport-icon catalog__transport-icon--active" width="14" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21" xml:space="preserve"><path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8 c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6 C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1 c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1 c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9 c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5 c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/></svg>
+                  </li>
+                  <li class="catalog__transport-item">
+                    <svg class="catalog__transport-icon" width="13" height="16"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21" xml:space="preserve"><path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4 c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5 C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9 H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/></svg>
+                  </li>
+                  <li class="catalog__transport-item">
+                    <svg class="catalog__transport-icon catalog__transport-icon--active" width="19" height="17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21" xml:space="preserve"><path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5 S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2 l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5 l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5 s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/></svg>
+                  </li>
+                  <li class="catalog__transport-item">
+                    <svg class="catalog__transport-icon" width="15" height="17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21" xml:space="preserve"><g><ellipse cx="14.3" cy="2" rx="2.1" ry="2"/><path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6 C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5 c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4 c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6 z"/></g></svg>
+                  </li>
                 </ul>
               </div>
               <div class="catalog__level">
                 <h4 class="catalog__level-title">левел</h4>
+                <svg class="catalog__level-svg catalog__level-svg--level-25" width="60" height="60"  viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true"><circle r="15.915" cx="15.915" cy="15.915"></circle></svg>
                 <span class="catalog__level-item">
                 25
                 </span>
@@ -253,9 +359,13 @@
           </li>
           <li class="catalog__list-item">
             <div class="catalog__wrap-person">
-              <img class="catalog__avatar" src="#" alt="Аватар">
-              <h3 class="catalog__name">Лариса Роговая</h3>
-              <span class="catalog__likes">23</span>
+              <div class="catalog__wrap-person">
+                <img class="catalog__avatar" src="#" alt="Аватар">
+                <div>
+                  <h3 class="catalog__name">Лариса Роговая</h3>
+                  <span class="catalog__likes">23</span>
+                </div>
+              </div>
             </div>
             <span class="catalog__hashtags">
               #образование #карьера #учеба #линкедин
@@ -269,15 +379,24 @@
               <div class="catalog__transport">
                 <h4 class="catalog__transport-title">транспорт:</h4>
                 <ul class="catalog__transport-list">
-                  <li class="catalog__transport-item catalog__transport-item--active" aria-label="Самолет"></li>
-                  <li class="catalog__transport-item catalog__transport-item--active" aria-label="Автобус"></li>
-                  <li class="catalog__transport-item" aria-label="Велосипед"></li>
-                  <li class="catalog__transport-item" aria-label="Пешком"></li>
+                  <li class="catalog__transport-item">
+                    <svg class="catalog__transport-icon catalog__transport-icon--active" width="14" height="16" aria-label="Самолет" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21" xml:space="preserve"><path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8 c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6 C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1 c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1 c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9 c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5 c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/></svg>
+                  </li>
+                  <li class="catalog__transport-item">
+                    <svg class="catalog__transport-icon catalog__transport-icon--active" width="13" height="16"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21" xml:space="preserve"><path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4 c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5 C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9 H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/></svg>
+                  </li>
+                  <li class="catalog__transport-item">
+                    <svg class="catalog__transport-icon" width="19" height="17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21" xml:space="preserve"><path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5 S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2 l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5 l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5 s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/></svg>
+                  </li>
+                  <li class="catalog__transport-item">
+                    <svg class="catalog__transport-icon" width="15" height="17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21" xml:space="preserve"><g><ellipse cx="14.3" cy="2" rx="2.1" ry="2"/><path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6 C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5 c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4 c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6 z"/></g></svg>
+                  </li>
                 </ul>
               </div>
               <div class="catalog__level">
                 <h4 class="catalog__level-title">левел</h4>
-                <span class="catalog__-level-item">
+                <svg class="catalog__level-svg catalog__level-svg--level-50" width="60" height="60"  viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true"><circle r="15.915" cx="15.915" cy="15.915"></circle></svg>
+                <span class="catalog__level-item">
                 50
                 </span>
               </div>
@@ -286,25 +405,49 @@
           </li>
         </ul>
         <div class="catalog__show-more">
-          <span class="catalog__show-more-title">Показать еще</span>
-          <div class="catalog__show-more-buttons">
-            <a class="catalog__show-more-buttoncatalog__show-more-button--back " href="#">Назад</a>
-            <a class="catalog__show-more-button catalog__show-more-button--forward" href="#">Вперед</a>
+          <span class="catalog__show-more-title">
+            <svg class="catalog__show-more-title-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" xml:space="preserve"><polygon class="st0" points="8,6 8,0 6,0 6,6 0,6 0,8 6,8 6,14 8,14 8,8 14,8 14,6 "/></svg>
+            Показать еще
+          </span>
+          <div class="catalog__show-more-pages">
+            <a class="catalog__show-more-page catalog__show-more-page--active" href="#">1</a>
+            <a class="catalog__show-more-page" href="#">2</a>
+            <a class="catalog__show-more-page" href="#">3</a>
+            <a class="catalog__show-more-page" href="#">4</a>
+            <a class="catalog__show-more-page" href="#">5</a>
+            <a class="catalog__show-more-button catalog__show-more-button--back" href="#" aria-label="Назад"></a>
+            <a class="catalog__show-more-button catalog__show-more-button--forward" href="#" aria-label="Вперед"></a>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <img src="#" alt="Логотип сервиса, Погнали?">
-      <ul class="footer__social-list">
-        <li class="footer__social-ikon footer__social-ikon--facebook"></li>
-        <li class="footer__social-ikon footer__social-ikon--vk"></li>
-        <li class="footer__social-ikon footer__social-ikon--instagram"></li>
-      </ul>
-      <div class="footer__maid-by">
-        <span class="footer__maid-by-span">Разработано</span>
-        <span class="footer__htmlacademy-logo"></span>
-      </div>
-    </footer>
+  <footer class="footer">
+    <a class="footer_logo" href="#">
+      <img class="footer_logo-image" src="img/logo-mobile-blue@1x.png" alt="Логотип сервиса, Погнали?">
+    </a>
+    <ul class="footer__social-list">
+      <li>
+        <a class="footer__social-icon" href="#">
+          <svg class="footer__social-svg footer__social-svg--facebook" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="21" width="11" x="0px" y="0px" viewBox="0 0 11 21" xml:space="preserve"><g><path d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8 V21z M3.4,19.9h3.1v-9.8h3.2V7.5H6.5l0-0.6c0-1.5,0-2.9,0.8-3.4l0.2-0.1h2.3V1.1H7.1C5.9,1.2,4.9,1.6,4.3,2.3 C3.5,3.2,3.2,4.8,3.4,6.9l0.1,0.6H1.2v2.6h2.2V19.9z"/></g></svg>
+        </a>
+      </li>
+      <li>
+        <a class="footer__social-icon" href="#">
+          <svg class="footer__social-svg footer__social-svg--vk" version="1.1" xmlns="http://www.w3.org/2000/svg" height="12" width="23" xmlns:xlink="http://www.w3.org/1999/xlink"   viewBox="0 0 30 15.8" xml:space="preserve"><g><path d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6 c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1 c0.4-0.4,1.1-0.5,1.4-0.5l4.1,0l0.1,0c0.1,0,0.6,0.1,1,0.3c0.4,0.2,0.6,0.7,0.6,0.7c0,0,0.6,1.4,1.5,2.7c1.3,2,1.9,2.5,2.1,2.6 c0.2-0.4,0.3-1.7,0.2-2.9c0-0.5-0.1-1.1-0.3-1.3c-0.1-0.1-0.4-0.3-0.8-0.3L9.5,1.8c-0.1-0.7,0.6-1.2,1.1-1.4 C11.3,0.1,12.4,0,13.7,0l0.7,0c1.2,0,1.6,0.1,2.1,0.2c1.7,0.4,1.6,1.7,1.6,3.3c0,0.5,0,1,0,1.6c0,0.2,0,0.3,0,0.5 c0,0.4,0,1,0.1,1.3c0.2-0.1,0.9-0.7,2.1-2.5c0.8-1.2,1.4-2.5,1.5-2.8l0,0c0.2-0.4,0.6-0.9,1.6-0.9l4.3,0c0,0,0.2,0,0.4,0 c1,0,1.6,0.3,1.8,0.9c0.3,0.6,0.2,1.7-2.4,4.6c-0.4,0.4-0.7,0.8-1,1.1c-0.6,0.7-1.2,1.4-1.2,1.6C25.4,9,26,9.5,26.6,10 c1.5,1.2,2.5,2.3,3,3.1c0.5,0.8,0.4,1.3,0.3,1.7c-0.4,0.9-1.6,1-1.9,1l-3.8,0C24.1,15.8,24.1,15.8,23.9,15.8z M18.6,10.9 c0.9,0,1.7,0.8,2.5,1.6c0.5,0.5,1,1,1.5,1.3c0.7,0.4,1.3,0.4,1.4,0.4l0.1,0l3.8,0c0.2,0,0.4-0.1,0.5-0.1c0,0,0-0.1-0.1-0.2 c-0.4-0.7-1.4-1.7-2.7-2.7c-1.2-1-1.8-1.5-1.9-2.2c-0.1-0.8,0.5-1.4,1.6-2.7c0.3-0.3,0.6-0.7,1-1.1c1.6-1.8,2-2.6,2.1-3 c-0.2,0-0.6,0-0.7,0l-4.4,0c-0.2,0-0.2,0-0.2,0c-0.2,0.4-0.8,1.8-1.6,3c-1.9,2.8-2.8,3.2-3.4,3.2c-0.2,0-0.4,0-0.6-0.1 c-1-0.6-1-1.8-0.9-2.8c0-0.1,0-0.3,0-0.4c0-0.6,0-1.2,0-1.7c0.1-1.7,0-1.7-0.4-1.8c-0.4-0.1-0.7-0.1-1.9-0.2l-0.7,0 c-0.6,0-1.3,0-1.9,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0.6,0.7,0.6,2,0.6,2.2c0.1,1.6,0.1,3.8-1,4.3c-0.2,0.1-0.4,0.1-0.6,0.1 c-0.9,0-1.9-0.9-3.4-3.3C6.8,3.9,6.1,2.4,6.1,2.3c0,0-0.1-0.1-0.1-0.1C5.9,2.2,5.8,2.1,5.7,2.1l-4,0c0,0,0,0-0.1,0 C2.2,3.3,5,8.7,8.1,11.6c2.7,2.5,5.8,2.6,6.4,2.6l1.9,0c0,0,0.2-0.1,0.3-0.1c0,0,0-0.1,0-0.1c0-0.3,0-2.6,1.6-3 C18.4,10.9,18.5,10.9,18.6,10.9z"/></g></svg>
+        </a>
+      </li>
+      <li>
+        <a class="footer__social-icon" href="">
+          <svg class="footer__social-svg footer__social-svg--instagram" version="1.1" xmlns="http://www.w3.org/2000/svg" height="18" width="18" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 23" xml:space="preserve"><path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5 M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"/><path class="st0" d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6 c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S14.8,5.6,11.5,5.6L11.5,5.6z"/><circle class="st0" cx="17.6" cy="5.4" r="1.3"/></svg>
+        </a>
+      </li>
+    </ul>
+    <div class="footer__maid-by">
+      <span class="footer__maid-by-span">Разработано</span>
+      <a class="footer__htmlacademy-logo" href="#">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="34" x="0px" y="0px" viewBox="0 0 27 34" xml:space="preserve"><path class="st0" d="M13.6,0l-0.2,0L0,1.4V26l13.5,8L27,26l0,0V1.4L13.6,0z M19.3,16.8l-0.9,0.5l-5-3l0,1.4l3.8,2.3l-0.8,0.5l-3-1.8 l0,1.4l1.9,1.1l-1.8,1.1L2,13.6l11.4-6.8L25,13.5l-4.5,2.6l-7.1-4.2l0,1.4L19.3,16.8z M1.9,15.1l11.4,6.8l0,1l-8-4.7l0,1.4l8,4.8 l0,1.1l-8-4.7l0,1.4l8,4.8l0,0l8.2-4.9v-1.3l0-0.1V17l3.4-2v10l-11.6,6.9L1.9,24.9V15.1z M1.9,12.1V3.1l11.6-1.2l11.6,1.2v9 L13.5,5.3l0-0.1l-0.1,0l-0.1,0v0.1L1.9,12.1z"/></svg>
+      </a>
+    </div>
+  </footer>
   </body>
 </html>

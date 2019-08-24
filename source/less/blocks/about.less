@@ -8,17 +8,19 @@
     url("../../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position:
-    80px 160px,
-    0 0;
+    80px 149px,
+    0 -74px;
   background-size:
-    192px 255px,
-    320px 417px;
+    191px 231px,
+    320px 569px;
   background-color: @dark-blue;
 }
 
 .about__slogan {
   padding: 0 16px;
   padding-bottom: 203px;
+  margin-top: 18px;
+  margin-bottom: 43px;
   text-align: center;
   color: #ffffff;
   font-size: 36px;
@@ -27,10 +29,10 @@
 }
 
 .about__list {
+  display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
 }
 
 .about__item {
@@ -47,30 +49,20 @@
 
   &--button {
     width: 189px;
+    height: 40px;
     border-radius: 20px;
     background-color: #ffd74b;
     text-align: center;
-    vertical-align: middle;
-    padding-top: 7px;
+    line-height: 40px;
   }
 }
 
 .about__item-link {
-  display: block;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 40px;
   width: 40px;
-}
-
-.about__link-svg {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-
-  &--message-us {
-    top: 12px;
-    left: 11px;
-  }
 }
 
 .about__authorization {
@@ -82,4 +74,80 @@
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .about {
+    display: flex;
+    padding-bottom: 345px;
+    justify-content: center;
+    background-position:
+      310px 355px,
+      0 335px;
+    background-size:
+      372px 451px,
+      1479px 612px;
+  }
+
+  .about__slogan {
+    text-align: center;
+    width: 400px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .about__list {
+    position: absolute;
+    top: -30px;
+    right: 30px;
+  }
+
+  .about__item--call-us {
+    display: none;
+  }
+
+  .about__item--message-us {
+    display: none;
+  }
+
+  .about__item--button {
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about__item--call-us {
+    display: flex;
+  }
+
+  .about__item--message-us {
+    display: flex;
+  }
+
+  .about__item-link {
+    height: 50px;
+    width: 50px;
+  }
+
+  .about__list {
+    top: -90px;
+    right: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about {
+    justify-content: flex-start;
+    background-image:
+      url("../../img/traveller-illustration-tablet@1x.png"),
+      url("../../img/globe-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position:
+      450px 0,
+      0 0;
+    background-size:
+      372px 451px,
+      1479px 612px;
+  }
 }

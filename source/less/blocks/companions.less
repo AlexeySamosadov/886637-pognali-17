@@ -1,7 +1,8 @@
 .companions {
   position: relative;
-  padding: 25px 25px;
-  margin-top: -10px;
+  padding: 30px 24px;
+  padding-top: 80px;
+  margin-top: -30px;
   border: 1px solid @dark-blue;
   border-radius: 0 0 30px 30px;
   background-color: @dark-blue;
@@ -15,16 +16,11 @@
 }
 
 .companions__title {
-  padding-left: 25px;
-  color: @orange;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 24px;
+  padding-left: 24px;
 }
 
 .companions__text {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 0 25px 5px 25px;
   color: @white;
   font-size: 16px;
   font-weight: 300;
@@ -32,7 +28,18 @@
 
   &--important {
     font-weight: 700;
+    padding-bottom: 40px;
   }
+}
+
+.companions__person {
+  width: 270px;
+  height: 427px;
+  position: relative;
+  background-color: @white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: none;
 }
 
 .companions-person__level {
@@ -43,8 +50,8 @@
   width: 60px;
   height: 60px;
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 19px;
+  left: 17px;
   border-radius: 50%;
   color: @white;
   font-size: 24px;
@@ -55,13 +62,14 @@
 .companions-person__level-svg {
   position: absolute;
   top: 15px;
-  left: 15px;
+  left: 17px;
   fill: transparent;
   stroke-dasharray: 75 5;
   stroke: @orange;
   border-radius: 50%;
   stroke-width: 3px;
   transform: rotate(-15deg);
+  background-color: rgba(0, 0, 0, 0.3);
 
   &--level-80 {
     stroke-dasharray: 75 17;
@@ -74,6 +82,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
+  margin-top: 1px;
 
   &::before {
     content: "";
@@ -88,29 +97,44 @@
 }
 
 .companions-person__name {
+  display: block;
+  min-width: 50px;
+  position: relative;
+  margin: 0  auto;
+  margin-top: -5px;
+  margin-bottom: 15px;
   color: @blue;
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
   text-align: center;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 53px;
+    transform: translateY(-70%);
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    border-radius: 50%;
+  }
+}
+
+.companions-person__name--active::before {
+  background-color: green;
 }
 
 .companions-person__hashtags {
   display: flex;
   width: 180px;
-  margin: 0 auto;
+  margin: 1px auto;
   color: @dark-gray;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   text-align: center;
-}
-
-.companions__person {
-  position: relative;
-  background-color: @white;
-  border-radius: 10px;
-  margin-bottom: 10px;
 }
 
 .companions-person__image {
@@ -122,30 +146,83 @@
   justify-content: center;
   margin: 0 auto;
   margin-top: -30px;
+  margin-bottom: 10px;
 }
 
 .companions-person__flag {
   width: 35px;
   height: 24px;
   margin: 9px;
+  margin-right: 10px;
 }
 
 .companions-person__transport {
+  width: 150px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .companions-person__transport-link {
-  padding: 10px;
+  padding: 15px 5px;
+  margin-right: 7px;
+
+  &--bike {
+    margin-left: -4px;
+    margin-right: 0;
+  }
 }
 
 .companions-person__transport-icon {
   fill: gray;
   opacity: 0.3;
 
-  &--plane {
+  &--active {
     fill: @blue;
     opacity: 1;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .companions {
+    padding: 90px 40px;
+    margin-top: -60px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .companions__text {
+    width: 480px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .companions__text--important {
+    width: 350px;
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .companions__persons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .companions__person {
+    width: 285px;
+    height: 483px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .companions {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .companions__persons {
+    min-width: 650px;
   }
 }

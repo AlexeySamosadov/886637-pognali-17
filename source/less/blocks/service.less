@@ -1,7 +1,7 @@
 .service {
   position: relative;
-  padding: 50px 50px;
-  padding-bottom: 80px;
+  padding: 36px 49px;
+  padding-bottom: 61px;
   border: 1px solid @dark-blue;
   border-radius: 0 0 30px 30px;
   background-color: @dark-blue;
@@ -9,20 +9,44 @@
   z-index: 10;
 }
 
-.service__title {
-  color: @orange;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 24px;
-}
-
 .service__text {
+  margin-bottom: 19px;
   color: @white;
+  width: 210px;
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
 
   &--important {
     font-weight: 700;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .service {
+    padding-left: 75px;
+    padding-right: 390px;
+  }
+
+  .service__text {
+    font-size: 28px;
+    line-height: 33px;
+
+    &--important {
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 25px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .service {
+    padding-left: 135px;
+    padding-right: 700px;
+  }
+
+  .service__text--important {
+    margin-bottom: 100px;
   }
 }
