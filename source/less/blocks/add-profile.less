@@ -17,11 +17,6 @@
     height: 99px;
     background-image: url("../../img/rates@1x.png");
     background-size: 99px 99px;
-
-    @media (min-width: @tablet-width) {
-      top: 300px;
-      right: 45px;
-    }
   }
 }
 
@@ -53,7 +48,7 @@
     width: 34px;
     height: 34px;
     position: absolute;
-    top: -7px;
+    top: -9px;
     right: -65px;
     border-radius: 50%;
     content: "1";
@@ -69,7 +64,19 @@
       left: -90px;
       width: 67px;
       height: 67px;
+      font-size: 28px;
+      line-height: 72px;
     }
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 200px;
+    position: absolute;
+    top: -12px;
+    background-color: rgba(0, 0, 0, 0.05);
   }
 }
 
@@ -121,25 +128,65 @@
 @media (min-width: @tablet-width) {
   .add-profile {
     padding: 60px 40px;
+    padding-top: 110px;
+    margin-top: -60px;
     border-radius: 0 0 60px 60px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 206px;
+      right: 39px;
+      width: 198px;
+      height: 285px;
+      border-radius: 20px;
+      background-color: @gray;
+    }
+
+    &::after {
+      top: 466px;
+      right: 85px;
+    }
   }
 
   .add-profile__title {
+    margin-top: 23px;
     width: 100%;
     text-align: center;
   }
 
   .add-profile__services-list {
     width: 100%;
-    padding-left: 100px;
+    padding-left: 66px;
+    margin-top: 72px;
+    margin-bottom: 37px;
   }
 
   .add-profile__item {
     display: flex;
+    justify-content: space-between;
     font-size: 28px;
     line-height: 33px;
     padding-top: 19px;
-    padding-bottom: 19px;
+    padding-bottom: 15px;
+    padding-right: 55px;
+
+    &::after {
+      top: 1px;
+      width: 562px;
+    }
+  }
+
+  .add-profile__show-all-tariff {
+    margin: 0;
+    margin-left: -1px;
+    margin-top: -2px;
+    margin-bottom: 2px;
+  }
+
+  .add-profile__show-icon {
+    margin-right: 21px;
   }
 }
 

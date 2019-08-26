@@ -40,6 +40,7 @@
   border-radius: 10px;
   margin-bottom: 10px;
   border: none;
+  text-align: center;
 }
 
 .companions-person__level {
@@ -97,7 +98,7 @@
 }
 
 .companions-person__name {
-  display: block;
+  display: inline-block;
   min-width: 50px;
   position: relative;
   margin: 0  auto;
@@ -112,7 +113,7 @@
   &::before {
     position: absolute;
     top: 50%;
-    left: 53px;
+    left: -15px;
     transform: translateY(-70%);
     content: "";
     width: 5px;
@@ -146,7 +147,7 @@
   justify-content: center;
   margin: 0 auto;
   margin-top: -30px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .companions-person__flag {
@@ -186,32 +187,84 @@
 
 @media (min-width: @tablet-width) {
   .companions {
-    padding: 90px 40px;
+    padding: 162px 48px;
+    padding-bottom: 87px;
     margin-top: -60px;
     border-radius: 0 0 60px 60px;
   }
 
+  .companions__title {
+    margin-bottom: 57px;
+  }
+
   .companions__text {
     width: 480px;
+    padding-left: 26px;
     font-size: 28px;
     line-height: 33px;
+  }
+
+  .companions__text--text {
+    margin-bottom: 36px;
   }
 
   .companions__text--important {
     width: 350px;
     font-size: 21px;
     line-height: 25px;
+    margin-bottom: 18px;
   }
 
   .companions__persons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 0 2px;
   }
 
   .companions__person {
     width: 285px;
     height: 483px;
+    border-radius: 20px;
+  }
+
+  .companions-person__image {
+    border-radius: 20px 20px 0 0;
+    width: 285px;
+  }
+
+  .companions-person__level {
+    top: 24px;
+    left: 20px;
+  }
+
+  .companions-person__level-svg {
+    top: 20px;
+    left: 20px;
+  }
+
+  .companions-person__flags {
+    margin-bottom: 13px;
+  }
+
+  .companions-person__name {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 24px;
+
+    &::before {
+      left: -20px;
+    }
+  }
+
+  .companions-person__hashtags {
+    width: 230px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .companions-person__transport-link {
+    padding: 23px 5px;
   }
 }
 
