@@ -69,9 +69,11 @@
 
 @media (min-width: @tablet-width) {
   .travel-algoritm {
+    padding: 14px 30px;
+    padding-left: 40px;
     background-color: transparent;
-    background-image: linear-gradient(to bottom, transparent 40%, @dark-blue 40%);
-    margin-top: -155px;
+    background-image: linear-gradient(to bottom, transparent 60%, @dark-blue 60%);
+    margin-top: -195px;
   }
 
   .travel-algoritm__list {
@@ -80,36 +82,42 @@
   }
 
   .travel-algoritm__step {
-    width: 350px;
+    padding-top: 31px;
+    padding-left: 33px;
+    width: 340px;
     height: 140px;
     margin-top: 0;
     font-size: 24px;
     line-height: 24px;
 
     &::before {
-      top: 100px;
-      left: 35px;
+      top: 94px;
+      left: 33px;
       font-size: 30px;
     }
 
     &--1 {
       border-radius: 20px 0 0 0;
       width: 370px;
+      padding-right: 100px;
     }
 
     &--2 {
       border-radius: 20px 20px 0 0;
-      margin-left: -20px;
+      margin-left: -26px;
+      width: 343px;
     }
 
     &--3 {
       border-radius: 0 0 0 20px;
       width: 370px;
+      padding-right: 148px;
     }
 
     &--4 {
       border-radius: 0 0 20px 20px;
-      margin-left: -20px;
+      margin-left: -26px;
+      width: 343px;
     }
   }
 }
