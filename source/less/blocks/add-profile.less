@@ -192,27 +192,42 @@
 
 
 @media (min-width: @desktop-width) {
+  .add-profile {
+    padding-top: 143px;
+    min-height: 810px;
+  }
+
   .add-profile::after {
-    top: 200px;
     width: 198px;
     height: 198px;
+    top: 345px;
+    right: 132px;
     background-size: 198px 198px;
   }
 
   .add-profile::before {
     content: "";
     position: absolute;
-    top: 150px;
-    right: 300px;
+    top: 292px;
+    right: 246px;
     width: 444px;
     height: 300px;
     border-radius: 20px;
     background-color: @gray;
   }
 
+  .add-profile__services-list {
+    margin-top: 131px;
+    margin-left: 114px;
+  }
+
   .add-profile__item {
     display: flex;
     justify-content: space-between;
-    width: 1000px;
+    width: 870px;
+  }
+
+  .add-profile__show-all-tariff {
+    margin-left: 90px;
   }
 }

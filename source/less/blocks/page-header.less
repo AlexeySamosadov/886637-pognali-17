@@ -312,19 +312,32 @@
 
   .page-header {
     justify-content: flex-start;
-    padding: 55px 60px;
+    padding: 63px 143px;
+    padding-bottom: 17px;
   }
 
   .main-nav {
-    margin-left: 100px;
+    margin-left: 140px;
   }
 
   .main-nav__list {
     display: flex;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 11px;
+      left: -88px;
+      width: 60px;
+      height: 2px;
+      background-color: @white;
+    }
   }
 
   .main-nav__list-item {
-    padding: 10px 25px;
+    padding: 10px 17px;
     color: @white;
     font-size: 20px;
     font-weight: 500;

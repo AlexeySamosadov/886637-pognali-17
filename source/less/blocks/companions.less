@@ -272,10 +272,32 @@
 @media (min-width: @desktop-width) {
   .companions {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    padding: 151px 53px;
+    padding-bottom: 123px;
+    padding-left: 105px;
   }
 
   .companions__persons {
     min-width: 650px;
+    margin-top: 42px;
+    margin-left: 163px;
+    justify-content: flex-start;
+  }
+
+  .companions__person {
+    &--person-1 {
+      margin-right: 60px;
+    }
+
+    .companions-person__level-svg {
+      top: 22px;
+      left: 22px;
+    }
+
+    .companions-person__level {
+      top: 26px;
+      left: 22px;
+    }
   }
 }

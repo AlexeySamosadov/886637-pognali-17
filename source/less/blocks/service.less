@@ -53,11 +53,39 @@
 
 @media (min-width: @desktop-width) {
   .service {
-    padding-left: 135px;
-    padding-right: 700px;
+    position: relative;
+    margin-top: -171px;
+    padding: 97px 600px 30px 131px;
+    background-color: @dark-night-blue;
+    background-image: url("../../img/about-desktop@1x.png");
+    background-position: 750px 87px;
+    min-height: 752px;
+    border: none;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 213px;
+      height: 213px;
+      position: absolute;
+      top: 73px;
+      left: 62px;
+      border-radius: 20px;
+      background-color: @deep-blue;
+    }
+  }
+
+  .service__title {
+    margin-bottom: 58px;
+  }
+
+  .service__text {
+    width: 630px;
+    margin-top: 40px;
   }
 
   .service__text--important {
-    margin-bottom: 100px;
+    width: 430px;
+    margin-bottom: 84px;
   }
 }
