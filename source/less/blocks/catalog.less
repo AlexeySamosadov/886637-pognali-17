@@ -76,6 +76,14 @@
   padding: 10px 0;
   padding-right: 70px;
 
+  &--plane {
+    padding: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
   &::before {
     content: "";
     display: block;
@@ -90,7 +98,8 @@
 }
 
 .catalog__filter-input:focus ~ .catalog__filter-option-label,
-.catalog__filter-list-input:focus ~ .catalog__filter-list-label {
+.catalog__filter-list-input:focus ~ .catalog__filter-list-label,
+.catalog__filter-list-input:focus ~ .catalog__transport-label {
   outline: 1px solid @deep-blue;
   border-radius: 20px;
 }
@@ -287,8 +296,8 @@
   background-color: @light-gray;
 }
 
-.catalog__transport-button {
-  margin-top: 4px;
+.catalog__transport-label {
+  margin-top: 10px;
   border: none;
   background: transparent;
 
