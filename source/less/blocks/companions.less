@@ -65,7 +65,7 @@
   top: 15px;
   left: 17px;
   fill: transparent;
-  stroke-dasharray: 75 5;
+  stroke-dasharray: 75px 5px;
   stroke: @orange;
   border-radius: 50%;
   stroke-width: 3px;
@@ -73,7 +73,7 @@
   background-color: rgba(0, 0, 0, 0.3);
 
   &--level-80 {
-    stroke-dasharray: 75 17;
+    stroke-dasharray: 75px 17px;
     transform: rotate(-60deg);
   }
 }
@@ -268,7 +268,6 @@
   }
 }
 
-
 @media (min-width: @desktop-width) {
   .companions {
     display: flex;
@@ -276,6 +275,16 @@
     padding: 151px 53px;
     padding-bottom: 123px;
     padding-left: 105px;
+    background-color: @dark-night-blue;
+    background-image:
+      url("../../img/smolov-back-desktop@1x.png"),
+      url("../../img/rogovaya-back-desktop@1x.png");
+    background-position:
+      547px 192px,
+      190px 445px;
+    background-size:
+      143px 143px,
+      285px 285px;
   }
 
   .companions__persons {
@@ -283,6 +292,21 @@
     margin-top: 42px;
     margin-left: 163px;
     justify-content: flex-start;
+  }
+
+  .companions_content-wrap {
+    position: relative;
+  }
+
+  .companions_content-wrap::before {
+    content: "";
+    width: 213px;
+    height: 213px;
+    position: absolute;
+    top: -24px;
+    left: -47px;
+    border-radius: 20px;
+    background-color: @deep-blue;
   }
 
   .companions__person {

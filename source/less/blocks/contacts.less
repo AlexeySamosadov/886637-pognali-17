@@ -37,6 +37,10 @@
   font-weight: 300;
   line-height: 22px;
 
+  &--2 {
+    display: none;
+  }
+
   &--questions {
     width: 235px;
     margin-left: 50px;
@@ -163,6 +167,12 @@
     height: 68px;
     margin-right: 22px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 90px;
+    height: 90px;
+    margin-right: 33px;
+  }
 }
 
 .contacts__icon-svg {
@@ -248,9 +258,17 @@
   z-index: 4;
 
   @media (min-width: @tablet-width) {
-    height: 600px;
+    min-height: 600px;
     margin-top: -86px;
     background-image: url("../../img/map-tab.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 515px;
+    padding-top: 0;
+    background-image: url("../../img/map-desktop.png");
+    background-size: 1440px, 750px;
+    background-position: 1px -114px;
   }
 }
 
@@ -296,19 +314,31 @@
 @media (min-width: @desktop-width) {
   .contacts__wrap {
     padding-top: 129px;
+    min-height: 807px;
+  }
+
+  .contacts__title {
+    margin-bottom: 57px;
   }
 
   .contacts__email-form {
-    margin: 60px 132px;
+    margin: 57px 132px;
   }
 
   .contacts__email-button {
     width: 325px;
 
     &::before {
+      position: absolute;
+      right: 36px;
+    }
+
+    &::after {
+      position: absolute;
+      left: 30px;
+      top: 30px;
       height: 30px;
       width: 150px;
-      border: none;
       color: #1d2e5b;
       font-family: "Blogger Sans", "Arial", sans-serif;
       content: "Регистрация";
@@ -318,19 +348,59 @@
     }
   }
 
+  .contacts__text {
+    &--1 {
+      display: none;
+    }
+
+    &--2 {
+      display: block;
+    }
+
+    &--questions {
+      width: 780px;
+      margin-top: 67px;
+      margin-left: 331px;
+      margin-bottom: 43px;
+    }
+  }
+
+  .contacts__icon-svg {
+    width: 36px;
+    height: 36px;
+  }
+
   .contacts__tel-mail-wrap {
-    width: 900px;
+    width: 874px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+
+  .contacts__tel {
+    margin-right: 108px;
+  }
+
+  .contacts__adress-icon {
+    width: 90px;
+    height: 90px;
+    margin-right: 33px;
   }
 
   .contacts__wrap-adress {
     display: flex;
-    padding: 100px 100px;
+    min-height: 200px;
+    padding: 12px 100px;
+    padding-top: 116px;
   }
 
   .contacts__adress {
     margin-top: 0;
+    margin-right: 148px;
+  }
+
+  .contacts__adress-icon-svg {
+    width: 28px;
+    height: 43px;
   }
 }
