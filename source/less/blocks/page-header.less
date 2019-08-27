@@ -191,13 +191,17 @@
 }
 
 .page-header__list {
+  display: none;
   position: absolute;
   top: 458px;
   right: 24px;
-  display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
+
+  &--index {
+    display: flex;
+  }
 }
 
 .page-header__item {
@@ -258,6 +262,7 @@
   }
 
   .page-header__list {
+    display: flex;
     position: absolute;
     top: 40px;
     right: 40px;
