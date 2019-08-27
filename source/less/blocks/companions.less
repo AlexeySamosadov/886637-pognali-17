@@ -65,7 +65,7 @@
   top: 15px;
   left: 17px;
   fill: transparent;
-  stroke-dasharray: 75px 5px;
+  stroke-dasharray: 75px, 5px;
   stroke: @orange;
   border-radius: 50%;
   stroke-width: 3px;
@@ -73,7 +73,7 @@
   background-color: rgba(0, 0, 0, 0.3);
 
   &--level-80 {
-    stroke-dasharray: 75px 17px;
+    stroke-dasharray: 75px, 17px;
     transform: rotate(-60deg);
   }
 }
@@ -285,6 +285,12 @@
     background-size:
       143px 143px,
       285px 285px;
+  }
+
+  .companions__title,
+  .companions__text {
+    position: relative;
+    z-index: 15;
   }
 
   .companions__persons {
