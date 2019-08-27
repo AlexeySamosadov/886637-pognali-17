@@ -229,7 +229,8 @@
 .catalog__list-item {
   position: relative;
   width: 270px;
-  padding: 25px 25px;
+  padding: 14px 18px;
+  padding-bottom: 22px;
   margin-bottom: 10px;
   border-radius: 20px;
   background-color: @white;
@@ -237,6 +238,7 @@
 
 .catalog__wrap-person {
   display: flex;
+  margin-bottom: 15px;
 }
 
 .catalog__avatar {
@@ -245,14 +247,61 @@
   border-radius: 50%;
 }
 
+.catalog__avatar-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31px;
+  height: 31px;
+  position: absolute;
+  top: 54px;
+  left: 67px;
+  border-radius: 50%;
+  background-color: @light-gray;
+
+  &--active {
+    background-color: @pale-pink;
+  }
+}
+
+.catalog__avatar-svg {
+  fill: @dark-night-blue;
+
+  &--active {
+    fill: #f02323;
+  }
+}
+
 .catalog__name {
+  width: 105px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  margin-left: 16px;
   color: @blue;
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
+
+  &::before {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #f97676;
+    border-radius: 50%;
+  }
+
+  &--active {
+    &::before {
+      background-color: #81e31e;
+    }
+  }
 }
 
 .catalog__likes {
+  margin-left: 16px;
   color: @dark-blue;
   font-size: 14px;
   font-weight: 700;
@@ -261,29 +310,54 @@
 }
 
 .catalog__hashtags {
+  display: block;
+  margin-left: 8px;
   color: @dark-gray;
   font-size: 15px;
   font-weight: 400;
   line-height: 18px;
 }
 
-.catalog__visit-wishes-title,
-.catalog__transport-title,
-.catalog__level-title {
+.catalog__title {
   color: @dark-gray;
   font-size: 15px;
   font-weight: 400;
   line-height: 18px;
-}
 
-.catalog__level-title {
-  margin-bottom: 30px;
+  &--wishes {
+    margin-top: 13px;
+    margin-bottom: 11px;
+    margin-left: 8px;
+  }
+
+  &--transport {
+    margin-top: 9px;
+    margin-left: 9px;
+    margin-bottom: 9px;
+  }
+
+  &--level {
+    margin-bottom: 22px;
+    margin-right: auto;
+  }
 }
 
 .catalog__visit-wishes-list {
   list-style: none;
   padding: 0;
+  padding-left: 5px;
   margin: 0;
+}
+
+.catalog__wishes-list-svg {
+  margin-right: 10px;
+  margin-bottom: -2px;
+}
+
+.catalog__transport-list {
+  display: flex;
+  padding: 5px;
+  padding-bottom: 20px;
 }
 
 .catalog__transport-item {
@@ -327,6 +401,8 @@
 }
 
 .catalog__wishes-list-item {
+  padding: 2px;
+  margin-bottom: 3px;
   color: @blue;
   font-size: 15px;
   font-weight: 500;
@@ -336,11 +412,12 @@
 
 .catalog__level {
   position: absolute;
-  right: 40px;
-  bottom: 100px;
+  right: 26px;
+  bottom: 83px;
 }
 
 .catalog__level-item {
+  margin-left: 7px;
   color: @blue;
   font-size: 24px;
   font-weight: 700;
@@ -366,8 +443,8 @@
 
 .catalog__level-svg {
   position: absolute;
-  top: 43px;
-  left: -17px;
+  top: 45px;
+  left: -3px;
   fill: transparent;
   stroke-dasharray: 75px, 5px;
   stroke: @orange;
