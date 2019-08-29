@@ -49,7 +49,7 @@
 
 .catalog__filter-option-label {
   padding: 5px 10px;
-  padding-right: 130px;
+  padding-right: 180px;
   margin-left: -10px;
   font-size: 16px;
   font-weight: 700;
@@ -72,9 +72,9 @@
 }
 
 .catalog__filter-list-label {
+  display: flex;
   position: relative;
   padding: 10px 0;
-  padding-right: 70px;
 
   &--plane {
     padding: 0;
@@ -672,8 +672,17 @@
   }
 
   .catalog__deep-list {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
     padding-top: 3px;
     list-style: none;
+
+    &--transport {
+      padding-top: 0;
+      margin-top: -4px;
+      margin-left: -5px;
+    }
   }
 
   .catalog__filter-level-number {
@@ -708,12 +717,88 @@
   }
 
   .catalog__deep-icon {
+    &--plane {
+      width: 19px;
+      height: 21px;
+    }
+
+    &--bus {
+      width: 17px;
+      height: 21px;
+    }
+
+    &--bike {
+      width: 24px;
+      height: 21px;
+    }
+
     &--walking {
       width: 20px;
       height: 21px;
     }
   }
+}
 
+@media (min-width: @tablet-width) {
+  .catalog {
+    padding: 90px 40px;
+    margin-top: -55px;
+  }
+
+  .catalog__show-more {
+    padding-bottom: 25px;
+  }
+
+  .catalog__show-more-pages {
+    width: 100%;
+    padding: 0 18px 0 28px;
+    max-width: 950px;
+    background-color: @white;
+    border-radius: 20px;
+  }
+
+  .catalog__show-more-button {
+    width: 43px;
+    height: 100px;
+
+    &--back {
+      margin-left: auto;
+    }
+  }
+
+  .catalog__show-more-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 2px;
+    border-radius: 50%;
+    color: @dark-blue;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+
+    &--active {
+      background-color: @lemon;
+    }
+  }
+
+  .catalog__show-more-title {
+    margin-top: 5px;
+    margin-left: 42px;
+    margin-bottom: 36px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .catalog__show-more-title-svg {
+    width: 27px;
+    height: 27px;
+    top: -2px;
+    left: -50px;
+  }
 
   .catalog__list-item {
     width: 688px;
@@ -857,77 +942,111 @@
   }
 }
 
-@media (min-width: @tablet-width) {
+
+@media (min-width: @desktop-width) {
   .catalog {
-    padding: 90px 40px;
-    margin-top: -55px;
+    position: relative;
+    padding: 132px 60px;
+  }
+
+  .catalog__filter {
+    position: absolute;
+    min-height: 815px;
+    padding: 40px 35px 70px 47px;
+    top: 124px;
+    right: 60px;
+    width: 285px;
+  }
+
+  .catalog__filter-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .catalog__filter-option-label {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+
+    &::before {
+      top: 10px;
+      right: 12px;
+      border-width: 5px;
+    }
+  }
+
+  .catalog__filter-input:checked ~ .catalog__filter-option-label::before {
+    border-width: 5px;
+  }
+
+  .catalog__filter-list-label {
+    display: flex;
+    width: 200px;
+    padding-left: 20px;
+    margin-left: -10px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      left: -15px;
+    }
   }
 
   .catalog__deep-list {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    padding-top: 3px;
+    margin-top: 8px;
 
     &--transport {
-      padding-top: 0;
-      margin-top: -4px;
-      margin-left: -5px;
+      margin-top: 3px;
     }
   }
 
-  .catalog__show-more {
-    padding-bottom: 25px;
+  .catalog__filter-list-option {
+    margin: 0 12px;
+    padding: 0 5px;
   }
 
-  .catalog__show-more-pages {
-    width: 100%;
-    padding: 0 18px 0 28px;
-    max-width: 950px;
-    background-color: @white;
-    border-radius: 20px;
-  }
-
-  .catalog__show-more-button {
+  .catalog__deep-item {
     width: 43px;
-    height: 100px;
+    height: 43px;
+  }
 
-    &--back {
-      margin-left: auto;
+  .catalog__deep-icon {
+    &--plane {
+      width: 19px;
+      height: 21px;
+    }
+
+    &--bus {
+      width: 17px;
+      height: 21px;
+    }
+
+    &--bike {
+      width: 24px;
+      height: 21px;
+    }
+
+    &--walking {
+      width: 20px;
+      height: 21px;
     }
   }
 
-  .catalog__show-more-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    margin-top: 2px;
-    border-radius: 50%;
-    color: @dark-blue;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 30px;
-    text-transform: uppercase;
-
-    &--active {
-      background-color: @lemon;
-    }
+  .catalog__filter-level {
+    margin-top: 12px;
+    margin-bottom: 20px;
   }
 
-  .catalog__show-more-title {
-    margin-top: 5px;
-    margin-left: 42px;
-    margin-bottom: 36px;
+  .catalog__filter-level-number {
+    width: 96px;
+    height: 46px;
+    border-radius: 4px 0 0 4px;
     font-size: 20px;
-    line-height: 30px;
-  }
-
-  .catalog__show-more-title-svg {
-    width: 27px;
-    height: 27px;
-    top: -2px;
-    left: -50px;
+    font-weight: 500;
+    line-height: 18px;
   }
 }
