@@ -118,13 +118,44 @@
     border-radius: 0 0 60px 60px;
   }
 
+  .filter-by-country__region-item {
+    opacity: 0.3;
+    color: @dark-night-blue;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+
+    &--active {
+      opacity: 1;
+    }
+  }
   .filter-by-country__countries-list {
-    top: 55px;
-    right: 75px;
+    top: 75px;
+    right: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
   }
 
   .filter-by-country__block {
     min-height: 932px;
+  }
+
+  .filter-by-country__table-data {
+    width: 70px;
+    height: 70px;
+    opacity: 0.2;
+    background-color: @gray;
+    border: none;
+    color: @dark-night-blue;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    &--active {
+      opacity: 1;
+    }
   }
 }
 
