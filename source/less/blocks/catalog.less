@@ -702,6 +702,19 @@
     margin-left: auto;
   }
 
+  .catalog__deep-item {
+    width: 43px;
+    height: 43px;
+  }
+
+  .catalog__deep-icon {
+    &--walking {
+      width: 20px;
+      height: 21px;
+    }
+  }
+
+
   .catalog__list-item {
     width: 688px;
     padding: 34px 35px;
@@ -800,7 +813,7 @@
   }
 
   .catalog__level {
-    right: 43px;
+    right: 42px;
     bottom: 123px;
   }
 
@@ -808,7 +821,32 @@
     width: 60px;
     height: 60px;
     top: -17px;
-    left: -8px;
+    left: -10px;
+  }
+
+  .catalog__level-item {
+    &::before {
+      content: "level";
+      position: absolute;
+      top: 23px;
+      right: 1px;
+      opacity: 0.4;
+      color: @dark-gray;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 14px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 19px;
+      right: -3px;
+      width: 31px;
+      height: 1px;
+      background-color: @blue;
+      opacity: 0.1;
+    }
   }
 
   .catalog__transport-list {
