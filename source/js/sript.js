@@ -2,8 +2,9 @@ var menuButton = document.querySelector(".main-nav__toggle")
 var menuWrap = document.querySelector(".main-nav__wrapper");
 var svgOpen = document.querySelector(".main-nav__toggle-svg--open");
 var svgClose = document.querySelector(".main-nav__toggle-svg--close");
-var filter = document.querySelector(".filter-by-country__filter-title");
+var filter = document.querySelector(".filter-by-country__filter");
 var filterBlock = document.querySelector(".filter-by-country__block");
+var filterButtonClose = filterBlock.querySelector(".filter-by-country__button-close");
 
 
 menuButton.addEventListener("click", function() {
@@ -26,3 +27,7 @@ document.addEventListener("keydown", function(event){
 filter.addEventListener("click", function(event) {
   filterBlock.classList.toggle("filter-by-country__block--active")
 });
+
+filterButtonClose.addEventListener("click", function(){
+  filterBlock.classList.remove("filter-by-country__block--active")
+})
