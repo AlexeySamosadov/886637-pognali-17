@@ -9,7 +9,7 @@
 .catalog__filter {
   position: relative;
   min-height: 623px;
-  padding: 20px 25px 70px 25px;
+  padding: 20px 25px 70px 26px;
   margin-top: 10px;
   margin-bottom: 29px;
   border-radius: 20px;
@@ -161,8 +161,12 @@
 }
 
 .catalog__filter-list-option {
+  padding: 0;
+  margin: -2px 17px;
+  /*
   padding: 5px;
   margin: 3px 12px;
+   */
 }
 
 .catalog__filter-option-wrap {
@@ -273,6 +277,8 @@
   fill: @dark-night-blue;
 
   &--active {
+    width: 13px;
+    height: 11px;
     fill: #f02323;
   }
 }

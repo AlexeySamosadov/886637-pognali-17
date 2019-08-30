@@ -102,17 +102,23 @@
       </div>
       <section class="filter-by-country">
         <div class="filter-by-country__filter">
+          <button class="filter-by-country__filter-title filter-by-country__filter-title--filter-by-country">
             <svg class="filter-by-country__filter-icon1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="10" viewBox="0 0 15 10" xml:space="preserve"><rect x="4" width="2" height="2"/><rect width="3" height="2"/><rect x="7" width="8" height="2"/><rect x="4" y="8" width="2" height="2"/><rect y="8" width="3" height="2"/><rect x="7" y="8" width="8" height="2"/><rect x="9" y="4" width="2" height="2"/><rect x="12" y="4" width="3" height="2"/><rect y="4" width="8" height="2"/></svg>
-          <button class="filter-by-country__filter-title">Фильтрация по странам</button>
+            Фильтрация по странам
             <svg class="filter-by-country__filter-icon2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="3" viewBox="0 0 27 5" xml:space="preserve"><circle class="st0" cx="2.5" cy="2.5" r="2.5"/><circle class="st0" cx="13.5" cy="2.5" r="2.5"/><circle class="st0" cx="24.5" cy="2.5" r="2.5"/></svg>
-        </div>
-        <div class="filter-by-country__block">
+          </button>
           <ul class="filter-by-country__region-list">
             <li class="filter-by-country__region-item filter-by-country__region-item--active">Европа</li>
             <li class="filter-by-country__region-item">Азия</li>
             <li class="filter-by-country__region-item">Америка</li>
             <li class="filter-by-country__region-item">Острова</li>
           </ul>
+          <button class="filter-by-country__filter-title filter-by-country__filter-title--show-all">
+            Показать все
+            <svg class="filter-by-country__filter-icon2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="3" viewBox="0 0 27 5" xml:space="preserve"><circle class="st0" cx="2.5" cy="2.5" r="2.5"/><circle class="st0" cx="13.5" cy="2.5" r="2.5"/><circle class="st0" cx="24.5" cy="2.5" r="2.5"/></svg>
+          </button>
+        </div>
+        <div class="filter-by-country__block">
           <table class="filter-by-country__region-table">
             <tr class="filter-by-country__table-row">
               <td class="filter-by-country__table-data filter-by-country__table-data--active">
@@ -171,7 +177,7 @@
             </tr>
           </table>
           <button class="button filter-by-country__button-close">
-            <svg class="filter-by-country__button-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12" style="enable-background:new 0 0 12 12;" xml:space="preserve"><path class="st0" d="M6.9,6l4.9-4.9c0.2-0.2,0.2-0.6,0-0.9s-0.6-0.2-0.9,0L6,5.1L1.1,0.2c-0.2-0.2-0.6-0.2-0.9,0s-0.2,0.6,0,0.9L5.1,6l-4.9,4.9c-0.2,0.2-0.2,0.6,0,0.9v0c0.2,0.2,0.6,0.2,0.9,0L6,6.9l4.9,4.9c0.2,0.2,0.6,0.2,0.9,0v0c0.2-0.2,0.2-0.6,0-0.9L6.9,6z"/></svg>
+            <svg class="filter-by-country__button-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12" xml:space="preserve"><path class="st0" d="M6.9,6l4.9-4.9c0.2-0.2,0.2-0.6,0-0.9s-0.6-0.2-0.9,0L6,5.1L1.1,0.2c-0.2-0.2-0.6-0.2-0.9,0s-0.2,0.6,0,0.9L5.1,6l-4.9,4.9c-0.2,0.2-0.2,0.6,0,0.9v0c0.2,0.2,0.6,0.2,0.9,0L6,6.9l4.9,4.9c0.2,0.2,0.6,0.2,0.9,0v0c0.2-0.2,0.2-0.6,0-0.9L6.9,6z"/></svg>
             Свернуть
           </button>
         </div>
@@ -238,7 +244,7 @@
             </li>
             <li class="catalog__filter-option catalog__filter-option--transport">
               <input class="catalog__filter-input visually-hidden" type="checkbox" id="filter-transport" checked>
-              <label class="catalog__filter-option-label" for="filter-transport">Транспорт:</label>
+              <label class="catalog__filter-option-label" for="filter-transport">Транспорт</label>
               <ul class="catalog__deep-list catalog__deep-list--transport">
                 <li class="catalog__transport-item catalog__deep-item">
                   <input class="catalog__filter-list-input visually-hidden" type="checkbox" id="filter-plane">

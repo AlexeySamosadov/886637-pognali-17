@@ -17,15 +17,20 @@
 }
 
 .filter-by-country__filter-title {
-  margin-left: 12px;
-  margin-right: 29px;
+  margin: 0;
+  padding: 13px 0;
   background-color: transparent;
   border: none;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   color: @dark-night-blue;
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
   text-transform: uppercase;
+
+  &--show-all {
+    display: none;
+  }
 }
 
 .filter-by-country__filter-icon1,
@@ -34,11 +39,19 @@
   fill: @saphire-blue;
 }
 
+.filter-by-country__filter-icon1 {
+  margin-right: 8px;
+}
+
+.filter-by-country__filter-icon2 {
+  margin-bottom: 4px;
+  margin-left: 23px;
+}
+
 .filter-by-country__block {
   position: relative;
   display: none;
-  padding: 27px 25px;
-  padding-bottom: 50px;
+  padding: 132px 25px 50px 25px;
   min-height: 717px;
 
   &--active {
@@ -47,9 +60,17 @@
 }
 
 .filter-by-country__region-list {
+  position: absolute;
+  top: 106px;
+  left: 50px;
+  display: none;
   list-style: none;
   padding: 0;
   margin: 0;
+
+  &--active {
+    display: block;
+  }
 }
 
 .filter-by-country__region-item {
@@ -113,9 +134,31 @@
 
 
 @media (min-width: @tablet-width) {
+  .filter-by-country__filter {
+    display: flex;
+  }
+
+  .filter-by-country__filter-title {
+    &--filter-by-country {
+      display: none;
+    }
+
+    &--show-all {
+      display: block;
+    }
+  }
+
   .filter-by-country {
     padding: 85px 75px 45px 75px;
     border-radius: 0 0 60px 60px;
+  }
+
+  .filter-by-country__region-list {
+    position: relative;
+    display: flex;
+    top: 0;
+    left: 0;
+    margin-right: 10px;
   }
 
   .filter-by-country__region-item {
@@ -124,6 +167,7 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
+    margin-right: 27px;
 
     &--active {
       opacity: 1;
