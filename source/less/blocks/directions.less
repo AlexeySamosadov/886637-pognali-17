@@ -61,14 +61,13 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  align-content: center;
   padding: 22px 25px;
   margin-top: -11px;
   border-radius: 10px;
   background-color: @white;
 
   &--last {
-    background: linear-gradient(to bottom, @white, #edeff6);
+    background: linear-gradient(to bottom, @white 30%, #edeff6);
   }
 }
 
@@ -95,10 +94,10 @@
     left: -17px;
     width: 11px;
     height: 11px;
-    background-image: url("../../img/business.svg");
+    background-image: url("../../img/user.svg");
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.1;
+    opacity: 0.3;
   }
 }
 
@@ -120,15 +119,48 @@
 
 @media (min-width: @tablet-width) {
   .directions {
-    padding: 60px 75px;
+    padding: 62px 74px;
+    padding-bottom: 80px;
     border-radius: 0 0 60px 60px;
+    background-image: url("../../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: 438px 90px;
+  }
+
+  .directions__cards-wrap {
+    position: relative;
+    margin-bottom: 48px;
+
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -36px;
+      left: -36px;
+      width: 141px;
+      height: 141px;
+      border-radius: 20px;
+      background-color: @gray;
+    }
+  }
+
+  .directions__title {
+    margin-top: 22px;
+    margin-left: -2px;
+    margin-bottom: 58px;
   }
 
   .directions__text {
     width: 350px;
+    margin-left: 0;
     font-size: 28px;
     font-weight: 300;
     line-height: 33px;
+  }
+
+  .directions__content-wrap {
+    margin-bottom: 105px;
   }
 
   .directions__countries {
@@ -137,14 +169,19 @@
 
   .directions__countries-wrap {
     flex-direction: column;
-    align-content: flex-start;
-    width: 618px;
+    align-items: flex-start;
+    padding: 15px 10px;
+    width: 434px;
     height: 140px;
     margin: 0;
+    border-radius: 20px 0 0 20px;
     order: 1;
   }
 
   .directions__countries-title {
+    margin-top: 16px;
+    margin-bottom: 5px;
+    margin-left: 20px;
     font-size: 24px;
     line-height: 24px;
   }
@@ -152,10 +189,13 @@
   .directions__slogan {
     font-size: 20px;
     line-height: 18px;
+    margin-left: 20px;
+    margin-bottom: 17px;
   }
 
   .directions__quantity-messages {
     margin: 0;
+    margin-left: 50px;
     order: 3;
     font-size: 20px;
     font-weight: 500;
@@ -164,6 +204,8 @@
     &::before {
       width: 20px;
       height: 20px;
+      top: 3px;
+      left: -30px;
     }
   }
 
@@ -172,10 +214,11 @@
     order: 2;
     width: 186px;
     height: 140px;
+    border-radius: 0 20px 20px 0;
   }
 
   .directions__countries-flag {
-    top: 20px;
+    top: 16px;
     left: -35px;
     width: 70px;
     height: 47px;
@@ -189,25 +232,50 @@
 
 @media (min-width: @desktop-width) {
   .directions {
+    min-height: 760px;
+    padding: 60px 90px;
+    padding-top: 153px;
+    padding-left: 130px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 60px 90px;
+    background-position: 1090px 97px;
   }
 
   .directions__cards-wrap {
+    margin-top: 17px;
     order: -1;
+
+    &::before {
+      top: -72px;
+      left: -72px;
+    }
   }
 
   .directions__content-wrap {
-    margin-right: 150px;
+    margin-right: 113px;
   }
 
   .directions__title {
     padding-bottom: 0;
+    margin-left: 0;
+  }
+
+  .directions__slogan {
+    margin-bottom: 23px;
   }
 
   .directions__countries-wrap {
-    width: 370px;
+    width: 373px;
+    padding-top: 8px;
+  }
+
+  .directions__countries-picture {
+    width: 187px;
+  }
+
+  .directions__countries-flag {
+    top: 24px;
+    left: -35px;
   }
 }

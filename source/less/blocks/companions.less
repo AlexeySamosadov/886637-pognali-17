@@ -40,6 +40,7 @@
   border-radius: 10px;
   margin-bottom: 10px;
   border: none;
+  text-align: center;
 }
 
 .companions-person__level {
@@ -64,7 +65,7 @@
   top: 15px;
   left: 17px;
   fill: transparent;
-  stroke-dasharray: 75 5;
+  stroke-dasharray: 75px, 5px;
   stroke: @orange;
   border-radius: 50%;
   stroke-width: 3px;
@@ -72,7 +73,7 @@
   background-color: rgba(0, 0, 0, 0.3);
 
   &--level-80 {
-    stroke-dasharray: 75 17;
+    stroke-dasharray: 75px, 17px;
     transform: rotate(-60deg);
   }
 }
@@ -97,7 +98,7 @@
 }
 
 .companions-person__name {
-  display: block;
+  display: inline-block;
   min-width: 50px;
   position: relative;
   margin: 0  auto;
@@ -112,18 +113,18 @@
   &::before {
     position: absolute;
     top: 50%;
-    left: 53px;
+    left: -15px;
     transform: translateY(-70%);
     content: "";
     width: 5px;
     height: 5px;
-    background-color: red;
+    background-color: #f97676;
     border-radius: 50%;
   }
 }
 
 .companions-person__name--active::before {
-  background-color: green;
+  background-color: #81e31e;
 }
 
 .companions-person__hashtags {
@@ -146,7 +147,7 @@
   justify-content: center;
   margin: 0 auto;
   margin-top: -30px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .companions-person__flag {
@@ -186,43 +187,147 @@
 
 @media (min-width: @tablet-width) {
   .companions {
-    padding: 90px 40px;
+    padding: 162px 48px;
+    padding-bottom: 87px;
     margin-top: -60px;
     border-radius: 0 0 60px 60px;
   }
 
+  .companions__title {
+    margin-bottom: 57px;
+  }
+
   .companions__text {
     width: 480px;
+    padding-left: 26px;
     font-size: 28px;
     line-height: 33px;
+  }
+
+  .companions__text--text {
+    margin-bottom: 36px;
   }
 
   .companions__text--important {
     width: 350px;
     font-size: 21px;
     line-height: 25px;
+    margin-bottom: 18px;
   }
 
   .companions__persons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 0 2px;
   }
 
   .companions__person {
     width: 285px;
     height: 483px;
+    border-radius: 20px;
+  }
+
+  .companions-person__image {
+    border-radius: 20px 20px 0 0;
+    width: 285px;
+  }
+
+  .companions-person__level {
+    top: 24px;
+    left: 20px;
+  }
+
+  .companions-person__level-svg {
+    top: 20px;
+    left: 20px;
+  }
+
+  .companions-person__flags {
+    margin-bottom: 13px;
+  }
+
+  .companions-person__name {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 24px;
+
+    &::before {
+      left: -20px;
+    }
+  }
+
+  .companions-person__hashtags {
+    width: 230px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .companions-person__transport-link {
+    padding: 23px 5px;
   }
 }
-
 
 @media (min-width: @desktop-width) {
   .companions {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    padding: 151px 53px;
+    padding-bottom: 123px;
+    padding-left: 105px;
+    background-color: @dark-night-blue;
+    background-image:
+      url("../../img/smolov-back-desktop@1x.png"),
+      url("../../img/rogovaya-back-desktop@1x.png");
+    background-position:
+      547px 192px,
+      190px 445px;
+    background-size:
+      143px 143px,
+      285px 285px;
+  }
+
+  .companions__title,
+  .companions__text {
+    position: relative;
+    z-index: 15;
   }
 
   .companions__persons {
     min-width: 650px;
+    margin-top: 42px;
+    margin-left: 163px;
+    justify-content: flex-start;
+  }
+
+  .companions_content-wrap {
+    position: relative;
+  }
+
+  .companions_content-wrap::before {
+    content: "";
+    width: 213px;
+    height: 213px;
+    position: absolute;
+    top: -24px;
+    left: -47px;
+    border-radius: 20px;
+    background-color: @deep-blue;
+  }
+
+  .companions__person {
+    &--person-1 {
+      margin-right: 60px;
+    }
+
+    .companions-person__level-svg {
+      top: 22px;
+      left: 22px;
+    }
+
+    .companions-person__level {
+      top: 26px;
+      left: 22px;
+    }
   }
 }

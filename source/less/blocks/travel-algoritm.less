@@ -69,9 +69,11 @@
 
 @media (min-width: @tablet-width) {
   .travel-algoritm {
+    padding: 14px 30px;
+    padding-left: 40px;
     background-color: transparent;
-    background-image: linear-gradient(to bottom, transparent 40%, @dark-blue 40%);
-    margin-top: -155px;
+    background-image: linear-gradient(to bottom, transparent 60%, @dark-blue 60%);
+    margin-top: -195px;
   }
 
   .travel-algoritm__list {
@@ -80,36 +82,42 @@
   }
 
   .travel-algoritm__step {
-    width: 350px;
+    padding-top: 31px;
+    padding-left: 33px;
+    width: 340px;
     height: 140px;
     margin-top: 0;
     font-size: 24px;
     line-height: 24px;
 
     &::before {
-      top: 100px;
-      left: 35px;
+      top: 94px;
+      left: 33px;
       font-size: 30px;
     }
 
     &--1 {
       border-radius: 20px 0 0 0;
       width: 370px;
+      padding-right: 100px;
     }
 
     &--2 {
       border-radius: 20px 20px 0 0;
-      margin-left: -20px;
+      margin-left: -26px;
+      width: 343px;
     }
 
     &--3 {
       border-radius: 0 0 0 20px;
       width: 370px;
+      padding-right: 148px;
     }
 
     &--4 {
       border-radius: 0 0 20px 20px;
-      margin-left: -20px;
+      margin-left: -26px;
+      width: 343px;
     }
   }
 }
@@ -117,18 +125,23 @@
 @media (min-width: @desktop-width) {
   .travel-algoritm {
     padding: 0 60px;
-    margin-top: -500px;
+    min-height: 400px;
+    margin-top: -327px;
+    background-color: transparent;
+    margin-bottom: 0;
   }
 
   .travel-algoritm__step {
     width: 315px;
     height: 107px;
     font-size: 24px;
+    padding-left: 35px;
+    padding-top: 30px;
 
     &::before {
       position: absolute;
-      left: 280px;                 /* right: 33px;   right тоже перестал работать */
-      top: 25px;
+      left: 270px;                 /* right: 33px;   right тоже перестал работать */
+      top: 33px;
       color: @white;
       font-size: 24px;
     }
@@ -139,23 +152,35 @@
     }
 
     &--2 {
-      width: 345px;
+      width: 360px;
       border-radius: 20px 0 0 20px;
-      margin-left: -20px;
+      padding-left: 28px;
+      margin-left: -28px;
+
+      &::before {
+        left: 300px;
+      }
     }
 
     &--3 {
       border-radius: 20px 0 0 20px;
-      width: 345px;
-      margin-left: -20px;
+      width: 360px;
+      padding-left: 30px;
+      padding-right: 135px;
+      margin-left: -16px;
+
+      &::before {
+        left: 300px;
+      }
     }
 
     &--4 {
       border-radius: 20px;
-      margin-left: -20px;
+      padding-left: 31px;
+      margin-left: -17px;
 
       &::before {
-        left: 265px;
+        left: 270px;
       }
     }
   }

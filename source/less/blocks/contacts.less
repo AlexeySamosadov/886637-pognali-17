@@ -14,6 +14,13 @@
   border-radius: 0 0 30px 30px;
   background-color: @dark-night-blue;
   z-index: 6;
+
+  @media (min-width: @tablet-width) {
+    padding: 57px 0;
+    border-radius: 0 0 60px 60px;
+    padding-top: 98px;
+    margin-top: -60px;
+  }
 }
 
 .contacts__title {
@@ -30,14 +37,23 @@
   font-weight: 300;
   line-height: 22px;
 
+  &--2 {
+    display: none;
+  }
+
   &--questions {
     width: 235px;
     margin-left: 50px;
     margin-bottom: 18px;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 80px;
+      margin-bottom: 42px;
+    }
   }
 
   @media (min-width: @tablet-width) {
-    width: 606px;
+    width: 610px;
     font-size: 28px;
     font-weight: 300;
     line-height: 33px;
@@ -52,6 +68,11 @@
 .contacts__email-form {
   position: relative;
   margin: 29px 25px;
+
+  @media (min-width: @tablet-width) {
+    margin: 65px 75px;
+    margin-bottom: 59px;
+  }
 }
 
 .contacts__email-input {
@@ -69,7 +90,10 @@
 
   @media (min-width: @tablet-width) {
     height: 81px;
+    padding-left: 34px;
     border-radius: 20px;
+    font-size: 24px;
+    line-height: 24px;
   }
 }
 
@@ -107,6 +131,10 @@
 
 .contacts__tel-mail-wrap {
   margin-left: 26px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 76px;
+  }
 }
 
 .contacts__tel,
@@ -133,6 +161,18 @@
   height: 45px;
   border-radius: 50%;
   background-color: @saphire-blue;
+
+  @media (min-width: @tablet-width) {
+    width: 68px;
+    height: 68px;
+    margin-right: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 90px;
+    height: 90px;
+    margin-right: 33px;
+  }
 }
 
 .contacts__icon-svg {
@@ -146,7 +186,6 @@
 .contacts__wrap-adress {
   position: relative;
   padding: 35px 25px;
-  padding-top: 35px;
   margin-top: -30px;
   border-radius: 0 0 30px 30px;
   background-color: @lemon;
@@ -154,7 +193,8 @@
 
   @media (min-width: @tablet-width) {
     border-radius: 0 0 60px 60px;
-    padding: 60px 45px;
+    padding: 81px 75px;
+    padding-bottom: 85px;
     margin-top: -60px;
   }
 }
@@ -175,6 +215,7 @@
     min-width: 470px;
     font-size: 28px;
     line-height: 28px;
+    margin-bottom: 43px;
   }
 }
 
@@ -188,6 +229,12 @@
   flex-shrink: 0;
   background-color: @saphire-blue;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 68px;
+    height: 68px;
+    margin-right: 25px;
+  }
 }
 
 .contacts__adress-icon-svg {
@@ -211,9 +258,17 @@
   z-index: 4;
 
   @media (min-width: @tablet-width) {
-    height: 700px;
-    margin-top: -30px;
+    min-height: 600px;
+    margin-top: -86px;
     background-image: url("../../img/map-tab.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 515px;
+    padding-top: 0;
+    background-image: url("../../img/map-desktop.png");
+    background-size: 1440px, 750px;
+    background-position: 1px -114px;
   }
 }
 
@@ -245,22 +300,107 @@
       height: 26px;
     }
   }
+
+  .contacts__title {
+    margin-bottom: 55px;
+  }
+
+  .contacts__icon-svg {
+    width: 27px;
+    height: 27px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .contacts__wrap {
+    padding-top: 129px;
+    min-height: 807px;
+  }
+
+  .contacts__title {
+    margin-bottom: 57px;
+  }
+
+  .contacts__email-form {
+    margin: 57px 132px;
+  }
+
+  .contacts__email-button {
+    width: 325px;
+
+    &::before {
+      position: absolute;
+      right: 36px;
+    }
+
+    &::after {
+      position: absolute;
+      left: 30px;
+      top: 30px;
+      height: 30px;
+      width: 150px;
+      color: #1d2e5b;
+      font-family: "Blogger Sans", "Arial", sans-serif;
+      content: "Регистрация";
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 24px;
+    }
+  }
+
+  .contacts__text {
+    &--1 {
+      display: none;
+    }
+
+    &--2 {
+      display: block;
+    }
+
+    &--questions {
+      width: 780px;
+      margin-top: 67px;
+      margin-left: 331px;
+      margin-bottom: 43px;
+    }
+  }
+
+  .contacts__icon-svg {
+    width: 36px;
+    height: 36px;
+  }
+
   .contacts__tel-mail-wrap {
-    width: 900px;
+    width: 874px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+
+  .contacts__tel {
+    margin-right: 108px;
+  }
+
+  .contacts__adress-icon {
+    width: 90px;
+    height: 90px;
+    margin-right: 33px;
   }
 
   .contacts__wrap-adress {
     display: flex;
-    padding: 100px 100px;
+    min-height: 200px;
+    padding: 12px 100px;
+    padding-top: 116px;
   }
 
   .contacts__adress {
     margin-top: 0;
+    margin-right: 148px;
+  }
+
+  .contacts__adress-icon-svg {
+    width: 28px;
+    height: 43px;
   }
 }

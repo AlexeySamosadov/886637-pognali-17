@@ -1,10 +1,12 @@
 .feedback {
   padding: 1px 25px;
+  padding-top: 30px;
   background-color: @dark-blue;
 }
 
 .feedback__text {
   width: 150px;
+  margin-bottom: 18px;
   margin-left: 25px;
   color: @white;
   font-size: 16px;
@@ -14,6 +16,7 @@
 
 .feedback__autor {
   width: 155px;
+  margin-bottom: 15px;
   margin-left: 25px;
   color: @white;
   font-size: 16px;
@@ -24,20 +27,20 @@
 @media (min-width: @tablet-width) {
   .feedback {
     position: absolute;
-    top: 400px;
-    left: 41px;
+    top: 266px;
+    left: 24px;
     background-color: transparent;
   }
 
   .feedback__text {
-    width: 257px;
+    width: 260px;
     font-size: 28px;
     line-height: 33px;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
   }
 
   .feedback__autor {
-    width: 243px;
+    width: 270px;
     font-size: 21px;
     line-height: 25px;
   }
@@ -45,7 +48,7 @@
 
 @media (min-width: @desktop-width) {
   .feedback {
-    top: 50px;
-    left: 1000px;  /* Почему-то не работает сваойсто Right*/
+    top: 54px;
+    left: 1044px;  /* Почему-то не работает сваойсто Right*/
   }
 }

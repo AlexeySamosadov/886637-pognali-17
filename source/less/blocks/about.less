@@ -1,24 +1,24 @@
 .about {
+  min-height: 405px;
   padding: 0 25px;
   padding-top: 1px;
   padding-bottom: 10px;
   color: @white;
   background-image:
-    url("../../img/traveller-illustration-tablet@1x.png"),
+    url("../../img/traveller-illustration-mobile@1x.png"),
     url("../../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position:
     80px 149px,
     0 -74px;
   background-size:
-    191px 231px,
+    191px 255px,
     320px 569px;
   background-color: @dark-blue;
 }
 
 .about__slogan {
   padding: 0 16px;
-  padding-bottom: 203px;
   margin-top: 18px;
   margin-bottom: 43px;
   text-align: center;
@@ -28,126 +28,52 @@
   line-height: 40px;
 }
 
-.about__list {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.about__item {
-  &--call-us {
-    background-color: #ff8d30;
-    border-radius: 50%;
-  }
-
-  &--message-us {
-
-    background-color: #ffbd30;
-    border-radius: 50%;
-  }
-
-  &--button {
-    width: 189px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: #ffd74b;
-    text-align: center;
-    line-height: 40px;
-  }
-}
-
-.about__item-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  width: 40px;
-}
-
-.about__authorization {
-  width: 112px;
-  height: 16px;
-  color: #161c35;
-  font-family: "Blogger Sans", "Arial", sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-
 @media (min-width: @tablet-width) {
   .about {
     display: flex;
-    padding-bottom: 345px;
+    min-height: 900px;
     justify-content: center;
+    background-color: @dark-blue;
+    background-image:
+      url("../../img/traveller-illustration-tablet@1x.png"),
+      url("../../img/globe-back-tablet@1x.jpg");
     background-position:
-      310px 355px,
-      0 335px;
+      284px 268px,
+      -355px 247px;
     background-size:
       372px 451px,
       1479px 612px;
   }
 
   .about__slogan {
+    width: 430px;
+    margin-top: 27px;
     text-align: center;
-    width: 400px;
     font-size: 60px;
     line-height: 70px;
-  }
-
-  .about__list {
-    position: absolute;
-    top: -30px;
-    right: 30px;
-  }
-
-  .about__item--call-us {
-    display: none;
-  }
-
-  .about__item--message-us {
-    display: none;
-  }
-
-  .about__item--button {
-    height: 50px;
-    line-height: 50px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .about__item--call-us {
-    display: flex;
-  }
-
-  .about__item--message-us {
-    display: flex;
-  }
-
-  .about__item-link {
-    height: 50px;
-    width: 50px;
-  }
-
-  .about__list {
-    top: -90px;
-    right: 60px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .about {
     justify-content: flex-start;
+    min-width: 1000px;
+    min-height: 736px;
     background-image:
-      url("../../img/traveller-illustration-tablet@1x.png"),
-      url("../../img/globe-back-mobile@1x.jpg");
+      url("../../img/traveller-illustration-desktop@1x.png"),
+      url("../../img/globe-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position:
-      450px 0,
-      0 0;
+      604px 0,
+      -177px -112px;
     background-size:
-      372px 451px,
-      1479px 612px;
+      431px 640px,
+      1800px 750px;
+  }
+
+  .about__slogan {
+    margin-top: 100px;
+    margin-left: 86px;
+    text-align: left;
   }
 }
