@@ -266,9 +266,13 @@
   @media (min-width: @desktop-width) {
     min-height: 515px;
     padding-top: 0;
-    background-image: url("../../img/map-desktop.png");
+    background-image: url("../../img/map-desktop@1x.jpg");
     background-size: 1440px, 750px;
     background-position: 1px -114px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/map-desktop@2x.jpg");
+    }
   }
 }
 

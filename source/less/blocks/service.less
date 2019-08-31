@@ -59,8 +59,13 @@
     background-color: @dark-night-blue;
     background-image: url("../../img/about-desktop@1x.png");
     background-position: 750px 87px;
+    background-size: 630px 665px;
     min-height: 752px;
     border: none;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/about-desktop@2x.png");
+    }
 
     &::before {
       content: "";
