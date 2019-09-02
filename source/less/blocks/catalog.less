@@ -247,7 +247,7 @@
 
 .catalog__wrap-person {
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
 }
 
 .catalog__avatar {
@@ -342,6 +342,10 @@
     margin-top: 13px;
     margin-bottom: 11px;
     margin-left: 8px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 5px;
+    }
   }
 
   &--transport {
@@ -811,7 +815,7 @@
     width: 688px;
     padding: 34px 35px;
     padding-bottom: 15px;
-    margin-bottom: 41px;
+    margin-bottom: 40px;
   }
 
   .catalog__wrap-person {
@@ -1017,33 +1021,6 @@
     padding: 0 5px;
   }
 
-  .catalog__deep-item {
-    width: 43px;
-    height: 43px;
-  }
-
-  .catalog__deep-icon {
-    &--plane {
-      width: 19px;
-      height: 21px;
-    }
-
-    &--bus {
-      width: 17px;
-      height: 21px;
-    }
-
-    &--bike {
-      width: 24px;
-      height: 21px;
-    }
-
-    &--walking {
-      width: 20px;
-      height: 21px;
-    }
-  }
-
   .catalog__filter-level {
     margin-top: 12px;
     margin-bottom: 20px;
@@ -1122,6 +1099,34 @@
       margin-top: 0;
       margin-right: 5px;
       margin-left: -9px;
+    }
+  }
+
+  .catalog__deep-item {
+    width: 43px;
+    height: 43px;
+    margin-right: 0;
+  }
+
+  .catalog__deep-icon {
+    &--plane {
+      width: 19px;
+      height: 21px;
+    }
+
+    &--bus {
+      width: 17px;
+      height: 21px;
+    }
+
+    &--bike {
+      width: 24px;
+      height: 21px;
+    }
+
+    &--walking {
+      width: 20px;
+      height: 21px;
     }
   }
 

@@ -32,17 +32,59 @@
   width: 270px;
   height: 110px;
   border-radius: 10px 10px 0 0;
+  background-size: 270px 110px;
+
+  @media (min-width: @tablet-width) {
+    background-size: 186px 140px;
+  }
 
   &--thailand {
     background-image: url("../../img/thailand-mobile@1x.jpg");
+
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/thailand-mobile@2x.jpg");
+    }
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../../img/thailand-desktop@1x.jpg");
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../../img/thailand-desktop@2x.jpg");
+      }
+    }
   }
 
   &--france {
     background-image: url("../../img/france-mobile@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/france-mobile@2x.jpg");
+    }
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../../img/france-desktop@1x.jpg");
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../../img/france-desktop@2x.jpg");
+      }
+    }
   }
 
   &--chehia {
     background-image: url("../../img/czech-mobile@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/czech-mobile@2x.jpg");
+    }
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../../img/czech-desktop@1x.jpg");
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../../img/czech-desktop@2x.jpg");
+      }
+    }
   }
 }
 
@@ -120,11 +162,16 @@
 @media (min-width: @tablet-width) {
   .directions {
     padding: 62px 74px;
-    padding-bottom: 80px;
+    padding-bottom: 78px;
     border-radius: 0 0 60px 60px;
     background-image: url("../../img/flags-back@1x.png");
     background-repeat: no-repeat;
     background-position: 438px 90px;
+    background-size: 289px 575px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/flags-back@2x.png");
+    }
   }
 
   .directions__cards-wrap {
@@ -136,7 +183,7 @@
       content: "";
       display: block;
       position: absolute;
-      top: -36px;
+      top: -39px;
       left: -36px;
       width: 141px;
       height: 141px;
