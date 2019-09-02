@@ -1,10 +1,14 @@
 .add-plan {
-  padding: 0 25px;
+  position: relative;
+  padding: 10px 25px;
+  margin-top: -30px;
   border-radius: 30px;
-  background-color: @gray-blue;
+  background-color: @blue-gray;
+  z-index: 2;
 }
 
 .add-plan__title {
+  margin-bottom: 29px;
   color: @blue;
   font-size: 24px;
   font-weight: 700;
@@ -12,11 +16,15 @@
 }
 
 .add-plan__step {
-  padding: 0 25px;
+  padding: 4px 25px;
+  padding-right: 23px;
+  border-radius: 10px;
   background-color: @white;
 }
 
 .add-plan__step-title {
+  width: 200px;
+  margin-bottom: 0;
   color: @blue;
   font-size: 20px;
   font-weight: 700;
@@ -24,6 +32,7 @@
 }
 
 .add-plan__step-text {
+  margin-bottom: 20px;
   color: @dark-gray;
   font-size: 16px;
   font-weight: 400;
@@ -32,6 +41,32 @@
 
 .add-plan__looking-travelers-title,
 .add-plan__duration-title {
+  position: relative;
+  color: @blue;
+  font-family: @main-font;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 14px;
+    display: block;
+    width: 14px;
+    height: 2px;
+    background-color: #cbced9;
+    z-index: 10;
+  }
+}
+
+.add-plan__looking-travelers-people,
+.add-plan__duration-days {
+  opacity: 0.3;
+  color: @blue;
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
@@ -39,8 +74,27 @@
   letter-spacing: 2.15px;
 }
 
+.add-plan__duration {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.add-plan__looking-travelers,
+.add-plan__duration {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
 .add-plan__looking-travelers-input,
 .add-plan__duration-input {
+  position: relative;
+  width: 220px;
+  height: 43px;
+  padding-left: 18px;
+  margin-bottom: 21px;
+  border-radius: 4px;
+  border: 1px solid #cbced9;
   color: @blue;
   font-size: 15px;
   font-weight: 500;

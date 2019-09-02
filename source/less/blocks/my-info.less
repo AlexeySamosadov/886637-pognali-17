@@ -1,13 +1,69 @@
 .my-info {
   padding: 0 25px;
+  padding-bottom: 60px;
   background-color: @light-gray;
+  position: relative;
+}
+
+.my-info__wrap-level-avatar {
+  display: flex;
+  padding-top: 24px;
+  margin-bottom: 19px;
+}
+
+.my-info__level-svg {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 22px;
+  left: 45px;
+  fill: transparent;
+  stroke-dasharray: 75px, 5px;
+  stroke: @orange;
+  border-radius: 50%;
+  stroke-width: 2px;
+  transform: rotate(-15deg);
+
+  &--level-80 {
+    stroke-dasharray: 75px, 17px;
+    transform: rotate(-60deg);
+  }
 }
 
 .my-info__level {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  top: 23px;
+  left: 38px;
+  margin-right: 93px;
+  border-radius: 50%;
   color: @dark-blue;
   font-size: 38px;
   font-weight: 700;
   line-height: 38px;
+}
+
+.my-info__level-name {
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  margin-top: 1px;
+
+  &::before {
+    content: "";
+    width: 49px;
+    height: 2px;
+    background-color: #cbced9;
+    position: absolute;
+    top: -4px;
+    left: -8px;
+  }
 }
 
 .my-info__level-level {
@@ -17,12 +73,49 @@
   line-height: 22.17px;
 }
 
+.my-info__image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.my-info__tags {
+  padding: 13px 24px;
+  padding-bottom: 21px;
+  margin: 0;
+  margin-bottom: 17px;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+}
+
 .my-info__title {
+  position: relative;
   color: @blue;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 17px;
+    height: 10px;
+    background-color: @light-gray;
+  }
+
+  &::before {
+    left: -15px;
+    top: 3px;
+  }
+
+  &::after {
+    right: -15px;
+    top: 3px;
+  }
 }
 
 .my-info__hachtags {
@@ -30,4 +123,33 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+}
+
+.my-info__transport {
+  padding: 0;
+  margin: 0;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+}
+
+.my-info__transport-list {
+  list-style: none;
+  padding: 4px 20px;
+  margin: 0 20px;
+  margin-left: 46px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.my-info__transport-item {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: @white;
+  display: flex;
+  justify-content: center;
+}
+
+.my-info__transport-label {
+  margin-top: 8px;
 }
