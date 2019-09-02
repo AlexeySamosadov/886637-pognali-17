@@ -104,19 +104,81 @@
   text-align: center;
 }
 
+.add-plan__duration-input {
+  margin-bottom: 28px;
+}
+
 .add-plan__with-child-label {
+  position: relative;
+  display: inline-block;
+  margin-left: 39px;
+  margin-bottom: 25px;
   color: @dark-gray;
   font-size: 15px;
   font-weight: 400;
   line-height: 15px;
   text-align: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 26px;
+    top: -7px;
+    left: -39px;
+    border-radius: 4px;
+    border: 1px solid #cbced9;
+    background-color: @white;
+  }
+}
+
+.add-plan__with-child-input:checked ~ .add-plan__with-child-label::before {
+  background-image: url("../../img/tick.svg");
+  background-size: 9px 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.add-plan__with-child-input:focus ~ .add-plan__with-child-label::before {
+  outline: 1px solir @gray-blue;
+}
+
+.add-plan__calendar {
+  position: relative;
+  padding: 11px 0;
+  border-top: 1px solid @gray-light;
+
+  &::before {
+    content: "";
+    width: 222px;
+    height: 1px;
+    position: absolute;
+    top: 42px;
+    background-color: @gray-light;
+  }
 }
 
 .add-plan__mounth {
+  position: relative;
+  display: block;
+  margin-bottom: 29px;
   color: @blue;
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
+}
+
+.add-plan__mounth-svg {
+  margin-bottom: -4px;
+  fill: @gray-light;
+
+  &--left {
+    margin-right: 49px;
+  }
+
+  &--right {
+    margin-left: 47px;
+  }
 }
 
 .add-plan__table {
