@@ -80,10 +80,13 @@
 }
 
 .my-plans__item-wrapper {
+  display: flex;
+  flex-direction: column;
   position: relative;
 
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-direction: row;
     margin-left: 1px;
 
     &::before {
