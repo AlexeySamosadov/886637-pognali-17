@@ -3,12 +3,22 @@
   padding-bottom: 60px;
   background-color: @light-gray;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 75px;
+    padding-bottom: 69px;
+  }
 }
 
 .my-info__wrap-level-avatar {
   display: flex;
   padding-top: 24px;
   margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 65px;
+    margin-bottom: 52px;
+  }
 }
 
 .my-info__level-svg {
@@ -23,6 +33,13 @@
   border-radius: 50%;
   stroke-width: 2px;
   transform: rotate(-15deg);
+
+  @media (min-width: @tablet-width) {
+    width: 94px;
+    height: 94px;
+    top: 65px;
+    left: 75px;
+  }
 
   &--level-80 {
     stroke-dasharray: 75px, 17px;
@@ -46,6 +63,11 @@
   font-size: 38px;
   font-weight: 700;
   line-height: 38px;
+
+  @media (min-width: @tablet-width) {
+    top: 21px;
+    left: 17px;
+  }
 }
 
 .my-info__level-name {
@@ -77,6 +99,13 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 372px;
+    width: 94px;
+    height: 94px;
+    border-radius: 5px;
+  }
 }
 
 .my-info__tags {
@@ -86,6 +115,12 @@
   margin-bottom: 17px;
   border: 1px solid #cbced9;
   border-radius: 10px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    padding: 33px 39px;
+    min-height: 94px;
+  }
 }
 
 .my-info__title {
@@ -97,6 +132,28 @@
   text-transform: uppercase;
   text-align: center;
 
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 86px;
+    left: 94px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+    &--transport {
+      display: block;
+      position: absolute;
+      top: 86px;
+      left: 94px;
+      background-color: @light-gray;
+    }
+
+    &--tags {
+      top: 85px;
+      left: 281px;
+    }
+  }
+
   &::before,
   &::after {
     content: "";
@@ -105,6 +162,10 @@
     width: 17px;
     height: 10px;
     background-color: @light-gray;
+
+    @media (min-width: @tablet-width) {
+      width: 20px;
+    }
   }
 
   &::before {
@@ -123,6 +184,11 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .my-info__transport {
@@ -130,6 +196,15 @@
   margin: 0;
   border: 1px solid #cbced9;
   border-radius: 10px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    padding-top: 20px;
+    top: 64px;
+    left: 229px;
+    width: 308px;
+    min-height: 96px;
+  }
 }
 
 .my-info__transport-list {
@@ -139,6 +214,11 @@
   margin-left: 46px;
   margin-bottom: 10px;
   display: flex;
+
+  @media (min-width: @tablet-width) {
+    padding: 5px 15px;
+    margin-left: 40px;
+  }
 }
 
 .my-info__transport-item {
@@ -148,8 +228,19 @@
   background-color: @white;
   display: flex;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    width: 43px;
+    height: 43px;
+    margin-right: 8px;
+  }
 }
 
 .my-info__transport-label {
   margin-top: 8px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 10px;
+  }
 }
+
