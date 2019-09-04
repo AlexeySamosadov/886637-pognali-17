@@ -209,7 +209,7 @@
       margin-left: 0;
       border-radius: 20px;
       font-size: 24px;
-      line-height: 80px;
+      line-height: 83px;
       text-transform: inherit;
     }
   }
@@ -223,12 +223,28 @@
     padding-left: 56px;
     margin-bottom: 2px;
     letter-spacing: 0.2px;
+
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      bottom: 62px;
+      right: 14px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: inherit;
+    }
   }
 
   &--add-plan-submit {
     padding-left: 3px;
     line-height: 41px;
     margin-bottom: 5px;
+
+    @media (min-width: @tablet-width) {
+      padding-right: 44px;
+      padding-left: 0;
+      line-height: 82px;
+    }
   }
 
   &--main-nav {
@@ -269,6 +285,21 @@
 
     @media (min-width: @tablet-width) {
       right: 36px;
+    }
+  }
+
+  &--back::before {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+      left: 26px;
+      top: 11px;
+      border: 7px solid #1d2e5b;
+      border-right-width: 10px;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      border-left: none;
     }
   }
 }
