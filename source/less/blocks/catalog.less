@@ -229,6 +229,61 @@
   }
 }
 
+.catalog__filter-level-radio-wrapper {
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 13px;
+    margin-left: 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 27px;
+  }
+}
+
+.catalog__filter-level-radio {
+  position: relative;
+  margin-top: 12px;
+  display: block;
+  width: 70px;
+  height: 2px;
+  background-color: @border-color;
+
+  @media (min-width: @tablet-width) {
+    width: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 64px;
+  }
+
+  &::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -5px;
+    right: -6px;
+    background-color: @blue;
+    border-radius: 50%;
+
+    @media (min-width: @tablet-width) {
+      width: 13px;
+      height: 13px;
+    }
+  }
+
+  &--active {
+    width: 143px;
+    background-color: @blue;
+
+    @media (min-width: @tablet-width) {
+      width: 119px;
+    }
+  }
+}
+
 .catalog__list {
   list-style: none;
   padding: 0;
