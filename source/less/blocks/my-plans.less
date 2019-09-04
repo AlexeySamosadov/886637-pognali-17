@@ -11,6 +11,11 @@
     padding: 20px 75px;
     padding-bottom: 94px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 19px 60px 98px 123px;
+    border-radius: 60px 60px 0 0;
+  }
 }
 
 .my-plans__title {
@@ -25,6 +30,10 @@
     font-size: 36px;
     line-height: 50px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 9px;
+  }
 }
 
 .my-plans__item-number {
@@ -37,6 +46,11 @@
     line-height: 18px;
     text-transform: uppercase;
     letter-spacing: 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: static;
+    margin-right: 25px;
   }
 }
 
@@ -61,6 +75,16 @@
     padding: 3px 32px;
     min-height: 150px;
   }
+
+  @media (min-width: @desktop-width) {
+    min-height: 97px;
+    padding: 0 38px;
+    padding-left: 45px;
+    margin-bottom: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .my-plans__item-title {
@@ -76,6 +100,10 @@
     line-height: 50px;
     margin-left: 4px;
     margin-bottom: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
 
@@ -100,6 +128,14 @@
       opacity: 0.3;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 16px;
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .my-palns__text {
@@ -111,13 +147,19 @@
   letter-spacing: 1.4px;
 
   @media (min-width: @tablet-width) {
-    margin-right: 44px;
+    margin-right: 38px;
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
 
     &--second-country {
       margin-right: 61px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--second-country {
+      margin-right: 50px;
     }
   }
 }
@@ -138,5 +180,15 @@
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 87px;
+  }
+
+  &--plan-2 {
+    @media (min-width: @desktop-width) {
+      margin-left: 92px;
+    }
   }
 }
