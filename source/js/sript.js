@@ -1,4 +1,4 @@
-var menuButton = document.querySelector(".main-nav__toggle")
+var menuButton = document.querySelector(".main-nav__toggle");
 var menuWrap = document.querySelector(".main-nav__wrapper");
 var svgOpen = document.querySelector(".main-nav__toggle-svg--open");
 var svgClose = document.querySelector(".main-nav__toggle-svg--close");
@@ -11,6 +11,7 @@ var showAllSpan = document.querySelector (".filter-by-country__show-all");
 var showAllIcon = document.querySelector (".filter-by-country__filter-icon3");
 var showAllClose = document.querySelector (".filter-by-country__close");
 var showAllIconClose = document.querySelector (".filter-by-country__svg-close");
+
 
 menuButton.addEventListener("click", function() {
   menuWrap.classList.toggle("main-nav__wrapper--opened");
