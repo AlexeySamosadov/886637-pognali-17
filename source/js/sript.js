@@ -13,6 +13,10 @@ var showAllClose = document.querySelector (".filter-by-country__close");
 var showAllIconClose = document.querySelector (".filter-by-country__svg-close");
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  menuWrap.classList.remove("no-js");
+});
+
 menuButton.addEventListener("click", function() {
   menuWrap.classList.toggle("main-nav__wrapper--opened");
   menuButton.classList.toggle("main-nav__toggle--open");
