@@ -171,6 +171,15 @@
     text-transform: uppercase;
     margin-bottom: 24px;
 
+    &:hover,
+    &:focus {
+      background-color: #d1d7e9;
+    }
+
+    &:active .button_my-info {
+      opacity: 0.3;
+    }
+
     @media (min-width: @tablet-width) {
       width: 618px;
       height: 60px;
@@ -188,8 +197,9 @@
       height: 47px;
       border-radius: 0 0 10px 10px;
       position: absolute;
-      top: 0;
+      top: 60px;
       right: 155px;
+      line-height: 50px;
     }
   }
 
@@ -211,6 +221,15 @@
   }
 
   &--add-plan-next {
+    &:hover,
+    &:focus {
+      background-color: @dark-lemon;
+    }
+
+    &:active span {
+      opacity: 0.3;
+    }
+
     @media (min-width: @tablet-width) {
       width: 285px;
       height: 81px;
@@ -364,5 +383,13 @@
     width: 18px;
     height: 18px;
     margin-right: 15px;
+  }
+}
+
+.button_my-info {
+  &--hide {
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
   }
 }

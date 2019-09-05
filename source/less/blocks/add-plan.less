@@ -518,6 +518,15 @@
   letter-spacing: 2px;
   text-align: center;
 
+  &:hover,
+  &:focus {
+    border: 1px solid #959bb2;
+  }
+
+  &:active {
+    border: 1px solid #161c35;
+  }
+
   @media (min-width: @tablet-width) {
     width: 531px;
     height: 70px;
@@ -568,6 +577,16 @@
   line-height: 15px;
   text-align: center;
 
+  &:hover::before,
+  &:focus::before {
+    border: 1px solid #959bb2;
+  }
+
+  &:active::before {
+    background-color: #e2e5f1;
+  }
+
+
   &::before {
     position: absolute;
     content: "";
@@ -608,6 +627,17 @@
 
 .add-plan__with-child-input:checked ~ .add-plan__with-child-label::before {
   background-image: url("../../img/tick.svg");
+  background-size: 9px 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: @tablet-width) {
+    background-size: 12px 12px;
+  }
+}
+
+.add-plan__with-child-input:checked ~ .add-plan__with-child-label:active::before {
+  background-image: url("../../img/tick-03.svg");
   background-size: 9px 9px;
   background-repeat: no-repeat;
   background-position: center;
@@ -668,7 +698,17 @@
 
 .add-plan__mounth-svg {
   margin-bottom: -4px;
-  fill: @gray-light;
+  fill: @black;
+  opacity: 0.3;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 
   @media (min-width: @tablet-width) {
     width: 19px;
@@ -938,11 +978,21 @@
   &--free {
     width: 220px;
 
+    &:hover {
+      border: 1px solid #959bb2;
+    }
+
+    &:focus,
+    &:active {
+      background-color: @blue;
+      color: white;
+    }
+
     &::before {
       width: 10px;
       height: 10px;
       border: 2px solid @border-color;
-      background-color: @white;
+      background-color: transparent;
       border-right-color: transparent;
       border-top-color: transparent;
       transform: rotate(-45deg);
@@ -951,6 +1001,7 @@
       @media (min-width: @tablet-width) {
         width: 13px;
         height: 13px;
+        box-shadow: none;
       }
     }
   }
@@ -959,6 +1010,15 @@
     width: 220px;
     background-color: @light-gray;
     margin-bottom: 3px;
+
+    &:hover,
+    &:focus {
+      background-color: @gray-blue;
+    }
+
+    &:active span {
+      opacity: 0.3;
+    }
 
     @media (min-width: @tablet-width) {
       border-color: transparent;
@@ -974,7 +1034,8 @@
       right: 13px;
       width: 14px;
       height: 2px;
-      background-color: @border-color;
+      background-color: @black;
+      opacity: 0.2;
 
       @media (min-width: @tablet-width) {
         top: 32px;
@@ -990,7 +1051,8 @@
       right: 19px;
       width: 2px;
       height: 14px;
-      background-color: @border-color;
+      background-color: @black;
+      opacity: 0.2;
 
       @media (min-width: @tablet-width) {
         top: 24px;
@@ -1089,10 +1151,28 @@
   height: 9px;
   fill: @border-color;
 
+  &:hover,
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.05;
+  }
+
   @media (min-width: @tablet-width) {
     width: 18px;
     height: 18px;
     opacity: 0.5;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.15;
+    }
   }
 }
 
@@ -1116,6 +1196,15 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #959bb2;
+  }
+
+  &:active {
+    color: @dark-gray;
+  }
 
   @media (min-width: @tablet-width) {
     width: 499px;

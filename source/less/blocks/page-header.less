@@ -225,12 +225,30 @@
   &--call-us {
     background-color: #ff8d30;
     border-radius: 50%;
+
+    &:hover,
+    &:focus {
+      background-color: #f26926;
+    }
+
+    &:active .page-header__item-link {
+      opacity: 0.3;
+    }
   }
 
   &--message-us {
 
     background-color: #ffbd30;
     border-radius: 50%;
+
+    &:hover,
+    &:focus {
+      background-color: @orange;
+    }
+
+    &:active .page-header__item-link {
+      opacity: 0.3;
+    }
   }
 
   &--button {
@@ -240,6 +258,15 @@
     background-color: #ffd74b;
     text-align: center;
     line-height: 40px;
+
+    &:hover,
+    &:focus {
+      background-color: @dark-lemon;
+    }
+
+    &:active .page-header__authorization-span {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -386,7 +413,18 @@
     font-weight: 500;
     line-height: 30px;
     text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      color: @lemon;
+    }
+
+    &:active {
+      opacity: 0.3;
+      color: @lemon;
+    }
   }
+
 
   .page-header__list {
     top: 50px;
