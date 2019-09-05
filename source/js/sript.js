@@ -15,6 +15,9 @@ var showAllIconClose = document.querySelector (".filter-by-country__svg-close");
 
 document.addEventListener("DOMContentLoaded", function () {
   menuWrap.classList.remove("no-js");
+  menuButton.classList.remove("main-nav__toggle--open");
+  svgOpen.classList.toggle("main-nav__toggle-svg--open-modal");
+  svgClose.classList.toggle("main-nav__toggle-svg--close-modal");
 });
 
 menuButton.addEventListener("click", function() {
