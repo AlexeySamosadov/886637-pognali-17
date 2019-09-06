@@ -397,6 +397,19 @@
   line-height: 43px;
   background-color: @gray-dark;
 
+  &:hover,
+  &:focus {
+    background-color: #c8cee8;
+  }
+
+  &:active {
+    color: @blue-03;
+  }
+
+  &:active .filter-by-country__button-svg {
+    fill: @blue-03;
+  }
+
   @media (min-width: @tablet-width) {
     width: 618px;
     height: 100px;

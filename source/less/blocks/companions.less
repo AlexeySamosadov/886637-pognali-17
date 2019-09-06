@@ -41,6 +41,19 @@
   margin-bottom: 10px;
   border: none;
   text-align: center;
+  overflow: hidden;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 21px rgba(0, 0, 0, 0.08);
+  }
+
+  &:active .companions-person__image {
+    width: 336px;
+    height: 326px;
+    transform: translateX(-30px) translateY(-40px);
+    transition-duration: 0.2s;
+  }
 }
 
 .companions-person__level {
@@ -147,16 +160,39 @@
   text-align: center;
 }
 
+.companions-person__image-wrapper {
+  width: 270px;
+  height: 270px;
+  overflow: hidden;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 285px;
+    height: 285px;
+  }
+}
+
 .companions-person__image {
   border-radius: 10px 10px 0 0;
+  width: 270px;
+  height: 269px;
+  max-width: none;
+
+  @media (min-width: @tablet-width) {
+    height: 285px;
+  }
 }
 
 .companions-person__flags {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  margin-top: -30px;
+  margin-top: -22px;
   margin-bottom: 5px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -21px;
+  }
 }
 
 .companions-person__flag {

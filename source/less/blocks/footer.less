@@ -84,6 +84,15 @@
   border-radius: 50%;
   background-color: @lemon;
 
+  &:hover,
+  &:focus {
+    background-color: @dark-lemon;
+  }
+
+  &:active .footer__social-svg {
+    opacity: 0.3;
+  }
+
   &--index {
     &:hover,
     &:focus {
@@ -93,17 +102,6 @@
 
     &:active .footer__social-svg {
       fill: @white;
-      opacity: 0.3;
-    }
-  }
-
-  &--form {
-    &:hover,
-    &:focus {
-      background-color: @dark-lemon;
-    }
-
-    &:active .footer__social-svg {
       opacity: 0.3;
     }
   }
