@@ -350,6 +350,15 @@
   font-weight: 700;
   line-height: 20px;
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::before {
     position: absolute;
     top: 22px;
@@ -446,6 +455,7 @@
 }
 
 .catalog__transport-item {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -453,6 +463,146 @@
   height: 32px;
   border-radius: 50%;
   background-color: @light-gray;
+
+  &--plane {
+    &:hover::before,
+    &:focus::before,
+    &:active::before {
+      content: "Самолет";
+      position: absolute;
+      top: 40px;
+      width: 171px;
+      height: 57px;
+      border-radius: 4px;
+      background-color: #101d41;
+      color: @white;
+      font-family: @main-font;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 54px;
+      text-align: center;
+    }
+
+    &:hover::after,
+    &:focus::after,
+    &:active::after {
+      content: "";
+      position: absolute;
+      top: 32px;
+      left: 3px;
+      width: 0;
+      height: 0;
+      border: 8px solid #101d41;
+      border-right-color: transparent;
+      border-left-color: transparent;
+      border-top: none;
+    }
+  }
+
+  &--bus {
+    &:hover::before,
+    &:focus::before,
+    &:active::before {
+      content: "Автобус";
+      position: absolute;
+      top: 40px;
+      width: 171px;
+      height: 57px;
+      border-radius: 4px;
+      background-color: #101d41;
+      color: @white;
+      font-family: @main-font;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 54px;
+      text-align: center;
+    }
+
+    &:hover::after,
+    &:focus::after,
+    &:active::after {
+      content: "";
+      position: absolute;
+      top: 32px;
+      left: 3px;
+      width: 0;
+      height: 0;
+      border: 8px solid #101d41;
+      border-right-color: transparent;
+      border-left-color: transparent;
+      border-top: none;
+    }
+  }
+
+  &--bike {
+    &:hover::before,
+    &:focus::before,
+    &:active::before {
+      content: "Велосипед";
+      position: absolute;
+      top: 40px;
+      width: 171px;
+      height: 57px;
+      border-radius: 4px;
+      background-color: #101d41;
+      color: @white;
+      font-family: @main-font;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 54px;
+      text-align: center;
+    }
+
+    &:hover::after,
+    &:focus::after,
+    &:active::after {
+      content: "";
+      position: absolute;
+      top: 32px;
+      left: 3px;
+      width: 0;
+      height: 0;
+      border: 8px solid #101d41;
+      border-right-color: transparent;
+      border-left-color: transparent;
+      border-top: none;
+    }
+  }
+
+  &--walking {
+    &:hover::before,
+    &:focus::before,
+    &:active::before {
+      content: "Пешком";
+      position: absolute;
+      top: 40px;
+      width: 171px;
+      height: 57px;
+      border-radius: 4px;
+      background-color: #101d41;
+      color: @white;
+      font-family: @main-font;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 54px;
+      text-align: center;
+    }
+
+    &:hover::after,
+    &:focus::after,
+    &:active::after {
+      content: "";
+      position: absolute;
+      top: 32px;
+      left: 3px;
+      width: 0;
+      height: 0;
+      border: 8px solid #101d41;
+      border-right-color: transparent;
+      border-left-color: transparent;
+      border-top: none;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     width: 30px;
