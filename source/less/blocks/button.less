@@ -161,22 +161,123 @@
 
   &--my-info {
     height: 40px;
-    padding-top: 10px;
     border-radius: 20px;
+    padding-left: 5px;
     background-color: @gray-blue;
+    border: none;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+
+    &:hover,
+    &:focus {
+      background-color: #d1d7e9;
+    }
+
+    &:active .button_my-info {
+      opacity: 0.3;
+    }
+
+    @media (min-width: @tablet-width) {
+      width: 618px;
+      height: 60px;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 60px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 51px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 190px;
+      height: 47px;
+      border-radius: 0 0 10px 10px;
+      position: absolute;
+      top: 60px;
+      right: 155px;
+      line-height: 50px;
+    }
   }
 
   &--add-plan-next,
   &--add-plan-back {
     width: 230px;
     height: 40px;
+    padding-left: 45px;
+    margin-bottom: 7px;
     border: none;
     border-radius: 20px;
     background-color: @lemon;
+    font-family: @main-font;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 44px;
+    text-transform: uppercase;
+    margin-left: -4px;
+  }
+
+  &--add-plan-next {
+    &:hover,
+    &:focus {
+      background-color: @dark-lemon;
+    }
+
+    &:active span {
+      opacity: 0.3;
+    }
+
+    @media (min-width: @tablet-width) {
+      width: 285px;
+      height: 81px;
+      padding-left: 33px;
+      margin-left: 0;
+      border-radius: 20px;
+      font-size: 24px;
+      line-height: 83px;
+      text-transform: inherit;
+    }
+  }
+
+  &--add-plan-next-step2 {
+    margin-bottom: 6px;
   }
 
   &--add-plan-back {
     background-color: @white;
+    padding-left: 56px;
+    margin-bottom: 2px;
+    letter-spacing: 0.2px;
+
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      bottom: 62px;
+      right: 14px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: inherit;
+    }
+
+    @media (min-width: @desktop-width) {
+      bottom: 114px;
+      right: 137px;
+    }
+  }
+
+  &--add-plan-submit {
+    padding-left: 3px;
+    line-height: 41px;
+    margin-bottom: 5px;
+
+    @media (min-width: @tablet-width) {
+      padding-right: 44px;
+      padding-left: 0;
+      line-height: 82px;
+    }
   }
 
   &--main-nav {
@@ -217,6 +318,21 @@
 
     @media (min-width: @tablet-width) {
       right: 36px;
+    }
+  }
+
+  &--back::before {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+      left: 26px;
+      top: 11px;
+      border: 7px solid #1d2e5b;
+      border-right-width: 10px;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      border-left: none;
     }
   }
 }
@@ -267,5 +383,13 @@
     width: 18px;
     height: 18px;
     margin-right: 15px;
+  }
+}
+
+.button_my-info {
+  &--hide {
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
   }
 }
