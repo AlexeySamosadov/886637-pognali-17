@@ -84,13 +84,28 @@
   border-radius: 50%;
   background-color: @lemon;
 
-  &:hover,
-  &:focus {
-    background-color: @dark-lemon;
+  &--index {
+    &:hover,
+    &:focus {
+      background-color: @dark-night-blue;
+      fill: @white;
+    }
+
+    &:active .footer__social-svg {
+      fill: @white;
+      opacity: 0.3;
+    }
   }
 
-  &:active .footer__social-svg {
-    opacity: 0.3;
+  &--form {
+    &:hover,
+    &:focus {
+      background-color: @dark-lemon;
+    }
+
+    &:active .footer__social-svg {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: @tablet-width) {
