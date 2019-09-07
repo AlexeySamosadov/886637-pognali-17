@@ -56,6 +56,15 @@
   line-height: 18px;
   text-transform: uppercase;
 
+  &:hover,
+  &:focus {
+    color: @blue-06;
+  }
+
+  &:active {
+    color: @blue-03;
+  }
+
   &::before {
     content: "";
     display: block;
@@ -75,6 +84,25 @@
   display: flex;
   position: relative;
   padding: 10px 0;
+  color: @dark-gray;
+
+  &:hover,
+  &:focus {
+    color: @dark-gray-06;
+  }
+
+  &:active {
+    color: @dark-gray-03;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 
   &--plane {
     padding: 0;
@@ -219,6 +247,15 @@
   text-align: center;
   letter-spacing: 2px;
 
+  &:hover,
+  &:focus {
+    border: 1px solid #959bb2;
+  }
+
+  &:active {
+    border: 1px solid #161c35;
+  }
+
   &--start {
     border-radius: 4px 0 0 4px;
   }
@@ -248,10 +285,24 @@
   display: block;
   width: 70px;
   height: 2px;
-  background-color: @border-color;
+  background-color: @border-color-03;
 
   @media (min-width: @tablet-width) {
     width: 75px;
+
+    &:hover::before,
+    &:focus::before {
+      top: -9px;
+      right: -10px;
+      width: 19px;
+      height: 19px;
+    }
+
+    &:active::before {
+      width: 19px;
+      height: 19px;
+      box-shadow: 0 3px 7px rgba(29, 46, 91, 0.35);
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -298,17 +349,70 @@
   margin-bottom: 10px;
   border-radius: 20px;
   background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    border-radius: 20px;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 6px 21px rgba(0, 0, 0, 0.08);
+    }
+
+    &:hover .catalog__avatar,
+    &:focus .catalog__avatar {
+      width: 250px;
+      height: 250px;
+      transform: translateX(-30px) translateY(-20px);
+      transition-duration: 0.2s;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &:hover,
+    &:focus {
+      box-shadow: 0 6px 21px rgba(0, 0, 0, 0.08);
+    }
+
+    &:hover .catalog__avatar,
+    &:focus .catalog__avatar {
+      width: 336px;
+      height: 326px;
+      transform: translateX(-20px) translateY(-20px);
+      transition-duration: 0.2s;
+    }
+  }
 }
 
 .catalog__wrap-person {
   display: flex;
   margin-bottom: 7px;
+  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    border-radius: 20px;
+  }
+}
+
+.catalog__avatar-wrap {
+  @media (min-width: @tablet-width) {
+    width: 190px;
+    height: 190px;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 286px;
+    height: 286px;
+    overflow: hidden;
+  }
 }
 
 .catalog__avatar {
   width: 70px;
   height: 70px;
   border-radius: 50%;
+  max-width: none;
 }
 
 .catalog__avatar-icon {
@@ -323,13 +427,42 @@
   border-radius: 50%;
   background-color: @light-gray;
 
+  &:hover,
+  &:focus {
+    background-color: @gray;
+  }
+
+  &:hover .catalog__avatar-svg,
+  &:focus .catalog__avatar-svg {
+    fill: @black-05;
+  }
+
+  &:active .catalog__avatar-svg {
+    fill: @black-01;
+  }
+
   &--active {
     background-color: @pale-pink;
+
+    &:hover,
+    &:focus {
+      background-color: #f9d8d8;
+    }
+
+    &:hover .catalog__avatar-svg,
+    &:focus .catalog__avatar-svg {
+      fill: #f02323;
+    }
+
+    &:active .catalog__avatar-svg {
+      fill: #f02323;
+      opacity: 0.3;
+    }
   }
 }
 
 .catalog__avatar-svg {
-  fill: @dark-night-blue;
+  fill: @blue-03;
 
   &--active {
     width: 13px;
@@ -747,6 +880,15 @@
   font-weight: 700;
   line-height: 50px;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog__show-more-title-svg {
@@ -767,6 +909,15 @@
   height: 50px;
   position: relative;
   background-color: @white;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &::before {
     content: "";
@@ -790,6 +941,17 @@
 
 .catalog__show-more-page {
   display: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    background-color: @white;
+  }
+
+  &:active {
+    background-color: @lemon;
+    opacity: 1;
+  }
 }
 
 .catalog__show-more-button--forward {

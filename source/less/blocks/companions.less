@@ -41,14 +41,14 @@
   margin-bottom: 10px;
   border: none;
   text-align: center;
-  overflow: hidden;
 
   &:hover,
   &:focus {
     box-shadow: 0 6px 21px rgba(0, 0, 0, 0.08);
   }
 
-  &:active .companions-person__image {
+  &:hover .companions-person__image,
+  &:focus .companions-person__image {
     width: 336px;
     height: 326px;
     transform: translateX(-30px) translateY(-40px);
@@ -293,7 +293,7 @@
   &:hover::before,
   &:focus::before,
   &:active::before {
-    content: "";
+    content: "fff";
     position: absolute;
     top: 58px;
     left: -70px;
