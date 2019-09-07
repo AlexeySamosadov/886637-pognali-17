@@ -138,7 +138,6 @@
   justify-content: space-between;
   align-items: center;
 
-
   &::before {
     content: "";
     position: absolute;
@@ -165,6 +164,10 @@
   @media (min-width: @tablet-width) {
     margin-top: -13px;
   }
+
+  &::before {
+    top: -15px;
+  }
 }
 
 .footer__maid-by-span {
@@ -175,6 +178,7 @@
 
   &--form {
     margin-top: -9px;
+    line-height: 54px;
   }
 
   &:hover,
@@ -184,10 +188,6 @@
 
   &:active {
     opacity: 0.3;
-  }
-
-  &--form {
-    line-height: 54px;
   }
 
   @media (min-width: @tablet-width) {
