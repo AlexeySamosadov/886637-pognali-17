@@ -1,7 +1,6 @@
 .add-plan {
   position: relative;
-  padding: 10px 25px;
-  padding-bottom: 61px;
+  padding: 10px 25px 64px;
   margin-top: -30px;
   border-radius: 30px 30px 0 0;
   background-color: @blue-gray;
@@ -518,11 +517,11 @@
   letter-spacing: 2px;
   text-align: center;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border: 1px solid #959bb2;
   }
 
+  &:focus,
   &:active {
     border: 1px solid #161c35;
   }
@@ -552,7 +551,7 @@
 }
 
 .add-plan__duration-input {
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 59px;
@@ -1197,11 +1196,11 @@
   font-weight: 400;
   line-height: 22px;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border: 1px solid #959bb2;
   }
 
+  &:focus,
   &:active {
     color: @dark-gray;
     border: 1px solid #161c35;
@@ -1229,22 +1228,22 @@
 
   &--first-country {
     position: relative;
-    margin-bottom: 22px;
+    margin-bottom: 13px;
 
     @media (min-width: @tablet-width) {
-      margin-bottom: 31px;
+      margin-bottom: 22px;
     }
   }
 
   &--second-country {
-    margin-bottom: 22px;
+    margin-bottom: 14px;
 
     @media (min-width: @tablet-width) {
-      margin-bottom: 47px;
+      margin-bottom: 39px;
     }
 
     @media (min-width: @desktop-width) {
-      margin-bottom: 56px;
+      margin-bottom: 47px;
     }
   }
 }
@@ -1336,6 +1335,10 @@
   @media (min-width: @tablet-width) {
     display: none;
   }
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+  }
 }
 
 .add-plan__submit-tablet {
@@ -1343,5 +1346,9 @@
 
   @media (min-width: @tablet-width) {
     display: inline;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
