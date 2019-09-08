@@ -16,8 +16,6 @@ var tariffButton = document.querySelector(".add-profile__show-all-tariff");
 var tariffPopup = document.querySelector(".add-profile-popup");
 var tariffButtonClose = document.querySelector(".add-profile-popup__button-close");
 
-
-
 document.addEventListener("DOMContentLoaded", function () {
   menuWrap.classList.remove("main-nav__wrapper-no-js");
   menuButton.classList.remove("main-nav__toggle--open");
