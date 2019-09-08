@@ -78,6 +78,24 @@
   }
 }
 
+.main-nav__toggle-svg-open {
+  fill: @white;
+
+  &--modal {
+    display: none;
+  }
+}
+
+.main-nav__toggle-svg-close {
+  display: none;
+
+  &--modal {
+    display: block;
+    fill: @gray-light;
+  }
+}
+
+
 .main-nav__wrapper {
   position: relative;
   top: -27px;
@@ -402,6 +420,10 @@
 
   .main-nav {
     margin-left: 128px;
+  }
+
+  .main-nav__wrapper {
+    display: none;
   }
 
   .main-nav__list {
