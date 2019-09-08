@@ -15,6 +15,8 @@ var form = document.querySelector(".add-plan__form");
 var tariffButton = document.querySelector(".add-profile__show-all-tariff");
 var tariffPopup = document.querySelector(".add-profile-popup");
 var tariffButtonClose = document.querySelector(".add-profile-popup__button-close");
+var textareaFirst = document.querySelector(".add-plan__textarea--first-country");
+var textareaSecond = document.querySelector(".add-plan__textarea--second-country");
 
 document.addEventListener("DOMContentLoaded", function () {
   menuWrap.classList.remove("main-nav__wrapper-no-js");
@@ -83,12 +85,28 @@ if(filter) {
 }
 
 if (form) {
+  var textErrorFirst = document.querySelector(".add-plan__error--first-country");
+  var textErrorSecond = document.querySelector(".add-plan__error--second-country");
+
   form.addEventListener("submit", function (evt) {
-    evt.preventDefault();
-    if (!textarea.value) {
-      console.log("Заполните данный формы, пожалуйста!");
-      console.log(textarea.value);
+    if (!textareaFirst.value || !textareaSecond.value) {
+      evt.preventDefault();
     }
+
+    if (!textareaFirst.value) {
+      evt.preventDefault();
+      textareaFirst.classList.add("add-plan__textarea--error");
+      textErrorFirst.classList.add("add-plan__error--active");
+      console.log("Заполните данные первой формы, пожалуйста!");
+    }
+
+    if (!textareaSecond.value) {
+      evt.preventDefault();
+      textareaSecond.classList.add("add-plan__textarea--error");
+      textErrorSecond.classList.add("add-plan__error--active");
+      console.log("Заполните данные второй формы, пожалуйста!");
+    }
+
   });
 }
 

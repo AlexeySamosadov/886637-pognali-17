@@ -1189,6 +1189,7 @@
   padding-top: 9px;
   padding-left: 13px;
   padding-right: 20px;
+  position: relative;
   border-radius: 5px;
   color: @dark-gray-03;
   font-family: @main-font;
@@ -1204,6 +1205,12 @@
   &:active {
     color: @dark-gray;
     border: 1px solid #161c35;
+  }
+
+  &--error {
+    position: relative;
+    border: 1px solid #f47e7e;
+    background-image: linear-gradient(to bottom, @white 68%, #ffefef 68%);
   }
 
 
@@ -1244,6 +1251,49 @@
 
     @media (min-width: @desktop-width) {
       margin-bottom: 47px;
+    }
+  }
+}
+
+.add-plan__error {
+  display: none;
+  position: absolute;
+  color: #ff0000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+
+  &--active {
+    display: block;
+  }
+
+  &--first-country {
+    left: 45px;
+    bottom: 410px;
+
+    @media (min-width: @tablet-width) {
+      left: 65px;
+      bottom: 452px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 200px;
+      bottom: 510px;
+    }
+  }
+
+  &--second-country {
+    left: 45px;
+    bottom: 127px;
+
+    @media (min-width: @tablet-width) {
+      left: 65px;
+      bottom: 193px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 200px;
+      bottom: 252px;
     }
   }
 }
