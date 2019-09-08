@@ -19,7 +19,7 @@ var tariffButtonClose = document.querySelector(".add-profile-popup__button-close
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  menuWrap.classList.remove("no-js");
+  menuWrap.classList.remove("main-nav__wrapper-no-js");
   menuButton.classList.remove("main-nav__toggle--open");
   svgOpen.classList.toggle("main-nav__toggle-svg-open--modal");
   svgClose.classList.toggle("main-nav__toggle-svg-close--modal");
@@ -49,6 +49,11 @@ document.addEventListener("keydown", function(event){
 });
 
 if(filter) {
+  document.addEventListener("DOMContentLoaded", function () {
+    filterBlock.classList.remove("filter-by-country__block--active");
+  });
+
+
   filter.addEventListener("click", function(event) {
     filterBlock.classList.toggle("filter-by-country__block--active");
     filterRegionList.classList.toggle("filter-by-country__region-list--active");

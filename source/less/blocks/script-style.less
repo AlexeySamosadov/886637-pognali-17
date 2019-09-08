@@ -6,8 +6,12 @@
   display: block;
 }
 
-.no-js {
+.main-nav__wrapper-no-js {
   display: flex;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .popup-no-js {
