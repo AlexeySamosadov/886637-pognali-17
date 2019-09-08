@@ -351,13 +351,58 @@
 }
 
 .my-info__transport-label {
-  margin-top: 8px;
+  margin-top: -1px;
+  padding-top: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: @tablet-width) {
-    margin-top: 10px;
+    margin-top: 0;
+    padding-top: 12px;
   }
 }
 
 .my-info__transport-icon {
+  fill: gray;
+  opacity: 0.3;
   margin-right: 1px;
+
+  &--active {
+    fill: @blue;
+    opacity: 1;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 21px;
+
+    &--plane {
+      width: 19px;
+    }
+
+    &--bus {
+      width: 17px;
+    }
+
+    &--bike {
+      width: 24px;
+    }
+
+    &--walking {
+      width: 20px;
+      margin-left: 2px;
+    }
+  }
+}
+
+.my-info__filter-list-input:focus ~ .my-info__transport-label {
+  outline: 1px solid @deep-blue;
+  border-radius: 20px;
+}
+
+.my-info__filter-list-input:checked ~ .my-info__transport-label {
+  background-color: @light-gray;
+  fill: @white;
 }
