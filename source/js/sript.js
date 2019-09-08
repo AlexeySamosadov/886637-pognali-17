@@ -84,11 +84,9 @@ if(filter) {
 
 if (form) {
   form.addEventListener("submit", function (evt) {
+    evt.preventDefault();
     if (!textarea.value) {
-      evt.preventDefault();
       console.log("Заполните данный формы, пожалуйста!");
-      console.log(login.value);
-      console.log(email.value);
       console.log(textarea.value);
     }
   });
