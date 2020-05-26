@@ -1,0 +1,328 @@
+.directions {
+  position: relative;
+  padding: 61px 24px;
+  padding-bottom: 30px;
+  margin-top: -10px;
+  border: 1px solid @light-gray;
+  border-radius: 0 0 30px 30px;
+  background-color: @light-gray;
+  z-index: 9;
+}
+
+.directions__title,
+.directions__text {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.directions__text {
+  margin-bottom: 59px;
+  color: @dark-gray;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.directions__cards-wrap {
+  margin-bottom: 26px;
+}
+
+.directions__countries-picture {
+  position: relative;
+  width: 270px;
+  height: 110px;
+  border-radius: 10px 10px 0 0;
+  background-size: 270px 110px;
+
+  @media (min-width: @tablet-width) {
+    background-size: 186px 140px;
+  }
+
+  &--thailand {
+    background-image: url("../img/thailand-mobile@1x.jpg");
+
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/thailand-mobile@2x.jpg");
+    }
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/thailand-desktop@1x.jpg");
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/thailand-desktop@2x.jpg");
+      }
+    }
+  }
+
+  &--france {
+    background-image: url("../img/france-mobile@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/france-mobile@2x.jpg");
+    }
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/france-desktop@1x.jpg");
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/france-desktop@2x.jpg");
+      }
+    }
+  }
+
+  &--chehia {
+    background-image: url("../img/czech-mobile@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/czech-mobile@2x.jpg");
+    }
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/czech-desktop@1x.jpg");
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/czech-desktop@2x.jpg");
+      }
+    }
+  }
+}
+
+.directions__countries-flag {
+  position: absolute;
+  top: 87px;
+  left: 25px;
+  width: 35px;
+  height: 24px;
+  z-index: 10;
+}
+
+.directions__countries-wrap {
+  position: relative;
+  width: 270px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 22px 25px;
+  margin-top: -11px;
+  border-radius: 10px;
+  background-color: @white;
+
+  &--last {
+    background: linear-gradient(to bottom, @white 30%, #edeff6);
+  }
+}
+
+.directions__quantity-messages,
+.directions__slogan {
+  margin: 0;
+  opacity: 0.3;
+  color: @dark-gray;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.directions__quantity-messages {
+  position: relative;
+  margin-left: auto;
+  line-height: 30px;
+  text-transform: uppercase;
+  opacity: 0.3;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: -17px;
+    width: 11px;
+    height: 11px;
+    background-image: url("../img/user.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+  }
+}
+
+.directions__slogan {
+  line-height: 16px;
+}
+
+.directions__countries {
+  margin-bottom: 10px;
+}
+
+.directions__countries-title {
+  color: @dark-blue;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .directions {
+    padding: 62px 74px;
+    padding-bottom: 78px;
+    border-radius: 0 0 60px 60px;
+    background-image: url("../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: 438px 90px;
+    background-size: 289px 575px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/flags-back@2x.png");
+    }
+  }
+
+  .directions__cards-wrap {
+    position: relative;
+    margin-bottom: 48px;
+
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -39px;
+      left: -36px;
+      width: 141px;
+      height: 141px;
+      border-radius: 20px;
+      background-color: @gray;
+    }
+  }
+
+  .directions__title {
+    margin-top: 22px;
+    margin-left: -2px;
+    margin-bottom: 58px;
+  }
+
+  .directions__text {
+    width: 350px;
+    margin-left: 0;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 33px;
+  }
+
+  .directions__content-wrap {
+    margin-bottom: 105px;
+  }
+
+  .directions__countries {
+    display: flex;
+  }
+
+  .directions__countries-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 10px;
+    width: 434px;
+    height: 140px;
+    margin: 0;
+    border-radius: 20px 0 0 20px;
+    order: 1;
+  }
+
+  .directions__countries-title {
+    margin-top: 16px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .directions__slogan {
+    font-size: 20px;
+    line-height: 18px;
+    margin-left: 20px;
+    margin-bottom: 17px;
+  }
+
+  .directions__quantity-messages {
+    margin: 0;
+    margin-left: 50px;
+    order: 3;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+
+    &::before {
+      width: 20px;
+      height: 20px;
+      top: 3px;
+      left: -30px;
+    }
+  }
+
+
+  .directions__countries-picture {
+    order: 2;
+    width: 186px;
+    height: 140px;
+    border-radius: 0 20px 20px 0;
+  }
+
+  .directions__countries-flag {
+    top: 16px;
+    left: -35px;
+    width: 70px;
+    height: 47px;
+  }
+
+  .directions__countries-flag svg {
+    width: 70px;
+    height: 47px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .directions {
+    min-height: 760px;
+    padding: 60px 90px;
+    padding-top: 153px;
+    padding-left: 130px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-position: 1090px 97px;
+  }
+
+  .directions__cards-wrap {
+    margin-top: 17px;
+    order: -1;
+
+    &::before {
+      top: -72px;
+      left: -72px;
+    }
+  }
+
+  .directions__content-wrap {
+    margin-right: 113px;
+  }
+
+  .directions__title {
+    padding-bottom: 0;
+    margin-left: 0;
+  }
+
+  .directions__slogan {
+    margin-bottom: 23px;
+  }
+
+  .directions__countries-wrap {
+    width: 373px;
+    padding-top: 8px;
+  }
+
+  .directions__countries-picture {
+    width: 187px;
+  }
+
+  .directions__countries-flag {
+    top: 24px;
+    left: -35px;
+  }
+}

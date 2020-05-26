@@ -1,0 +1,539 @@
+.companions {
+  position: relative;
+  padding: 30px 24px;
+  padding-top: 80px;
+  margin-top: -30px;
+  border: 1px solid @dark-blue;
+  border-radius: 0 0 30px 30px;
+  background-color: @dark-blue;
+  background-image:
+    url("../img/smolov-back-desktop@1x.png"),
+    url("../img/rogovaya-back-mobile@1x.png");
+  background-size: 143px 143px, 71px 71px;
+  background-repeat: no-repeat;
+  background-position: 150px 67px, -11px 339px;
+  z-index: 8;
+}
+
+.companions__title {
+  padding-left: 24px;
+}
+
+.companions__text {
+  padding: 0 25px 5px 25px;
+  color: @white;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+
+  &--important {
+    font-weight: 700;
+    padding-bottom: 40px;
+  }
+}
+
+.companions__person {
+  width: 270px;
+  height: 427px;
+  position: relative;
+  background-color: @white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: none;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 21px rgba(0, 0, 0, 0.08);
+  }
+
+  &:hover .companions-person__image,
+  &:focus .companions-person__image {
+    width: 336px;
+    height: 326px;
+    transform: translateX(-30px) translateY(-40px);
+    transition-duration: 0.2s;
+  }
+}
+
+.companions-person__level {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 19px;
+  left: 17px;
+  border-radius: 50%;
+  color: @white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.companions-person__level-svg {
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  fill: transparent;
+  stroke-dasharray: 75px, 5px;
+  stroke: @orange;
+  border-radius: 50%;
+  stroke-width: 3px;
+  transform: rotate(-15deg);
+  background-color: rgba(0, 0, 0, 0.3);
+
+  &--level-80 {
+    stroke-dasharray: 75px, 17px;
+    transform: rotate(-60deg);
+  }
+}
+
+.companions-person__level-name {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-top: 1px;
+
+  &::before {
+    content: "";
+    width: 31px;
+    height: 1px;
+    opacity: 0.3;
+    background-color: @white;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+  }
+}
+
+.companions-person__name {
+  display: inline-block;
+  min-width: 50px;
+  position: relative;
+  margin: 0  auto;
+  margin-top: -5px;
+  margin-bottom: 15px;
+  color: @blue;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-70%);
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #f97676;
+    border-radius: 50%;
+  }
+}
+
+.companions-person__name--active::before {
+  background-color: #81e31e;
+}
+
+.companions-person__hashtags {
+  display: flex;
+  width: 180px;
+  margin: 1px auto;
+  color: @dark-gray;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}
+
+.companions-person__image-wrapper {
+  width: 270px;
+  height: 270px;
+  overflow: hidden;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 285px;
+    height: 285px;
+  }
+}
+
+.companions-person__image {
+  border-radius: 10px 10px 0 0;
+  width: 270px;
+  height: 269px;
+  max-width: none;
+
+  @media (min-width: @tablet-width) {
+    height: 285px;
+  }
+}
+
+.companions-person__flags {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: -22px;
+  margin-bottom: 5px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -21px;
+  }
+}
+
+.companions-person__flag {
+  width: 35px;
+  height: 24px;
+  margin: 9px;
+  margin-right: 10px;
+  position: relative;
+
+  &:hover::before,
+  &:focus::before,
+  &:active::before {
+    content: "";
+    position: absolute;
+    top: 38px;
+    left: -70px;
+    width: 171px;
+    height: 57px;
+    border-radius: 4px;
+    background-color: #101d41;
+    color: @white;
+    font-family: @main-font;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: center;
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:active::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 3px;
+    width: 0;
+    height: 0;
+    border: 8px solid #101d41;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top: none;
+  }
+
+  &--sri-lanka {
+    &:hover::before,
+    &:focus::before,
+    &:active::before {
+      content: "Шри-ланка";
+    }
+  }
+
+  &--thailand {
+    &:hover::before,
+    &:focus::before,
+    &:active::before {
+      content: "Тайланд";
+    }
+  }
+
+  &--seychelles {
+    &:hover::before,
+    &:focus::before,
+    &:active::before {
+      content: "Сейшелы";
+    }
+  }
+
+  &--belgium {
+    &:hover::before,
+    &:focus::before,
+    &:active::before {
+      content: "Бельгия";
+    }
+  }
+
+  &--chech {
+    &:hover::before,
+    &:focus::before,
+    &:active::before {
+      content: "Чехия";
+    }
+  }
+}
+
+.companions-person__transport {
+  width: 150px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.companions-person__transport-link {
+  position: relative;
+  padding: 15px 5px;
+  margin-right: 7px;
+
+  &:hover::before,
+  &:focus::before,
+  &:active::before {
+    content: "fff";
+    position: absolute;
+    top: 58px;
+    left: -70px;
+    width: 171px;
+    height: 57px;
+    border-radius: 4px;
+    background-color: #101d41;
+    color: @white;
+    font-family: @main-font;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: center;
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:active::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 3px;
+    width: 0;
+    height: 0;
+    border: 8px solid #101d41;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top: none;
+  }
+
+  &--plane {
+    &:hover::before,
+    &:focus::before,
+    &:active::before {
+      content: "Самолет";
+    }
+  }
+
+  &--bus {
+    &:hover::before,
+    &:focus::before,
+    &:active::before {
+      content: "Автобус";
+    }
+  }
+
+  &--bike {
+    margin-left: -4px;
+    margin-right: 0;
+
+    &:hover::before,
+    &:focus::before,
+    &:active::before {
+      content: "Велосипед";
+    }
+  }
+
+  &--walking {
+    &:hover::before,
+    &:focus::before,
+    &:active::before {
+      content: "Пешком";
+    }
+  }
+}
+
+.companions-person__transport-icon {
+  fill: gray;
+  opacity: 0.3;
+
+  &--active {
+    fill: @blue;
+    opacity: 1;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .companions {
+    padding: 162px 48px;
+    padding-bottom: 87px;
+    margin-top: -60px;
+    border-radius: 0 0 60px 60px;
+    background-image:
+      url("../img/smolov-back-desktop@1x.png"),
+      url("../img/rogovaya-back-mobile@1x.png");
+    background-size:
+      143px 143px,
+      285px 285px;
+    background-position:
+      40px 481px,
+      407px 136px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image:
+        url("../img/smolov-back-desktop@2x.png"),
+        url("../img/rogovaya-back-desktop@2x.png");
+    }
+  }
+
+  .companions__title {
+    margin-bottom: 57px;
+  }
+
+  .companions__text {
+    width: 480px;
+    padding-left: 26px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .companions__text--text {
+    margin-bottom: 36px;
+  }
+
+  .companions__text--important {
+    width: 350px;
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 18px;
+  }
+
+  .companions__persons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 2px;
+  }
+
+  .companions__person {
+    width: 285px;
+    height: 483px;
+    border-radius: 20px;
+  }
+
+  .companions-person__image {
+    border-radius: 20px 20px 0 0;
+    width: 285px;
+  }
+
+  .companions-person__level {
+    top: 24px;
+    left: 20px;
+  }
+
+  .companions-person__level-svg {
+    top: 20px;
+    left: 20px;
+  }
+
+  .companions-person__flags {
+    margin-bottom: 13px;
+  }
+
+  .companions-person__name {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 24px;
+
+    &::before {
+      left: -20px;
+    }
+  }
+
+  .companions-person__hashtags {
+    width: 230px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .companions-person__transport-link {
+    padding: 23px 5px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .companions {
+    display: flex;
+    justify-content: flex-start;
+    padding: 151px 53px;
+    padding-bottom: 123px;
+    padding-left: 105px;
+    background-color: @dark-night-blue;
+    background-image:
+      url("../img/smolov-back-desktop@1x.png"),
+      url("../img/rogovaya-back-desktop@1x.png");
+    background-position:
+      547px 192px,
+      190px 445px;
+    background-size:
+      143px 143px,
+      285px 285px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image:
+        url("../img/smolov-back-desktop@2x.png"),
+        url("../img/rogovaya-back-desktop@2x.png");
+    }
+  }
+
+  .companions__title,
+  .companions__text {
+    position: relative;
+    z-index: 15;
+  }
+
+  .companions__persons {
+    min-width: 650px;
+    margin-top: 42px;
+    margin-left: 163px;
+    justify-content: flex-start;
+  }
+
+  .companions_content-wrap {
+    position: relative;
+  }
+
+  .companions_content-wrap::before {
+    content: "";
+    width: 213px;
+    height: 213px;
+    position: absolute;
+    top: -24px;
+    left: -47px;
+    border-radius: 20px;
+    background-color: @deep-blue;
+  }
+
+  .companions__person {
+    &--person-1 {
+      margin-right: 60px;
+    }
+
+    .companions-person__level-svg {
+      top: 22px;
+      left: 22px;
+    }
+
+    .companions-person__level {
+      top: 26px;
+      left: 22px;
+    }
+  }
+}

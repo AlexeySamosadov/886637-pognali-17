@@ -1,0 +1,54 @@
+.feedback {
+  padding: 1px 25px;
+  padding-top: 30px;
+  background-color: @dark-blue;
+}
+
+.feedback__text {
+  width: 150px;
+  margin-bottom: 18px;
+  margin-left: 25px;
+  color: @white;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.feedback__autor {
+  width: 155px;
+  margin-bottom: 15px;
+  margin-left: 25px;
+  color: @white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback {
+    position: absolute;
+    top: 266px;
+    left: 24px;
+    background-color: transparent;
+  }
+
+  .feedback__text {
+    width: 260px;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 44px;
+  }
+
+  .feedback__autor {
+    width: 270px;
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback {
+    top: 54px;
+    left: 1044px;  /* Почему-то не работает сваойсто Right*/
+  }
+}

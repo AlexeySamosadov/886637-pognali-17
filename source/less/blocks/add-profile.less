@@ -1,0 +1,370 @@
+.add-profile {
+  position: relative;
+  padding: 36px 25px;
+  margin-top: -10px;
+  background-color: @light-gray;
+  border: 1px solid @light-gray;
+  border-radius: 0 0 30px 30px;
+  z-index: 7;
+
+  &::after {
+    display: block;
+    position: absolute;
+    top: 46px;
+    right: 26px;
+    content: "";
+    width: 99px;
+    height: 99px;
+    background-image: url("../img/rates@1x.png");
+    background-size: 99px 99px;
+  }
+}
+
+
+.add-profile__title {
+  width: 115px;
+  padding: 0 25px;
+}
+
+.add-profile__services-list {
+  width: 180px;
+  list-style: none;
+  padding: 0;
+  margin: 20px 23px;
+  margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-profile__item {
+  position: relative;
+  padding-bottom: 22px;
+  color: @dark-gray;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+
+  &::before {
+    display: flex;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: -9px;
+    right: -65px;
+    border-radius: 50%;
+    content: "1";
+    color: @white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 38px;
+    background-color: @light-orange;
+    justify-content: center;
+
+    @media (min-width: @tablet-width) {
+      top: 0;
+      left: -90px;
+      width: 67px;
+      height: 67px;
+      font-size: 28px;
+      line-height: 72px;
+    }
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 200px;
+    position: absolute;
+    top: -12px;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+.add-profile__item--2 {
+  &::before {
+    content: "2";
+    background-color: @dark-lemon;
+  }
+}
+
+.add-profile__item--3 {
+  &::before {
+    content: "3";
+    background-color: @lemon;
+  }
+}
+
+.add-profile__show-all-tariff {
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
+  text-align: center;
+  color: @dark-night-blue;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.add-profile__show-icon {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 67px;
+    height: 67px;
+    background-color: @gray;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+}
+
+.add-profile-popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: @mobile-section-width;
+  min-height: 443px;
+  padding-left: 25px;
+  box-shadow: 0 20px 50px rgba(29, 46, 91, 0.1);
+  border-radius: 20px;
+  background-color: @white;
+  z-index: 15;
+
+  @media (min-width: @tablet-width) {
+    width: 688px;
+    height: 526px;
+    top: 670px;
+    box-shadow: 0 20px 50px rgba(29, 46, 91, 0.1);
+    border-radius: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 160px;
+    left: 400px;
+  }
+
+  &--active {
+    display: block;
+  }
+}
+
+.add-profile-popup__titile {
+  color: @orange;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+    margin-bottom: 60px;
+  }
+}
+
+.add-profile-popup__text {
+  display: block;
+  position: relative;
+  width: 161px;
+  margin-bottom: 15px;
+  color: @dark-gray;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+
+  @media (min-width: @tablet-width) {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    width: 219px;
+    height: 1px;
+    opacity: 0.05;
+    background-color: @black;
+
+    @media (min-width: @tablet-width) {
+      width: 500px;
+      top: -15px;
+    }
+  }
+}
+
+.add-profile-popup__button-close {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: @mobile-section-width;
+  height: 59px;
+  border: none;
+  border-radius: 0 0 20px 20px;
+  background-color: #f3f4f8;
+  text-align: center;
+  color: @blue;
+  font-family: @main-font;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 59px;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: #c5d0e6;
+  }
+
+
+  &:active {
+    color: @blue-03;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 688px;
+    height: 108px;
+    border-radius: 0 0 30px 30px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: capitalize;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .add-profile {
+    padding: 60px 40px;
+    padding-top: 110px;
+    margin-top: -60px;
+    border-radius: 0 0 60px 60px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 206px;
+      right: 39px;
+      width: 198px;
+      height: 285px;
+      border-radius: 20px;
+      background-color: @gray;
+    }
+
+    &::after {
+      top: 466px;
+      right: 85px;
+    }
+  }
+
+  .add-profile__title {
+    margin-top: 23px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .add-profile__services-list {
+    width: 100%;
+    padding-left: 66px;
+    margin-top: 72px;
+    margin-bottom: 37px;
+  }
+
+  .add-profile__item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    line-height: 33px;
+    padding-top: 19px;
+    padding-bottom: 15px;
+    padding-right: 55px;
+
+    &::after {
+      top: 1px;
+      width: 562px;
+    }
+  }
+
+  .add-profile__show-all-tariff {
+    margin: 0;
+    margin-left: -1px;
+    margin-top: -2px;
+    margin-bottom: 2px;
+  }
+
+  .add-profile__show-icon {
+    margin-right: 21px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .add-profile {
+    padding-top: 143px;
+    min-height: 810px;
+  }
+
+  .add-profile::after {
+    width: 198px;
+    height: 198px;
+    top: 345px;
+    right: 132px;
+    background-size: 198px 198px;
+  }
+
+  .add-profile::before {
+    content: "";
+    position: absolute;
+    top: 292px;
+    right: 246px;
+    width: 444px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: @gray;
+  }
+
+  .add-profile__services-list {
+    margin-top: 131px;
+    margin-left: 114px;
+  }
+
+  .add-profile__item {
+    display: flex;
+    justify-content: space-between;
+    width: 870px;
+
+    &::after {
+      width: 815px;
+    }
+  }
+
+  .add-profile__show-all-tariff {
+    margin-left: 90px;
+  }
+}

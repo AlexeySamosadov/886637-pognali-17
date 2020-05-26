@@ -1,0 +1,105 @@
+.service {
+  position: relative;
+  padding: 36px 49px;
+  padding-bottom: 61px;
+  border: 1px solid @dark-blue;
+  border-radius: 0 0 30px 30px;
+  background-color: @dark-blue;
+  background-image: url("../img/about-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 17px 24px;
+  z-index: 10;
+}
+
+.service__text {
+  margin-bottom: 19px;
+  color: @white;
+  width: 210px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+
+  &--important {
+    width: 230px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .service {
+    padding: 87px 49px;
+    padding-left: 74px;
+    padding-right: 390px;
+    padding-top: 88px;
+    border-radius: 0 0 60px 60px;
+    background-image: url("../img/about-tablet@1x.png");
+    background-position: 385px 129px;
+    background-size: 373px 545px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/about-tablet@2x.png");
+    }
+  }
+
+  .service__text {
+    width: 310px;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 35px;
+
+    &--important {
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 25px;
+      margin-bottom: 51px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .service {
+    position: relative;
+    margin-top: -171px;
+    padding: 97px 600px 30px 131px;
+    background-color: @dark-night-blue;
+    background-image: url("../img/about-desktop@1x.png");
+    background-position: 750px 87px;
+    background-size: 630px 665px;
+    min-height: 752px;
+    border: none;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/about-desktop@2x.png");
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 213px;
+      height: 213px;
+      position: absolute;
+      top: 73px;
+      left: 62px;
+      border-radius: 20px;
+      background-color: @deep-blue;
+    }
+  }
+
+  .service__title {
+    position: relative;
+    margin-bottom: 58px;
+    z-index: 15;
+  }
+
+  .service__text {
+    position: relative;
+    width: 630px;
+    margin-top: 40px;
+    z-index: 15;
+  }
+
+  .service__text--important {
+    width: 430px;
+    margin-bottom: 84px;
+  }
+}
